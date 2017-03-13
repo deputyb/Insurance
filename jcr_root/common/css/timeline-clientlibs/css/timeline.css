@@ -1,0 +1,170 @@
+.interactiveTimeline .timeline-img {
+	border-bottom: 1px solid #bdbec2;
+	position: relative;
+	z-index: 10;
+}
+.interactiveTimeline .timeline-img img {
+	max-width: 100%;
+}
+.interactiveTimeline .timeline-marks {
+	position: relative;
+	top: -39px;
+	z-index: 30;
+}
+.interactiveTimeline .bx-wrapper {
+	top: -15px;
+	z-index: 10;
+}
+.narrowContainer .articleModule > h2 {
+	padding: 30px 0 0;
+}
+.interactiveTimeline .bx-wrapper .item-content-wrapper {
+	padding-top: 75px;
+}
+.interactiveTimeline .timeline-mark {
+	position: absolute;
+	background-color: #f33f2e;
+	height: 30px;
+	width: 2px;
+	display: inline-block;
+	cursor: pointer;
+}
+.interactiveTimeline .timeline-arrow {
+	position: absolute;
+	top: 1px;
+	border: 7px solid transparent;
+	border-bottom-color: #f33f2e;
+	display: inline-block;
+}
+.interactiveTimeline .bx-wrapper .bx-viewport {
+	background-color: transparent;
+}
+.interactiveTimeline .bx-wrapper .bx-prev,
+.interactiveTimeline .bx-wrapper .bx-next {
+	background-color: #00a3c6;
+	width: 47px;
+	height: 47px;
+}
+.interactiveTimeline .bx-wrapper .bx-prev {
+	background-image: url(../../../images/designs/global/spr-white-arrows.png);
+	background-position: 0 0;
+	left: -30px;
+}
+.interactiveTimeline .bx-wrapper .bx-next {
+	background-image: url(../../../images/designs/global/spr-white-arrows.png);
+	background-position: -48px 0;
+	right: -30px;
+}
+.interactiveTimelineItem {
+	padding: 0 70px;
+	min-height: 380px;
+}
+.interactiveTimelineItem .bx-wrapper {
+	border: 1px solid #e5e5e5;
+}
+.interactiveTimelineItem .bx-wrapper ul {
+	margin-left: 0;
+}
+.interactiveTimelineItem .bx-wrapper img {
+	margin: 0 auto;
+}
+.interactiveTimelineItem .bx-wrapper .bx-pager {
+	display: none;
+	padding-top: 56%;
+}
+.interactiveTimelineItem .bx-wrapper .slideHeaderTxt {
+	position: absolute;
+	bottom: -5%;
+	left: 3%;
+}
+/*for IE8 bug*/
+.bx-wrapper, .bx-wrapper .bx-viewport {
+	height: auto\9 !important; 
+}
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+		.interactiveTimeline .bx-wrapper .bx-prev {
+			left: -1%;
+		}
+		.interactiveTimeline .bx-wrapper .bx-next {
+			right: -1%;
+		}
+}
+@media only screen and (min-width : 1px) and (max-width:767px) {
+	footer {
+		z-index: 1000;
+	}
+	.newsTop {
+		z-index: 1000;
+		position: relative;
+	}
+	.interactiveTimelineItem {
+		min-height: initial;
+		display: inline-block;
+		margin-bottom: 15px;
+		padding: 0;
+	}
+	.interactiveTimeline .timeline-img {
+		border: none;
+		float: left;
+		width: 7%;
+		z-index: 1;
+	}
+	.narrowContainer h2, .topic-header {
+		position: relative;
+		z-index: 50;
+		background: #fff;
+	}
+	.interactiveTimeline .timeline-img img {
+		max-width: 25px;
+	}
+	.interactiveTimeline .timeline-arrow {
+		position: relative;
+		top: 2px;
+		left: -2% !important;
+		border: 7px solid transparent;
+		border-right-color: #f33f2e;
+		float: left;
+	}
+	.interactiveTimeline .bxslider-timeline {
+		width: 93%;
+		float :left;
+	}
+	.interactiveTimeline .bxslider-timeline.active {
+		margin-left: 7%;
+	}
+	.item-content-wrapper {
+		float: left;
+		width: 95%;
+	}
+	.item-content-wrapper.active {
+		margin-left: 3%;
+	}
+	.interactiveTimelineItem .bx-wrapper .bx-pager {
+		display: none;
+		padding-top: 79%;
+	}
+	.interactiveTimelineItem .videoContent {
+		max-width: 720px;
+		width: auto;
+	}
+	.interactiveTimelineItem h3.active {
+		position: fixed;
+		top: 62px;
+		left: 13.5%;
+		padding-top: 5px;
+		background-color: white;
+		width: 100%;
+		z-index: 1;
+	}
+	.interactiveTimelineItem span.active {
+		position: fixed;
+		top: 70px;
+		left: 10% !important;
+	}
+	.modImgText .row-fluid .span3.leftImg {
+		width: auto;
+		display: block;
+		float: none;
+		text-align: center;
+	}
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Quote"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <text
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to include as the main quote content"
+                        fieldLabel="Text"
+                        name="./text"
+                        xtype="textarea"/>
+                    <author
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to include as the quote's author"
+                        fieldLabel="Author"
+                        name="./author"
+                        xtype="textfield"/>
+                    <authorinformation
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to include as the quote's author information"
+                        fieldLabel="Author Information"
+                        name="./authorinformation"
+                        xtype="textfield"/>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

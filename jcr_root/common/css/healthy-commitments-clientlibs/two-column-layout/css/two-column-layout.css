@@ -1,0 +1,47 @@
+.twoColumnLayout .row-fluid {
+	padding: 50px 0 0 0;
+}
+
+.twoColumnLayout .row-fluid.blue-gb {
+	background-color: #d6eff7 !important;
+	padding: 30px 0;
+}
+
+.twoColumnLayout .image-bottom {
+	text-align: center;
+	line-height: normal;
+	font-size: 0;
+}
+
+.twoColumnLayout .image-bottom img {
+	position: relative;
+}
+
+.twoColumnLayout .image img {
+	max-width: 100%;	
+}
+
+@media only screen and (min-width: 768px) {	
+	.twoColumnLayout .row-fluid > div.separator {
+		border-right: 2px solid #B3CCD2 !important;
+	}
+}
+
+@media only screen and (min-width: 1px) and (max-width: 767px) {
+	.twoColumnLayout .image {
+		text-align: center;
+	}
+		
+	.twoColumnLayout .image-bottom img {
+		position: inherit;
+	}
+	
+	.twoColumnLayout .row-fluid > div.horizontal-separator {
+		border-bottom: 2px solid #B3CCD2 !important;
+	}
+	
+		.twoColumnLayout .row-fluid > div.text-align-bottom {
+		 padding-top:  5%;
+	}
+	
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="footer-dialog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <formaction
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Path of the page to execute the form action"
+                        fieldLabel="Form action"
+                        name="./formaction"
+                        xtype="pathfield"/>
+                    <formtitle
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to display as the form title"
+                        fieldLabel="Form title"
+                        name="./title"
+                        xtype="textfield"/>
+                    <subheading
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to display as the form subheading"
+                        fieldLabel="Form subheading"
+                        name="./subheading"
+                        xtype="textfield"/>
+                    <formerrormessage
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to display as the form error message"
+                        fieldLabel="Form error message"
+                        name="./formerrormessage"
+                        xtype="textfield"/>
+                    <interstitialonsubmit
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to open the insterstitial message on form submit"
+                        fieldLabel="Interstitial on submit"
+                        name="./interstitialonsubmit"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <numinputs
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        description="Number of text fields to show in the form"
+                        fieldLabel="Input fields"
+                        name="./numinputs"
+                        xtype="numberfield"/>
+                    <submittitle
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        description="Text to display as the title of the submit button"
+                        fieldLabel="Submit title"
+                        name="./submittitle"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                title="Functionality">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <turnoff
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to disable the search functionality"
+                        fieldLabel="Disable search functionality"
+                        name="./turnOffFunctionality"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <precertsearchnotavailablemsg
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        fieldDescription="Text to display when the Search functionality is not available."
+                        fieldLabel="Search Not Available Message"
+                        height="200"
+                        name="./precertsearchnotavailablemsg"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                            xtype="cqinclude"/>
+                    </precertsearchnotavailablemsg>
+                </items>
+            </tab2>
+        </items>
+    </items>
+</jcr:root>

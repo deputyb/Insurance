@@ -1,0 +1,249 @@
+@media only screen and (min-width : 1px) and (max-width:767px) {
+	.shop-module-wrapper h2 {
+		text-align: center;
+	}
+	
+	.shop-module-wrapper .shop-module-content {
+		margin-bottom: 20px;
+	}
+	
+	.shop-module-wrapper.tall {
+		padding: 0;
+	}
+	
+	.shopModule {
+		padding-bottom: 0;
+	}
+	
+	.interstitialParsys .interstitial .parsys {
+	  	-webkit-overflow-scrolling: touch;
+	}	
+	
+	.interstitial .shopModule {
+		padding-bottom: 25px;
+	}
+	
+	.interstitial .shopModule select, 
+	.interstitial .zip-code-form input {
+		font-size: 1em;
+		padding: 11px 0px;
+	}
+	
+	.interstitial .shop-module-wrapper[data-page-language="es"] .shopModule select.js-insurance-type-select {
+		font-size: 0.9em;
+		padding: 14px 0px;
+	}
+	
+	.interstitial .shopModule .open-layout {
+		padding: 0;
+	}
+	
+	.shopModule .mobile-wrapper.mobile-wrapper-hidden-desktop,
+	.shop-module-preview-wrapper .mobile-wrapper.mobile-wrapper-hidden-desktop {
+		display: block;
+	}
+	
+	.shopModule .mobile-wrapper .mobile-links {
+		margin-bottom: 30px;
+	}
+	
+	.shop-module-preview-wrapper .mobile-wrapper .mobile-links {
+		margin-top: 20px;
+	}
+	
+	.template.article-template .bodyContent.span12 .progressivePageBand {
+		margin: 0 -3%;
+	}
+	
+	.interstitial .zip-code-wrapper {
+		padding-top: 40px;
+	}
+	
+	.interstitial .progressive-page-login-wrapper {
+		padding: 20px;
+	}
+	
+	.interstitial .progressive-page-login-wrapper .title-wrapper h4 {
+		float: inherit;
+		margin-bottom: 10px;
+	}
+	
+	.interstitial .progressive-page-login-wrapper .title-wrapper .tooltip-icon-wrapper {
+		float: inherit;
+		margin: 0 0 10px;
+	}
+	
+	.interstitial .progressive-page-login-wrapper .title-wrapper .tooltip-icon-wrapper a {
+		left: 48%;
+	}
+	
+	.interstitial .progressive-page-login-wrapper .tooltip-content {
+		top: 65px;
+		max-width: 68%;
+		left: 10%;
+	}
+	
+	.interstitial .progressive-page-login-wrapper .zip-code-wrapper {
+		padding-top: 0px;
+	}
+	
+	.interstitial .zip-code-wrapper .zip-code-form {
+		margin-bottom: 15px;
+	}
+	
+	.interstitial .shop-module-content .zip-code-wrapper .zip-code-form label {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	
+	.interstitial .shopModule h2, 
+	.interstitial .zip-code-form label {
+		font-size: 1.3em;
+		margin-bottom: 10px;
+	}
+	
+	.interstitial .zip-code-form label {
+		margin-right: 0;
+	}
+	
+	.interstitial .shop-module-content .zip-code-wrapper .zip-code-form input {
+		width: 44%;
+	}
+	
+	.zip-code-wrapper .shop-button .shop-button-error {
+		position: relative;
+		max-width: 175px;
+		top: 117%;
+		left: 0;
+		margin: 16px auto 0;
+	}
+	
+	.zip-code-wrapper .shop-button .shop-button-error .arrow,
+	.zip-code-wrapper .submit-button-error .arrow {
+		left: 46%;
+		top: -18px;
+		border: 8px solid transparent;
+		border-bottom-color: #e2eaf0;
+  		border-bottom-width: 11px;
+	}
+	
+	.county-dropdown-wrapper .selectWrap select {
+		font-size: 0.9em;
+		padding: 14px 48px 12px 2px;
+		font-family: 'Foco W01 Light', Arial, sans-serif;
+	}
+	
+	.shop-module-wrapper .shop-content > .columnLayout h5 {
+		text-align: center;
+	}
+	
+	.interstitial .shop-module-wrapper .blueBtn {
+		font-size: 0.8em;
+		line-height: 1.1;
+	}
+		
+	.shop-module-wrapper .shop-content > .columnLayout .blueBtn.whiteBtn {
+		width: 90%;
+		margin: 30px 0;
+	}
+	
+	.home-slideshow-wrapper .slide img {
+		max-width: 100%;
+	}
+	
+	.home-slideshow-wrapper.slideshow-wrapper .heroSlideshowItem .slide {
+		background-color: white;
+	}
+	
+	.home-slideshow-wrapper.slideshow-wrapper .heroSlideshowItem:last-child .span7.content .home-slideshow-item-content {
+		border-bottom: 2px solid #eee;
+	}
+
+	.shopModule .zip-code-wrapper .zip-code-form.county-selection .county-dropdown-wrapper,
+	.progressive-page-band-wrapper .zip-code-wrapper .zip-code-form.county-selection .county-dropdown-wrapper,
+	.progressive-page-login-wrapper .zip-code-wrapper .zip-code-form.county-selection .county-dropdown-wrapper {
+		width: 100%;
+	}
+	
+	.bodyContent.span7 .progressive-page-band-wrapper .zip-code-wrapper {
+		padding-top: 24px;
+	}
+	
+	.shop-module-wrapper .language-toggle a {
+		padding: 8px 16px;
+	}
+	
+	.zip-code-wrapper .county-form-item {
+		width: 100%;
+	}
+	
+	.progressive-page-band-wrapper .zip-code-wrapper .county-form-item {
+		width: 75%;
+		margin: 0 auto;
+	}
+	
+	.zip-code-form .tooltip-icon-wrapper {
+		padding: 15px 0 0;
+	}
+	
+	.zip-code-form .tooltip-icon {
+		margin: 0 auto;
+		position: inherit;
+	}
+	
+	.zip-code-wrapper .tooltip-content {
+		max-width: 75%;
+		left: 5%;
+		top: 90px;
+	}
+
+	.progressive-page-band-wrapper .tooltip-content {
+		top: 50px;
+	}
+	
+	.progressive-page-band-wrapper .county-selection .tooltip-content {
+		top: 100px;
+	}
+	
+	.progressive-page-band-wrapper .tooltip-icon-wrapper {
+		float: inherit;
+	}
+	
+	.bodyContent.span7 .progressive-page-wrapper .tooltip-icon {
+		left: 0% !important;
+	}
+}
+@media only screen and (min-width : 1px) and (max-width:480px) {
+	.progressive-page-band-wrapper .arrow {
+		left: 38%;
+	}
+	
+	.zip-code-wrapper .zip-code-form input {
+		width: 25%;
+	}
+	
+	.bodyContent.span7 .progressive-page-band-wrapper .zip-code-form input {
+		font-size: 1em;
+	}
+	
+	.interstitial .progressive-page-login-wrapper .zip-code-wrapper .zip-code-form input {
+		width: 55%;
+	}
+	
+	.interstitial .progressive-page-login-wrapper.progressive-page-wrapper .zip-code-form label {
+		text-align: center;
+		margin-bottom: 5px;
+		display: block;
+	}
+}
+@media only screen and (min-width : 481px) and (max-width:767px) {
+	.progressive-page-band-wrapper .arrow {
+		left: 41%;
+	}
+	
+	.interstitial .progressive-page-login-wrapper .zip-code-wrapper .zip-code-form input {
+		width: 35%;
+	}
+}

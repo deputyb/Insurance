@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Address Field"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <label
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/forms/basicformcomponent/dialog/items/items/configuration/items/label.infinity.json"
+                        xtype="cqinclude"/>
+                    <descriptiontext
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/forms/basicformcomponent/dialog/items/items/configuration/items/descriptiontext.infinity.json"
+                        xtype="cqinclude"/>
+                </items>
+            </configuration>
+            <address1
+                jcr:primaryType="cq:Panel"
+                title="Address line 1">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <placeholder
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to render inside the address line 1 field as a placeholder."
+                        fieldLabel="Placeholder text"
+                        name="./address1placeholder"
+                        xtype="textfield"/>
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="HTML name attribute to be submitted for the address line 1 field."
+                        fieldLabel="Input name"
+                        name="./address1name"
+                        xtype="textfield"/>
+                    <validations
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Include each validation for the address line 1 field."
+                        fieldLabel="Validations"
+                        name="./address1validations"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="aetna.formvalidation"/>
+                    </validations>
+                </items>
+            </address1>
+            <address2
+                jcr:primaryType="cq:Panel"
+                title="Address line 2">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <placeholder
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to render inside the address line 2 field as a placeholder."
+                        fieldLabel="Placeholder text"
+                        name="./address2placeholder"
+                        xtype="textfield"/>
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="HTML name attribute to be submitted for the address line 2 field."
+                        fieldLabel="Input name"
+                        name="./address2name"
+                        xtype="textfield"/>
+                    <validations
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Include each validation for the address line 2 field."
+                        fieldLabel="Validations"
+                        name="./address2validations"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="aetna.formvalidation"/>
+                    </validations>
+                </items>
+            </address2>
+            <city
+                jcr:primaryType="cq:Panel"
+                title="City">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <placeholder
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to render inside the city field as a placeholder."
+                        fieldLabel="Placeholder text"
+                        name="./cityplaceholder"
+                        xtype="textfield"/>
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="HTML name attribute to be submitted for the city field."
+                        fieldLabel="Input name"
+                        name="./cityname"
+                        xtype="textfield"/>
+                    <validations
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Include each validation for the city field."
+                        fieldLabel="Validations"
+                        name="./cityvalidations"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="aetna.formvalidation"/>
+                    </validations>
+                </items>
+            </city>
+            <state
+                jcr:primaryType="cq:Panel"
+                title="State">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <defaultoption
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="First option to render in the state dropdown."
+                        fieldLabel="Default option"
+                        name="./statedefaultoption"
+                        xtype="textfield"/>
+                    <anotherdefaultoption
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Second option to render in the state dropdown. Only valid if first default option is specified."
+                        fieldLabel="Second option"
+                        name="./stateanotherdefaultoption"
+                        xtype="textfield"/>
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="HTML name attribute to be submitted for the state field."
+                        fieldLabel="Input name"
+                        name="./statename"
+                        xtype="textfield"/>
+                    <states
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select the states to render. Leave it blank to render all."
+                        fieldLabel="States"
+                        name="./states"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            options="/services/us-states"
+                            type="select"
+                            xtype="selection"/>
+                    </states>
+                    <statereplacements
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="In case you need to change the state label, use this field as replacement pattern(old-value|new-value). You can use multiple by separating them by commas."
+                        fieldLabel="States Replacement"
+                        name="./statereplacements"
+                        xtype="textfield"/>
+                    <validations
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Include each validation for the state field."
+                        fieldLabel="Validations"
+                        name="./statevalidations"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="aetna.formvalidation"/>
+                    </validations>
+                </items>
+            </state>
+            <zip
+                jcr:primaryType="cq:Panel"
+                title="Zip Code">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <placeholder
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to render inside the zip code field as a placeholder."
+                        fieldLabel="Placeholder text"
+                        name="./zipplaceholder"
+                        xtype="textfield"/>
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="HTML name attribute to be submitted for the zip code field."
+                        fieldLabel="Input name"
+                        name="./zipname"
+                        xtype="textfield"/>
+                    <validations
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Include each validation for the zip code field."
+                        fieldLabel="Validations"
+                        name="./zipvalidations"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="aetna.formvalidation"/>
+                    </validations>
+                </items>
+            </zip>
+            <zip4
+                jcr:primaryType="cq:Panel"
+                title="Zip+4 Code">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <showzip
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check to show the extra zip field."
+                        fieldLabel="Show extra zip"
+                        name="./showZipplus4"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <placeholder
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to render inside the zip code field as a placeholder."
+                        fieldLabel="Placeholder text"
+                        name="./zipplus4Placeholder"
+                        xtype="textfield"/>
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="HTML name attribute to be submitted for the zip code field."
+                        fieldLabel="Input name"
+                        name="./ziplus4name"
+                        xtype="textfield"/>
+                    <validations
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Include each validation for the zip code field."
+                        fieldLabel="Validations"
+                        name="./zipplus4validations"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="aetna.formvalidation"/>
+                    </validations>
+                </items>
+            </zip4>
+        </items>
+    </items>
+</jcr:root>

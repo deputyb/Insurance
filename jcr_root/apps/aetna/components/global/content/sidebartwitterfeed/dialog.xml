@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Sidebar Twitter Feed"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to include as the component title."
+                        fieldLabel="Title"
+                        name="./title"
+                        xtype="textfield"/>
+                    <twitterfeedactive
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to display the Twitter feed."
+                        fieldLabel="Twitter Feed Active"
+                        name="./twitterfeedactive"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <twitteraccount
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Include the Twitter account to pull the feed from."
+                        fieldLabel="Twitter Account"
+                        name="./twitteraccount"
+                        xtype="textfield"/>
+                    <twitterwidgetid
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Include the Twitter widget ID to display."
+                        fieldLabel="Twitter Widget ID"
+                        name="./twitterwidgetid"
+                        xtype="textfield"/>
+                    <twitternotavailablemsg
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        fieldDescription="Text to display when the Twitter Feed is not available."
+                        fieldLabel="Twitter Not Available Messag"
+                        height="200"
+                        name="./twitternotavailablemsg"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                            xtype="cqinclude"/>
+                    </twitternotavailablemsg>
+                </items>
+            </configuration>
+            <buttonconfiguration
+                jcr:primaryType="cq:Panel"
+                title="Button Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <buttontitle
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to include as the button title."
+                        fieldLabel="Title"
+                        name="./buttontitle"
+                        xtype="textfield"/>
+                    <buttonlink
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="URL to redirect when the button is clicked."
+                        fieldLabel="Button link"
+                        name="./buttonlink"
+                        xtype="pathfield"/>
+                    <buttontarget
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Check it if you want to open the link in a new window/tab"
+                        fieldLabel="New tab/window"
+                        name="./buttontarget"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <buttoninterstitial
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Select the interstitial window to display"
+                        fieldLabel="Interstitial"
+                        name="./buttoninterstitial"
+                        options="/services/article-module-interstitial?page=$PATH"
+                        type="select"
+                        xtype="selection"/>
+                    <buttononclick
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="onclick JavaScript event to execute when the button is clicked."
+                        fieldLabel="OnClick"
+                        name="./buttononclick"
+                        xtype="textarea"/>
+                </items>
+            </buttonconfiguration>
+            <socialicons
+                jcr:primaryType="cq:Panel"
+                title="Social Icons">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <copy
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to add as the social icons label."
+                        fieldLabel="Copy"
+                        name="./copy"
+                        xtype="textfield"/>
+                    <facebook
+                        jcr:primaryType="cq:Widget"
+                        title="Facebook"
+                        xtype="fieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <facebooklink
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Aetna's Facebook account link."
+                                fieldLabel="Facebook link"
+                                name="./facebooklink"
+                                width="95%"
+                                xtype="textfield"/>
+                            <facebooklinktarget
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Check it if you want to open the Facebook link in a new tab/window."
+                                fieldLabel="Facebook new tab/window"
+                                name="./facebooklinktarget"
+                                type="checkbox"
+                                xtype="selection"/>
+                            <facebooklinkonclick
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Javascript onclick method for analytics in Facebook link."
+                                fieldLabel="Facebook link onclick"
+                                name="./facebooklinkonclick"
+                                width="95%"
+                                xtype="textarea"/>
+                            <facebookinterstitial
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Select the interstitial window to display when the link is clicked."
+                                fieldLabel="Facebook Interstitial"
+                                name="./facebookinterstitial"
+                                options="/services/article-module-interstitial?page=$PATH"
+                                type="select"
+                                xtype="selection"/>
+                        </items>
+                    </facebook>
+                    <twitter
+                        jcr:primaryType="cq:Widget"
+                        title="Twitter"
+                        xtype="fieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <twitterlink
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Aetna's Twitter account link."
+                                fieldLabel="Twitter link"
+                                name="./twitterlink"
+                                width="95%"
+                                xtype="textfield"/>
+                            <twitterlinktarget
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Check it if you want to open the Twitter link in a new tab/window."
+                                fieldLabel="Twitter new tab/window"
+                                name="./twitterlinktarget"
+                                type="checkbox"
+                                xtype="selection"/>
+                            <twitterlinkonclick
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Javascript onclick method for analytics in Twitter link."
+                                fieldLabel="Twitter link onclick"
+                                name="./twitterlinkonclick"
+                                width="95%"
+                                xtype="textarea"/>
+                            <twitterinterstitial
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Select the interstitial window to display when the link is clicked."
+                                fieldLabel="Twitter Interstitial"
+                                name="./twitterinterstitial"
+                                options="/services/article-module-interstitial?page=$PATH"
+                                type="select"
+                                xtype="selection"/>
+                        </items>
+                    </twitter>
+                    <youtube
+                        jcr:primaryType="cq:Widget"
+                        title="YouTube"
+                        xtype="fieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <youtubelink
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Aetna's YouTube account link."
+                                fieldLabel="YouTube link"
+                                name="./youtubelink"
+                                width="95%"
+                                xtype="textfield"/>
+                            <youtubelinktarget
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Check it if you want to open the YouTube link in a new tab/window."
+                                fieldLabel="YouTube new tab/window"
+                                name="./youtubelinktarget"
+                                type="checkbox"
+                                xtype="selection"/>
+                            <youtubelinkonclick
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Javascript onclick method for analytics in YouTube link."
+                                fieldLabel="YouTube link onclick"
+                                name="./youtubelinkonclick"
+                                width="95%"
+                                xtype="textarea"/>
+                            <youtubeinterstitial
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Select the interstitial window to display when the link is clicked."
+                                fieldLabel="YouTube Interstitial"
+                                name="./youtubeinterstitial"
+                                options="/services/article-module-interstitial?page=$PATH"
+                                type="select"
+                                xtype="selection"/>
+                        </items>
+                    </youtube>
+                    <additionalSocial
+                        jcr:primaryType="cq:Widget"
+                        title="Additional Social Link"
+                        xtype="fieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <additionallink
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Aetna's Additional Social account link."
+                                fieldLabel="Additional Social link"
+                                name="./additionallink"
+                                width="95%"
+                                xtype="textfield"/>
+                            <additionallinktarget
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Check it if you want to open the Additional Social link in a new tab/window."
+                                fieldLabel="Additional Social Link new tab/window"
+                                name="./additionallinktarget"
+                                type="checkbox"
+                                xtype="selection"/>
+                            <additionallinkonclick
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Javascript onclick method for analytics in additional link."
+                                fieldLabel="Additional Social link onclick"
+                                name="./additionallinkonclick"
+                                width="95%"
+                                xtype="textarea"/>
+                            <additionalinterstitial
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Select the interstitial window to display when the link is clicked."
+                                fieldLabel="Additional Social Link Interstitial"
+                                name="./additionalinterstitial"
+                                options="/services/article-module-interstitial?page=$PATH"
+                                type="select"
+                                xtype="selection"/>
+                            <additionalIconPath
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Path of the icon for additional Social link."
+                                fieldLabel="Additional Social Icon"
+                                name="./additionalIcon"
+                                width="95%"
+                                xtype="pathfield"/>
+                            <additionalAltText
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Aetna's Additional Social Alt Text."
+                                fieldLabel="Additional Social Alt text"
+                                name="./additionalAltText"
+                                width="95%"
+                                xtype="textfield"/>
+                        </items>
+                    </additionalSocial>
+                </items>
+            </socialicons>
+        </items>
+    </items>
+</jcr:root>

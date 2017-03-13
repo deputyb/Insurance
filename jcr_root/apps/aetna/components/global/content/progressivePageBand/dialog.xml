@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Progressive Page Band"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Type the text that will be displayed as the first row of the band"
+                        fieldLabel="Title"
+                        name="./title"
+                        xtype="textfield"/>
+                    <type
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Select which will be the type of the band to render"
+                        fieldLabel="Type"
+                        name="./type"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <yesnoquestion
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes/No Question"
+                                value="yesnoquestion"/>
+                            <zipcodeinput
+                                jcr:primaryType="nt:unstructured"
+                                text="ZIP Code Input"
+                                value="zipcodeinput"/>
+                            <yesnoquestionzipcodeinput
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes/No question with ZIP code input"
+                                value="yesnoquestionzipcodeinput"/>
+                        </options>
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            loadcontent="function(field, record, path) { Aetna.ProgressivePage.hideConfigurationTabs(field); }"
+                            selectionchanged="function(field, value, isChecked) { Aetna.ProgressivePage.hideConfigurationTabs(field); }"/>
+                    </type>
+                </items>
+            </configuration>
+            <yesnoquestion
+                jcr:primaryType="cq:Panel"
+                title="Yes/No Question">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <configuration
+                        jcr:primaryType="cq:Widget"
+                        title="Configuration"
+                        xtype="fieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <questionlabel
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="false"
+                                fieldDescription="Text to display as the question label"
+                                fieldLabel="Question Label"
+                                name="./questionlabel"
+                                width="90%"
+                                xtype="textfield"/>
+                            <yeslabel
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="false"
+                                defaultValue="Yes"
+                                fieldDescription="Text to display as the 'Yes' label"
+                                fieldLabel="'Yes' Label"
+                                name="./yeslabel"
+                                width="90%"
+                                xtype="textfield"/>
+                            <yesonclick
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="JavaScript code to execute when the label is clicked"
+                                fieldLabel="'Yes' onClick"
+                                name="./yesonclick"
+                                width="90%"
+                                xtype="textarea"/>
+                            <nolabel
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="false"
+                                defaultValue="No"
+                                fieldDescription="Text to display as the 'No' label"
+                                fieldLabel="'No' Label"
+                                name="./nolabel"
+                                width="90%"
+                                xtype="textfield"/>
+                            <noonclick
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="JavaScript code to execute when the label is clicked"
+                                fieldLabel="'No' onClick"
+                                name="./noonclick"
+                                width="90%"
+                                xtype="textarea"/>
+                        </items>
+                    </configuration>
+                </items>
+            </yesnoquestion>
+            <zipcodeinput
+                jcr:primaryType="cq:Panel"
+                title="ZIP Code Input">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <zipcodetext
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text that will be displayed as the label of the ZIP code field."
+                        fieldLabel="ZIP Code Text"
+                        name="./zipcodetext"
+                        xtype="textfield"/>
+                    <countydropdowndefaultoption
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to use as the County dropdown default option that will be displayed."
+                        fieldLabel="County Dropdown Default Option"
+                        name="./countydropdowndefaultoption"
+                        width="90%"
+                        xtype="textfield"/>
+                    <countydropdownoptionseparator
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="--------------------------"
+                        fieldDescription="Separator text to use in the County dropdown. Leave empty if no separator is required."
+                        fieldLabel="County Dropdown Option Separator"
+                        name="./countydropdownoptionseparator"
+                        width="90%"
+                        xtype="textfield"/>
+                    <tooltiptext
+                        jcr:primaryType="cq:Widget"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        fieldDescription="Text to use in the information tooltip."
+                        fieldLabel="Tooltip Text"
+                        height="200"
+                        name="./tooltiptext"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                            xtype="cqinclude"/>
+                    </tooltiptext>
+                    <submitbuttonlabel
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        defaultValue="Submit"
+                        fieldDescription="Text to display as the Submit Button text"
+                        fieldLabel="Submit Button Label"
+                        name="./submitbuttonlabel"
+                        xtype="textfield"/>
+                    <submitbuttononclick
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="JS code that will be executed when button is clicked and the service returns the market."
+                        fieldLabel="Submit Button OnClick"
+                        name="./submitbuttononclick"
+                        xtype="textarea"/>
+                    <submitbuttonerrormessage
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        defaultValue="Please enter your ZIP code"
+                        fieldDescription="Text to display when the Submit Button is clicked and the ZIP code is not correct"
+                        fieldLabel="Submit Button Error Message"
+                        name="./submitbuttonerrormessage"
+                        xtype="textfield"/>
+                    <submitbuttonerrormessageinvalidzip
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        defaultValue="Please enter a valid ZIP code"
+                        fieldDescription="Text to display when the Submit Button is clicked and the ZIP code is invalid."
+                        fieldLabel="Submit Button Error Message Invalid ZIP Code"
+                        name="./submitbuttonerrormessageinvalidzip"
+                        xtype="textfield"/>
+                </items>
+            </zipcodeinput>
+        </items>
+    </items>
+</jcr:root>

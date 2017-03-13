@@ -1,0 +1,92 @@
+@media only screen and (min-width : 1px) and (max-width:767px) {
+	.form input[type=text] {
+		-moz-box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, .3);
+		-webkit-box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, .3);
+		box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, .3);
+	}
+	
+	.form form .parsys .row-fluid>div {
+		padding: 0;
+	}
+	
+	.form .wizard {
+		display: table;
+		margin-bottom: 10px;
+	}
+	
+	.form .wizard-info {
+		display: table-cell;
+		border-right: 1px solid #bebebe;
+		padding-right: 8px;
+	}
+	
+	.form .wizard-title {
+		display: table-cell;
+		padding-left: 8px;
+		
+	}
+	
+	.form .wizard-title h4 {
+		margin: 0;
+		font-size: 1.5em;
+		word-break: break-word;
+	}	
+	
+	.form .wizard-section {
+		margin-bottom: 30px;
+	}
+	
+	.form .wizard-section.hide {
+		display: none;
+	}
+	
+	.form .wizard-buttons a {
+		width: 100%;
+		margin-bottom: 10px;
+		padding: 10px 0;
+	}
+	
+	.form .form-submit-buttons.span12, .iform form-next-buttons.span12 {
+		padding: 0;
+	}
+	
+	.form .addressfield .float-left {
+		float: left !important;
+	}
+		
+	.form .addressfield .col {
+		float: none;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.form .addressfield .col2 {
+		min-width: 297px;
+	}
+	
+	.form .addressfield .col3 {
+		margin-right: 0%;
+	}
+	
+	.form .addressfield .shortercol3{
+		width: 70%;
+		margin-right: 3%;
+	}
+	
+	.form .addressfield .col4 {
+		width:20%;
+		margin-left:0% !important;
+	}
+	
+	.form .addressfield .zip-divider{
+		width: 4%;
+		margin-left:3%;
+	}
+	
+	.form input.low-width, .form textarea.low-width {
+		width:50%;
+	}
+	
+	.form .phonefield .col1, .form .phonefield .col3 {
+		width: 27%;
+	}
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Text"
+    title="Radio Buttons"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="Text"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <formInstruction
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Insert subheading for the call out text"
+                    fieldLabel="Form subheading:"
+                    name="./instruction"
+                    xtype="textfield"/>
+                <options
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new option"
+                    fieldLabel="Options to show:"
+                    name="./options"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="155"
+                        xtype="textfield"/>
+                </options>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

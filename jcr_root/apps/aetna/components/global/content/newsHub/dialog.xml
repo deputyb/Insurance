@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="What's New"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to use as the main title of the What's New section."
+                        fieldLabel="Title"
+                        name="./title"
+                        xtype="textfield"/>
+                    <hideInComponentLinks
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to hide links configured here and display only separate component news hub links."
+                        fieldLabel="Hide links configured in dialog"
+                        name="./hideInComponentLinks"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <firstlink
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="true"
+                        title="First What's New Link"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <firstnewstext
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Text to use as the first What's New link. If you leave it blank, the first item won't be displayed."
+                                fieldLabel="First What's New Link Text"
+                                name="./firstnewstext"
+                                xtype="textfield"/>
+                            <firstnewslink
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="URL or page of the first What's New link."
+                                fieldLabel="First What's New Link"
+                                name="./firstnewslink"
+                                xtype="pathfield"/>
+                            <firstnewsalert
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Check it if you want to display the first item as an Alert link."
+                                fieldLabel="First What's New Link Alert"
+                                name="./firstnewsalert"
+                                type="checkbox"
+                                xtype="selection"/>
+                            <onclick
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="true"
+                                fieldDescription="Code to use in the onclick event for tracking."
+                                fieldLabel="First What's New Link onclick event"
+                                name="./onclick"
+                                xtype="textfield"/>
+                            <firstinterstitial
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Select the interstitial window to display"
+                                fieldLabel="Interstitial"
+                                name="./firstinterstitial"
+                                options="/services/article-module-interstitial?page=$PATH"
+                                type="select"
+                                xtype="selection"/>
+                        </items>
+                    </firstlink>
+                    <secondlink
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="true"
+                        title="Second What's New Link"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <secondstaticnewstext
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Text to use as the second What's New link. If you leave it blank, the first item won't be displayed."
+                                fieldLabel="Second What's New Link Text"
+                                name="./secondstaticnewstext"
+                                xtype="textfield"/>
+                            <secondstaticnewslink
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="URL or page of the second What's New link."
+                                fieldLabel="Second What's New Link"
+                                name="./secondstaticnewslink"
+                                xtype="pathfield"/>
+                            <secondnewsalert
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Check it if you want to display the second item as an Alert link."
+                                fieldLabel="Second What's New Link Alert"
+                                name="./secondstaticnewsalert"
+                                type="checkbox"
+                                xtype="selection"/>
+                            <secondstaticonclick
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="true"
+                                fieldDescription="Code to use in the onclick event for tracking."
+                                fieldLabel="Second What's New Link onclick event"
+                                name="./secondstaticonclick"
+                                xtype="textfield"/>
+                            <secondInterstitial
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Select the interstitial window to display"
+                                fieldLabel="Interstitial"
+                                name="./secondinterstitial"
+                                options="/services/article-module-interstitial?page=$PATH"
+                                type="select"
+                                xtype="selection"/>
+                        </items>
+                    </secondlink>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

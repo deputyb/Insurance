@@ -1,0 +1,2 @@
+#base=js
+non-ssl-redirection.js

@@ -1,0 +1,4 @@
+#base=js
+libs/bootstrap.file-input.js
+controller/dam-metadata-import-export-controller.js
+scripts.js

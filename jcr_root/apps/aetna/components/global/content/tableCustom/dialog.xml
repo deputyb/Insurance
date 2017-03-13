@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    anchor="100%"
+    helpPath="en/cq/current/wcm/default_components.html#Table"
+    title="Table"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <table
+            jcr:primaryType="cq:Widget"
+            hideLabel="{Boolean}true"
+            name="./tableData"
+            xtype="tableedit2">
+            <rtePlugins
+                jcr:primaryType="nt:unstructured"
+                path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                xtype="cqinclude"/>
+        </table>
+        <headers
+            jcr:primaryType="cq:Widget"
+            name="./hasHeaders"
+            xtype="hidden"/>
+        <classes
+            jcr:primaryType="nt:unstructured"
+            fieldDescription="Classes to include to the table"
+            fieldLabel="Classes"
+            name="./classes"
+            xtype="multifield">
+            <fieldConfig
+                jcr:primaryType="cq:Widget"
+                type="select"
+                width="155"
+                xtype="selection">
+                <options jcr:primaryType="cq:WidgetCollection">
+                    <onerow
+                        jcr:primaryType="nt:unstructured"
+                        text="One Row"
+                        value="oneRow"/>
+                    <bgrows
+                        jcr:primaryType="nt:unstructured"
+                        text="Alternate Shades"
+                        value="bgrows"/>
+                    <mobileOverflow
+                        jcr:primaryType="nt:unstructured"
+                        text="Mobile Overflow"
+                        value="mobileOverflow"/>
+                    <mobileStack
+                        jcr:primaryType="nt:unstructured"
+                        text="Mobile Stack Table"
+                        value="stacktable"/>
+                    <tableWithPadding
+                        jcr:primaryType="nt:unstructured"
+                        text="Table With Padding"
+                        value="tableWithPadding"/>
+                </options>
+            </fieldConfig>
+        </classes>
+    </items>
+</jcr:root>

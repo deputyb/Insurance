@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="News Link"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <text
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to display"
+                        fieldLabel="Text"
+                        name="./text"
+                        xtype="textfield"/>
+                    <href
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Address that the link will redirect"
+                        fieldLabel="href"
+                        name="./href"
+                        xtype="pathfield"/>
+                    <newsalert
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to display the link as an Alert link."
+                        fieldLabel="Link Alert"
+                        name="./newsAlert"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <target
+                        jcr:primaryType="nt:unstructured"
+                        name="./target"
+                        xtype="hidden"/>
+                    <linktarget
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Check it if you want to open the link in a new window/tab"
+                        fieldLabel="New tab/window"
+                        name="./linktarget"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <class
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="true"
+                        fieldDescription="Link Style Class"
+                        fieldLabel="Class"
+                        name="./class"
+                        xtype="textfield"/>
+                    <showInterstitial
+                        jcr:primaryType="cq:Widget"
+                        name="./showInterstitial"
+                        xtype="hidden"/>
+                    <interstitial
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Select the interstitial window to display"
+                        fieldLabel="Interstitial"
+                        name="./interstitial"
+                        options="/services/article-module-interstitial?page=$PATH"
+                        type="select"
+                        xtype="selection"/>
+                    <id
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="true"
+                        fieldDescription="Link ID"
+                        fieldLabel="ID"
+                        name="./id"
+                        xtype="textfield"/>
+                    <onclick
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="true"
+                        fieldDescription="onclick event"
+                        fieldLabel="OnClick"
+                        name="./onclick"
+                        xtype="textarea"/>
+                </items>
+            </configuration>
+        </items>
+    </items>
+    <listeners
+        jcr:primaryType="nt:unstructured"
+        beforesubmit="function(dialog){ var target = dialog.getField('./target'); var linkTarget = dialog.getField('./linktarget'); if (linkTarget.getValue() == 'true') { target.setValue('_blank'); } else { target.setValue(''); } }"
+        loadContent="function(dialog){ var target = dialog.getField('./target'); var linkTarget = dialog.getField('./linktarget'); if (target.getValue() == '_blank') { linkTarget.setValue('true'); } else { linkTarget.setValue('false'); } var showInterstitial = dialog.getField('./showInterstitial'); if (showInterstitial.getValue() == 'true') { var interstitial = dialog.getField('./interstitial'); interstitial.setValue('external'); showInterstitial.setValue(''); } }"/>
+</jcr:root>

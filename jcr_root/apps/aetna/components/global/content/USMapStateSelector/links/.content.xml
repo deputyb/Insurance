@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <link01
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-az"
+        href="health-insurance-exchange/arizona-health-insurance-exchange.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','State Selection',this,'Arizona');s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Arizona"/>
+    <link02
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-dc"
+        href="health-insurance-exchange/district-of-columbia-health-insurance-exchange.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','State Selection',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="District of Columbia'"/>
+    <link03
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-dc two"
+        href="health-insurance-exchange/district-of-columbia-health-insurance-exchange.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','State Selection',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="District of Columbia"/>
+    <link04
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-fl"
+        href="health-insurance-exchange/florida-health-insurance-exchange.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','State Selection',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Florida"/>
+    <link05
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-il"
+        href="health-insurance-exchange/illinois-health-insurance-exchange.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','State Selection',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Illinois"/>
+    <link06
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-il two"
+        href="health-insurance-exchange/illinois-health-insurance-exchange.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','State Selection',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Illinois"/>
+    <link07
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-pa"
+        href="health-insurance-exchange/pennsylvania-health-insurance-exchange.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','State Selection',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Pennsylvania"/>
+    <link08
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-tx"
+        href="health-insurance-exchange/texas-health-insurance-exchange.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','State Selection',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Texas"/>
+    <link09
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-tx two"
+        href="health-insurance-exchange/texas-health-insurance-exchange.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','State Selection',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Texas"/>
+    <link10
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-tx three"
+        href="health-insurance-exchange/texas-health-insurance-exchange.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','State Selection',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Texas"/>
+    <link11
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-ok"
+        href="health-insurance-exchange/oklahoma-health-insurance-exchange.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','State Selection',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Oklahoma"/>
+    <link12
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-ok two"
+        href="health-insurance-exchange/oklahoma-health-insurance-exchange.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','State Selection',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Oklahoma"/>
+    <link13
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-va"
+        href="health-insurance-exchange/virginia-health-insurance-exchange.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','State Selection',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Virginia"/>
+    <link14
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-va two"
+        href="health-insurance-exchange/virginia-health-insurance-exchange.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','State Selection',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Virginia"/>
+    <link15
+        jcr:primaryType="nt:unstructured"
+        class="arrowBlueSmall"
+        href="http://healthinsurance.aetna.com"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','State Selection',this);s.tl(this,'o',linkText);"
+        target="_blank"
+        text="shop for an Aetna plan today"
+        title=""/>
+</jcr:root>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    width="700"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <footerconfig
+                jcr:primaryType="cq:Widget"
+                title="Footer Configuration"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <isfourcolumns
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select to display 4 columns in the footer, deselect for 5 columns"
+                        fieldLabel="Display 4 column footer?"
+                        name="./isfourcolumns"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <copyrighttext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to display as the copyright disclaimer. Use [current-year] as a placeholder to be replaced with the actual year"
+                        fieldLabel="Copyright"
+                        name="./copyrighttext"
+                        xtype="textfield"/>
+                </items>
+            </footerconfig>
+            <icon1
+                jcr:primaryType="cq:Widget"
+                title="Icon 1"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <icon1icon
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Path of the icon 1 image"
+                        fieldLabel="Icon 1 Path"
+                        name="./icon1icon"
+                        xtype="pathfield"/>
+                    <icon1link
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Link for icon 1"
+                        fieldLabel="Icon 1 Link"
+                        name="./icon1link"
+                        xtype="pathfield"/>
+                    <icon1alttext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to use as Alt text for icon 1"
+                        fieldLabel="Icon 1 Alt Text"
+                        name="./icon1alttext"
+                        xtype="textfield"/>
+                    <icon1interstitial
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select the interstitial window to display"
+                        fieldLabel="Interstitial"
+                        name="./icon1interstitial"
+                        options="/services/article-module-interstitial?page=$PATH"
+                        type="select"
+                        xtype="selection"/>
+                    <icon1onclick
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="JavaScript code to execute when the icon is clicked"
+                        fieldLabel="Icon 1 onClick"
+                        name="./icon1onclick"
+                        xtype="textarea"/>
+                </items>
+            </icon1>
+            <icon2
+                jcr:primaryType="cq:Widget"
+                title="Icon 2"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <icon2icon
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Path of the icon 2 image"
+                        fieldLabel="Icon 2 Path"
+                        name="./icon2icon"
+                        xtype="pathfield"/>
+                    <icon2link
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Link for icon 2"
+                        fieldLabel="Icon 2 Link"
+                        name="./icon2link"
+                        xtype="pathfield"/>
+                    <icon2alttext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to use as Alt text for icon 2"
+                        fieldLabel="Icon 2 Alt Text"
+                        name="./icon2alttext"
+                        xtype="textfield"/>
+                    <icon2interstitial
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select the interstitial window to display"
+                        fieldLabel="Interstitial"
+                        name="./icon2interstitial"
+                        options="/services/article-module-interstitial?page=$PATH"
+                        type="select"
+                        xtype="selection"/>
+                    <icon2onclick
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="JavaScript code to execute when the icon is clicked"
+                        fieldLabel="Icon 2 onClick"
+                        name="./icon2onclick"
+                        xtype="textarea"/>
+                </items>
+            </icon2>
+            <icon3
+                jcr:primaryType="cq:Widget"
+                title="Icon 3"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <icon3icon
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Path of the icon 3 image"
+                        fieldLabel="Icon 3 Path"
+                        name="./icon3icon"
+                        xtype="pathfield"/>
+                    <icon3link
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Link for icon 3"
+                        fieldLabel="Icon 3 Link"
+                        name="./icon3link"
+                        xtype="pathfield"/>
+                    <icon3alttext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to use as Alt text for icon 3"
+                        fieldLabel="Icon 3 Alt Text"
+                        name="./icon3alttext"
+                        xtype="textfield"/>
+                    <icon3interstitial
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select the interstitial window to display"
+                        fieldLabel="Interstitial"
+                        name="./icon3interstitial"
+                        options="/services/article-module-interstitial?page=$PATH"
+                        type="select"
+                        xtype="selection"/>
+                    <icon3onclick
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="JavaScript code to execute when the icon is clicked"
+                        fieldLabel="Icon 3 onClick"
+                        name="./icon3onclick"
+                        xtype="textarea"/>
+                </items>
+            </icon3>
+            <icon4
+                jcr:primaryType="cq:Widget"
+                title="Icon 4"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <icon4icon
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Path of the icon 4 image"
+                        fieldLabel="Icon 4 Path"
+                        name="./icon4icon"
+                        xtype="pathfield"/>
+                    <icon4link
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Link for icon 4"
+                        fieldLabel="Icon 4 Link"
+                        name="./icon4link"
+                        xtype="pathfield"/>
+                    <icon4alttext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to use as Alt text for icon 4"
+                        fieldLabel="Icon 4 Alt Text"
+                        name="./icon4alttext"
+                        xtype="textfield"/>
+                    <icon4interstitial
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select the interstitial window to display"
+                        fieldLabel="Interstitial"
+                        name="./icon4interstitial"
+                        options="/services/article-module-interstitial?page=$PATH"
+                        type="select"
+                        xtype="selection"/>
+                    <icon4onclick
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="JavaScript code to execute when the icon is clicked"
+                        fieldLabel="Icon 4 onClick"
+                        name="./icon4onclick"
+                        xtype="textarea"/>
+                </items>
+            </icon4>
+            <icon5
+                jcr:primaryType="cq:Widget"
+                title="Icon 5"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <icon5icon
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Path of the icon 5 image"
+                        fieldLabel="Icon 5 Path"
+                        name="./icon5icon"
+                        xtype="pathfield"/>
+                    <icon5link
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Link for icon 5"
+                        fieldLabel="Icon 5 Link"
+                        name="./icon5link"
+                        xtype="pathfield"/>
+                    <icon5alttext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to use as Alt text for icon 5"
+                        fieldLabel="Icon 5 Alt Text"
+                        name="./icon5alttext"
+                        xtype="textfield"/>
+                    <icon5interstitial
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select the interstitial window to display"
+                        fieldLabel="Interstitial"
+                        name="./icon5interstitial"
+                        options="/services/article-module-interstitial?page=$PATH"
+                        type="select"
+                        xtype="selection"/>
+                    <icon5onclick
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="JavaScript code to execute when the icon is clicked"
+                        fieldLabel="Icon 5 onClick"
+                        name="./icon5onclick"
+                        xtype="textarea"/>
+                </items>
+            </icon5>
+            <icon6
+                jcr:primaryType="cq:Widget"
+                title="Icon 6"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <icon6icon
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Path of the icon 6 image"
+                        fieldLabel="Icon 6 Path"
+                        name="./icon6icon"
+                        xtype="pathfield"/>
+                    <icon6link
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Link for icon 6"
+                        fieldLabel="Icon 6 Link"
+                        name="./icon6link"
+                        xtype="pathfield"/>
+                    <icon6alttext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to use as Alt text for icon 5"
+                        fieldLabel="Icon 6 Alt Text"
+                        name="./icon6alttext"
+                        xtype="textfield"/>
+                    <icon6interstitial
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select the interstitial window to display"
+                        fieldLabel="Interstitial"
+                        name="./icon61interstitial"
+                        options="/services/article-module-interstitial?page=$PATH"
+                        type="select"
+                        xtype="selection"/>
+                    <icon6onclick
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="JavaScript code to execute when the icon is clicked"
+                        fieldLabel="Icon 6 onClick"
+                        name="./icon6onclick"
+                        xtype="textarea"/>
+                </items>
+            </icon6>
+        </items>
+    </items>
+</jcr:root>

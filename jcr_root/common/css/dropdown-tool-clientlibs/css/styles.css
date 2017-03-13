@@ -1,0 +1,21 @@
+.dropdown-tool-wrapper {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.dropdown-tool-wrapper .select-wrapper label {
+	font-size: 3em;
+	font-family: 'Foco W01 Light',Arial,sans-serif;
+	color: #5e9732;
+	line-height: 1
+}
+
+.dropdown-tool-wrapper .select-wrapper {
+	margin-bottom: 30px;
+}
+
+.dropdown-tool-wrapper .dropdown-tool-item.border {
+	border: 2px solid #dbdbdb;
+	padding: 20px 25px;
+}

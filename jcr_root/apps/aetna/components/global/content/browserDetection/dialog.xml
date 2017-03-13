@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="BrowserDetction-dialog"
+    width="300"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <isDisableBrowserDetect
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="This will disable the Browser detection logic"
+                        fieldLabel="Disable Browser Detection?"
+                        name="./isDisableBrowserDetect"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <ieconfig
+                        jcr:primaryType="cq:Widget"
+                        collapsed="true"
+                        collapsible="true"
+                        title="IE Configuration"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <text
+                                jcr:primaryType="cq:Widget"
+                                externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                                fieldDescription="Message to be displayed"
+                                fieldLabel="Message for IE"
+                                height="100"
+                                name="./ieText"
+                                xtype="richtext">
+                                <rtePlugins
+                                    jcr:primaryType="cq:Widget"
+                                    path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                                    xtype="cqinclude"/>
+                            </text>
+                            <versions
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Examples: &quot;8&quot; - Browser with this version will be considered, &quot;lt 9&quot; - Browser versions lesser than this will be considered"
+                                fieldLabel="Versions"
+                                name="./ieVersions"
+                                xtype="multifield">
+                                <fieldConfig
+                                    jcr:primaryType="cq:Widget"
+                                    xtype="textfield"/>
+                            </versions>
+                        </items>
+                    </ieconfig>
+                    <safariconfig
+                        jcr:primaryType="cq:Widget"
+                        collapsed="true"
+                        collapsible="true"
+                        title="Safari Configuration"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <text
+                                jcr:primaryType="cq:Widget"
+                                externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                                fieldDescription="Message to be displayed"
+                                fieldLabel="Message for Safari"
+                                height="100"
+                                name="./safariText"
+                                xtype="richtext">
+                                <rtePlugins
+                                    jcr:primaryType="cq:Widget"
+                                    path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                                    xtype="cqinclude"/>
+                            </text>
+                            <versions
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Examples: &quot;7.1.2&quot; - Browser with this version will be considered, &quot;lt 7.1.3&quot; - Browser versions lesser than this will be considered"
+                                fieldLabel="Versions"
+                                name="./safariVersions"
+                                xtype="multifield">
+                                <fieldConfig
+                                    jcr:primaryType="cq:Widget"
+                                    xtype="textfield"/>
+                            </versions>
+                        </items>
+                    </safariconfig>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

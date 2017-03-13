@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>aetna &#124; health section &#187; Syndicate – All Audiences</title>
+	<atom:link href="http://wpaetna.lampdev.cmgrp.com/tag/syndicate-health-matters/feed/" rel="self" type="application/rss+xml" />
+	<link>http://wpaetna.lampdev.cmgrp.com</link>
+	<description>The Health Section</description>
+	<lastBuildDate>Tue, 15 Apr 2014 20:28:38 +0000</lastBuildDate>
+	<language>en-US</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.9-RC2</generator>
+	<item>
+		<title>Right incentives, better outcomes</title>
+		<link>http://wpaetna.lampdev.cmgrp.com/right-incentives-better-outcomes-2/</link>
+		<comments>http://wpaetna.lampdev.cmgrp.com/right-incentives-better-outcomes-2/#comments</comments>
+		<pubDate>Tue, 01 Apr 2014 20:17:32 +0000</pubDate>
+		<dc:creator><![CDATA[Dante Fattoruso]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[health care policies]]></category>
+		<category><![CDATA[health care quality]]></category>
+		<category><![CDATA[pay for performance]]></category>
+		<category><![CDATA[Syndicate – All Audiences]]></category>
+
+		<guid isPermaLink="false">https://news.aetna.com/?p=319</guid>
+		<description><![CDATA[Paying doctors based on performance has potential to improve health care, but challenges remain. The health care landscape continues to shift under the Affordable Care Act (ACA). One big change is the way physicians will be incentivized. The ACA is &#8230; <a href="http://wpaetna.lampdev.cmgrp.com/right-incentives-better-outcomes-2/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<h2>Paying doctors based on performance has potential to improve health care, but challenges remain.</h2>
+<p>The health care landscape continues to shift under the Affordable Care Act (ACA). One big change is the way physicians will be incentivized.</p>
+<p>The ACA is moving us away from the fee-for-service model that financially rewards doctors for the volume of services rendered to patients. Critics say the tradition fee-for-service model may sacrifice quality for quantity. And that it leads to more than 39,000 avoidable deaths each year and more than $2.8 billion in avoidable medical costs, according to <a href="http://www.ncqa.org/Portals/0/Publications/Resource%20Library/NCQA_Primer_web.pdf" target="_blank">data</a> from the National Committee for Quality Assurance.</p>
+<p>With the new pay-for-performance model, hospitals and doctors are scored based on how well they care for patients. The theory is that this approach will improve the quality of health care. But challenges remain in implementing this system and collecting the data to confirm results.</p>
+<p>The <a href="http://www.medicare.gov/hospitalcompare/linking-quality-to-payment.html" target="_blank">Center for Medicare and Medicaid Services</a> and municipal health care systems like the New York City Health and Hospital Corporation have already adopted this model. And in the next five years, more than 85 percent of states expect to launch pay-for-performance programs, according to a <a href="http://ipro.org/about/publications/p4p-cmwf-report" target="_blank">report</a> published by the health care improvement organization IPRO.</p>
+<blockquote class="offset right"><p>“In the next five years, over 85 percent of states expected to launch pay-for-performance programs.”</p></blockquote>
+<p>The movement is still in its infancy and a handful of <a href="http://annals.org/article.aspx?articleid=1485311" target="_blank">studies</a> show only modest bumps in efficiency and patient outcomes. So, will paying doctors for performance improve health care?</p>
+<p>“The programs have the potential to be very powerful in overcoming some of the volume-based incentives in our current system,” said Dr. Laura Peterson, director of the Center for Innovations in Quality, Effectiveness and Safety at Michael E. DeBakey VA Medical Center. “But there’s little evidence so far.”</p>
+<p>In a 2013 <a href="http://jama.jamanetwork.com/article.aspx?articleid=1737042" target="_blank">paper</a> published in the <i>Journal of American Medical Association</i>, Peterson and colleagues found that a bonus equal to just 2 percent of a physician’s annual salary resulted in improved outcomes. The effect, however, did not last.</p>
+<p>“We stopped the incentive and waited a year to then recollect data,” Peterson said. “The performance had declined. So that was surprising and puzzling, but I believe that happened because the incentives did not result in structural changes to health care delivery.”</p>
+<p>Structural changes, such as incentive pay to fund case manager support, could lead to more lasting results.</p>
+<p>“It’s all about how these programs are going to be implemented, so people need to put a lot of thought into the design,” Peterson said. “Pay-for-performance is not going to be sufficient in and of itself to fix all the quality and efficiency problems that we have, but I think it could be part of the solution.”</p>
+<p>One challenge to studying the pay-for-performance model is that few health information systems are designed to collect data needed to assess quality.</p>
+<p>“Without the data system support, you cannot do the work in an accurate and valid way—and that undermines the program,” Peterson said.</p>
+<p>Some insurers are investing in that transformation. They are offering technology to help doctors and hospitals gain the capabilities for that new data system support.</p>
+<p>“We have invested over a billion dollars to help them navigate this new environment,” Elizabeth Curran, head of National Network Strategy and Program Development for Aetna, said. “We are helping to connect hospitals and physician practices so they can share data to improve care delivery.”</p>
+]]></content:encoded>
+			<wfw:commentRss>http://wpaetna.lampdev.cmgrp.com/right-incentives-better-outcomes-2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

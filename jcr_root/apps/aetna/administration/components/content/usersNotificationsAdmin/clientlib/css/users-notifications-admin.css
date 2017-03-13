@@ -1,0 +1,47 @@
+body {
+	background-color: #F0F0F0;
+}
+
+h1 {
+	border-top: none;
+	width: auto;
+}
+
+p {
+	width: auto;
+	padding-left: 0;
+}
+
+table li {
+	border: none;
+	width: 500px;
+}
+
+.table-bordered th, 
+.table-bordered td {
+	border-right: none;	
+}
+
+.table th.align-center, 
+.table td.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.property-wrapper {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 10px 0;
+}
+
+#email-configuration .row {
+	margin-bottom: 10px;
+}
+
+#add-email-address-wrapper {
+	width: 100%;
+	float: left;
+	margin: 10px;
+}

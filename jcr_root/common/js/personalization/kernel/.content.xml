@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:lastReplicated="{Date}2014-12-30T17:15:58.738-05:00"
+    cq:lastReplicatedBy="jgcasares"
+    cq:lastReplicationAction="Activate"
+    jcr:mixinTypes="[cq:ReplicationStatus]"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    categories="[personalization.stores.kernel,personalization.stores.geolocation.kernel]"
+    dependencies="[personalization.core.kernel]"/>

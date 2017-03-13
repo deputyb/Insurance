@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    title="US Map"
+    width="650"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Copy to use as the component title."
+                        fieldLabel="Title"
+                        name="./title"
+                        xtype="textfield"/>
+                    <headertext
+                        jcr:primaryType="cq:Widget"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        fieldDescription="Copy to use as the component header text."
+                        fieldLabel="Header Text"
+                        height="200"
+                        name="./headertext"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                            xtype="cqinclude"/>
+                    </headertext>
+                    <dropdownwidth
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Select the width of the dropdown you want."
+                        fieldLabel="Dropdown width"
+                        name="./dropdownwidth"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <narrow
+                                jcr:primaryType="nt:unstructured"
+                                text="Narrow"
+                                value="narrow"/>
+                            <wide
+                                jcr:primaryType="nt:unstructured"
+                                text="Wide"
+                                value="wide"/>
+                        </options>
+                    </dropdownwidth>
+                    <footertext
+                        jcr:primaryType="cq:Widget"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        fieldDescription="Copy to use as the component footer text."
+                        fieldLabel="Footer Text"
+                        height="200"
+                        name="./footertext"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                            xtype="cqinclude"/>
+                    </footertext>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="US Map Link"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <state
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Select the state that will represent the actual US Map Entity."
+                        fieldLabel="State"
+                        name="./state"
+                        options="$PATH.options.json"
+                        type="select"
+                        xtype="selection"/>
+                    <statename
+                        jcr:primaryType="cq:Widget"
+                        name="./statename"
+                        xtype="hidden"/>
+                    <statenamedropdown
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Include the state name that will be displayed in the dropdown. If not provided, the default state name will be used."
+                        fieldLabel="Dropdown state name"
+                        name="./statenamedropdown"
+                        xtype="textfield"/>
+                    <href
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Address that the link will redirect."
+                        fieldLabel="Link"
+                        name="./href"
+                        xtype="pathfield"/>
+                </items>
+            </configuration>
+        </items>
+    </items>
+    <listeners
+        jcr:primaryType="nt:unstructured"
+        beforesubmit="function(dialog){ var stateName = dialog.getField('./state').comboBox.el.dom.value; dialog.getField('./statename').setValue(stateName); }"/>
+</jcr:root>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Page Link Refresher"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <pathFilter
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Path to filter link search"
+                        name="./pathFilters"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="false"
+                            rootPath="/"
+                            xtype="pathfield"/>
+                    </pathFilter>
+                    <target
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Time between each automatic Sync"
+                        fieldLabel="Sync Interval"
+                        name="./syncInterval"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <always
+                                jcr:primaryType="nt:unstructured"
+                                text="Always"
+                                value="0"/>
+                            <daily
+                                jcr:primaryType="nt:unstructured"
+                                text="Daily"
+                                value="1"/>
+                            <weekly
+                                jcr:primaryType="nt:unstructured"
+                                text="Weekly"
+                                value="7"/>
+                            <monthly
+                                jcr:primaryType="nt:unstructured"
+                                text="Monthly"
+                                value="30"/>
+                        </options>
+                    </target>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

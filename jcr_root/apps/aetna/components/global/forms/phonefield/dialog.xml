@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Phone Field"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <label
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/forms/basicformcomponent/dialog/items/items/configuration/items/label.infinity.json"
+                        xtype="cqinclude"/>
+                    <descriptiontext
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/forms/basicformcomponent/dialog/items/items/configuration/items/descriptiontext.infinity.json"
+                        xtype="cqinclude"/>
+                </items>
+            </configuration>
+            <part1
+                jcr:primaryType="cq:Panel"
+                title="Phone number - Part 1">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <placeholder
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to render inside the part 1 of the phone number field as a placeholder."
+                        fieldLabel="Placeholder text"
+                        name="./part1placeholder"
+                        xtype="textfield"/>
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="HTML name attribute to be submitted for the part 1 of the phone number field."
+                        fieldLabel="Input name"
+                        name="./part1name"
+                        xtype="textfield"/>
+                    <fieldlabelaccessibility
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        defaultValue="Part 1"
+                        fieldDescription="Label of the field for accessibility standards. It will be concatenated with the main Phone Field label."
+                        fieldLabel="Field Label (Accessibility)"
+                        name="./part1fieldlabelaccessibility"
+                        xtype="textfield"/>
+                    <validations
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Include each validation for the part 1 of the phone number field."
+                        fieldLabel="Validations"
+                        name="./part1validations"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="aetna.formvalidation"/>
+                    </validations>
+                </items>
+            </part1>
+            <part2
+                jcr:primaryType="cq:Panel"
+                title="Phone number - Part 2">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <placeholder
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to render inside the part 2 of the phone number field as a placeholder."
+                        fieldLabel="Placeholder text"
+                        name="./part2placeholder"
+                        xtype="textfield"/>
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="HTML name attribute to be submitted for the part 2 of the phone number field."
+                        fieldLabel="Input name"
+                        name="./part2name"
+                        xtype="textfield"/>
+                    <fieldlabelaccessibility
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        defaultValue="Part 2"
+                        fieldDescription="Label of the field for accessibility standards. It will be concatenated with the main Phone Field label."
+                        fieldLabel="Field Label (Accessibility)"
+                        name="./part2fieldlabelaccessibility"
+                        xtype="textfield"/>
+                    <validations
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Include each validation for the part 2 of the phone number field."
+                        fieldLabel="Validations"
+                        name="./part2validations"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="aetna.formvalidation"/>
+                    </validations>
+                </items>
+            </part2>
+            <part3
+                jcr:primaryType="cq:Panel"
+                title="Phone number - Part 3">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <placeholder
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to render inside the part 3 of the phone number field as a placeholder."
+                        fieldLabel="Placeholder text"
+                        name="./part3placeholder"
+                        xtype="textfield"/>
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="HTML name attribute to be submitted for the part 3 of the phone number field."
+                        fieldLabel="Input name"
+                        name="./part3name"
+                        xtype="textfield"/>
+                    <fieldlabelaccessibility
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        defaultValue="Part 3"
+                        fieldDescription="Label of the field for accessibility standards. It will be concatenated with the main Phone Field label."
+                        fieldLabel="Field Label (Accessibility)"
+                        name="./part3fieldlabelaccessibility"
+                        xtype="textfield"/>
+                    <validations
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Include each validation for the part 3 of the phone number field."
+                        fieldLabel="Validations"
+                        name="./part3validations"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="aetna.formvalidation"/>
+                    </validations>
+                </items>
+            </part3>
+        </items>
+    </items>
+</jcr:root>

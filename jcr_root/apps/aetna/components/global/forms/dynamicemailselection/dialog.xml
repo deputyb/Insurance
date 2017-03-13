@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Dynamic Email Selection"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <inputname
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Name HTML attribute of the form select input to bind the event"
+                        fieldLabel="Input name"
+                        name="./inputname"
+                        xtype="textfield"/>
+                    <conditions
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Set of conditions to apply"
+                        fieldLabel="Conditions"
+                        name="./conditions"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="aetna.emailcondition"/>
+                    </conditions>
+                    <defaultemailaddress
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Email address to use as the default option when none of the conditions above are applied"
+                        fieldLabel="Default email address"
+                        name="./defaultemailaddress"
+                        xtype="textfield"/>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,3 @@
+#base=js
+libs/jquery.min.1.9.1.js
+cleanHtmlForm.js

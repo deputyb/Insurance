@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Aetna Article Standalone template"
+    jcr:primaryType="cq:Template"
+    jcr:title="Aetna Article Standalone no Sidebar"
+    allowedPaths="[/content(/.*)?]"
+    ranking="{Long}3"
+    shortTitle="1 Column Body Standalone Page">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="aetna/components/global/page/standalone-pages/1-column-article-page"/>
+</jcr:root>

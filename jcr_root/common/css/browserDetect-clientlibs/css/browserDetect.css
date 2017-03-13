@@ -1,0 +1,22 @@
+.badBrowser {
+    height:30px;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Arial, sans-serif;
+    font-size: 14pt;
+    color: #000000;
+    line-height: 30px;
+    background: #FDB933;
+    text-align:center;
+    position:fixed;
+    width:100%;
+    background-size:100%;
+}
+
+.badBrowser a {
+    color: #000000;
+        font-weight: normal;
+    }
+
+a.blackLink {
+color: #000000;
+        font-weight: normal;
+    }

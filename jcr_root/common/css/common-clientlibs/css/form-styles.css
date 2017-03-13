@@ -1,0 +1,158 @@
+
+/*BEGIN: input fields*/
+
+div.required, span.required {
+	color: red;
+	display:inline;
+}
+
+.rounded-number {
+	border-radius: 3px;
+	background-color:gray;
+	color: white;
+	font-weight: bold;
+	padding: 0px 5px;
+	margin-right: 5px;
+}
+
+table, table td {
+	border:0;
+}
+
+table td {
+	width:33%;
+}
+
+.formContent {
+	padding-bottom: 2.5%;
+	overflow: hidden;
+	width:75%;
+}
+
+.formSection:not(:last-child) {
+	border-bottom: 2px solid #eeeeee;
+	margin-bottom: 35px;
+	padding-bottom: 35px;
+}
+
+
+.formSection ul {
+	overflow: hidden;
+	width:100%;
+}
+
+.formSection li {
+	line-height: 33px;
+	width: 33%;
+	display: inline;
+	float: left;
+}
+
+input[type=text], .form-wrapper input.textfield {
+	margin-bottom: 0px !important;
+}
+
+label{
+	font-weight: bold;
+}
+
+div.sameLine input[type=text] {
+	display: inline !important;
+    width: auto !important;
+    margin: 0 5px;
+}
+
+.sameLine .checkBox {
+	float: left;
+	padding-right: 50px;
+	margin-top: 20px;
+}
+
+.bottomBtns {
+	clear: both;
+	float:left;
+	/*margin-top: 20px;*/
+}
+
+.bottomBtns a {
+	margin: 10px;
+}
+
+.bottomBtns input[type=submit]{
+	margin-right: 20px;
+}
+
+.desc{
+	color: gray;
+	font-size: 14px;
+	display:block;
+	clear: both;
+}
+
+input.small{
+	width: 80px !important;
+}
+
+input.medium{
+	width: 150px;
+}
+
+input.phone{
+	display: inline !important;
+	margin: 0 15px;
+}
+
+input.phone1{
+	margin-left: 0 ;
+}
+
+input.phone.smallNum{
+	width: 50px;
+}
+input.phone.largeNum{
+	width: 100px;
+}
+
+.row {
+	clear: both;
+	margin-top: 20px;
+	overflow: hidden;	
+}
+
+.regularCol {
+	float:left;
+	margin-right:30px;
+	width: 330px;
+}
+
+.smallCol{
+	float:left;
+	margin-right:30px;
+}
+
+.selectWrap {
+	width: 330px;
+}
+
+textarea{
+	width: 330px;
+	height: 150px;
+	display:block;
+}
+
+/* style for radio order alphabetic list */
+ul.orderedAlpha {
+	margin:0;
+}
+.orderedAlpha li{
+	list-style: lower-alpha !important;
+	width:100%;
+	display: list-item;
+	line-height: 25px;
+	
+}
+.orderedAlpha li label {
+	margin-bottom: auto !important;
+}
+
+/*END: input fields*/

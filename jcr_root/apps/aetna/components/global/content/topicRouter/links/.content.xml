@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <link00
+        jcr:primaryType="nt:unstructured"
+        href="http://windows.microsoft.com/en-us/internet-explorer/ie-10-worldwide-languages"
+        text="Upgrade"/>
+    <link01
+        jcr:primaryType="nt:unstructured"
+        href="#"
+        tabindex="1"
+        text="logo"
+        title=""/>
+    <link02
+        jcr:primaryType="nt:unstructured"
+        class="arrowBlueBig path if"
+        href="individuals-families.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeRouter','for Individuals &amp; Families',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Individuals &amp; Families"/>
+    <link03
+        jcr:primaryType="nt:unstructured"
+        class="path if"
+        href="https://member.aetna.com/appConfig/login/login.fcc?TYPE=33554433&amp;REALMOID=06-36d8cb4d-4ac1-44c7-b12d-a80fba4b718e&amp;GUID=&amp;SMAUTHREASON=0&amp;METHOD=GET&amp;SMAGENTNAME=-SM-xU5km2Pz5%2f9A%2f2FCwUlXE48HlDkyH9ruz3da8Iqw6pwcy09mgHFN5RmlkMNqguY5&amp;TARGET=-SM-HTTPS%3a%2f%2fmember%2eaetna%2ecom%2fMbrLanding%2fRoutingServlet%3fcreateSession%3dtrue&amp;WT.svl=Login_nav"
+        onclick="Aetna.analytics.omniture.linkCode('aeLoginClkA','Login Exits',this);s.tl(this,'e',linkText,null,'navigate');return false;"
+        text="Log In  / Register"/>
+    <link04
+        jcr:primaryType="nt:unstructured"
+        class="arrowBlueSmall path employers"
+        href="employers-organizations.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeRouter','for Employers &amp; Organizations',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Employers &amp; Organizations"/>
+    <link05
+        jcr:primaryType="nt:unstructured"
+        class="arrowBlueSmall path hcp"
+        href="http://www.aetna.com/healthcare-professionals/index.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeRouter','for Health Care Professionals',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Health Care Professionals"/>
+    <link06
+        jcr:primaryType="nt:unstructured"
+        class="arrowBlueSmall path producers"
+        href="insurance-producer.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeRouter','for Producers',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Producers"/>
+    <link07
+        jcr:primaryType="nt:unstructured"
+        class="path if"
+        href="https://member.aetna.com/appConfig/login/login.fcc?TYPE=33554433&amp;REALMOID=06-36d8cb4d-4ac1-44c7-b12d-a80fba4b718e&amp;GUID=&amp;SMAUTHREASON=0&amp;METHOD=GET&amp;SMAGENTNAME=-SM-xU5km2Pz5%2f9A%2f2FCwUlXE48HlDkyH9ruz3da8Iqw6pwcy09mgHFN5RmlkMNqguY5&amp;TARGET=-SM-HTTPS%3a%2f%2fmember%2eaetna%2ecom%2fMbrLanding%2fRoutingServlet%3fcreateSession%3dtrue&amp;WT.svl=Login_nav"
+        onclick="Aetna.analytics.omniture.linkCode('aeLoginClkA','Login Exits',this);s.tl(this,'e',linkText,null,'navigate');return false;"
+        text="&lt;span class=&quot;icn login&quot;>&lt;/span>&lt;strong>Log In  / &lt;span class=&quot;arrowBlueSmall&quot;>Register&lt;/span>&lt;/strong>"/>
+    <link08
+        jcr:primaryType="nt:unstructured"
+        class="path if"
+        href="http://www.aetna.com/dse/search?site_id=docfind&amp;langpref=en&amp;tabKey=tab1"
+        text="&lt;strong>&lt;span class=&quot;arrowBlueSmall left-align&quot;>Search DocFind&lt;span class=&quot;superscript&quot;>&amp;reg;&lt;/span>&lt;/span>&lt;/strong>"/>
+    <link09
+        jcr:primaryType="nt:unstructured"
+        class="path if"
+        href="https://www.aetna.com/producer_public/login.fcc?TYPE=33554433&amp;REALMOID=06-aab84995-cc4b-11d5-8cb8-0008c7df6a81&amp;GUID=&amp;SMAUTHREASON=0&amp;METHOD=GET&amp;SMAGENTNAME=-SM-g96BoeA31Sn1BtbDw57yO6bTsqp6znM8Xzh%2bwJ0sKfnhlD9LVZJRNjMICttXsdG9&amp;TARGET=-SM-https%3a%2f%2fwww%2eaetna%2ecom%2fproducer%2fLogin%2edo"
+        onclick="Aetna.analytics.omniture.linkCode('aeLoginClkA','Login Exits',this);s.tl(this,'e',linkText,null,'navigate');return false;"
+        text="&lt;span class=&quot;icn login&quot;>&lt;/span>&lt;strong>Log In  / Register / &lt;span class=&quot;arrowBlueSmall&quot;>Get a Quote&lt;/span>&lt;/strong>"/>
+    <link10
+        jcr:primaryType="nt:unstructured"
+        class="path if"
+        href="https://pangea.geninfo.com/Aetna/Apply/"
+        text="&lt;strong>&lt;span class=&quot;arrowBlueSmall left-align&quot;>Become appointed with Aetna&lt;/span>&lt;/strong>"/>
+    <link11
+        jcr:primaryType="nt:unstructured"
+        class="arrowBlueSmall path employers"
+        href="employers-organizations.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeRouter','for Employers &amp; Organizations',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Employers &amp; Organizations"/>
+    <link12
+        jcr:primaryType="nt:unstructured"
+        class="arrowBlueSmall path hcp"
+        href="http://www.aetna.com/healthcare-professionals/index.html"
+        onclick="Aetna.analytics.omniture.linkCode('aeRouter','for Health Care Professionals',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Health Care Professionals"/>
+</jcr:root>

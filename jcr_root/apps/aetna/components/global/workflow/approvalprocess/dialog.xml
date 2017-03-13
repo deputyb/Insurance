@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Step Properties"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs jcr:primaryType="cq:TabPanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <common
+                    jcr:primaryType="cq:Panel"
+                    title="Common">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <basic
+                            jcr:primaryType="cq:Widget"
+                            collapsed="{Boolean}false"
+                            collapsible="{Boolean}false"
+                            xtype="dialogfieldset">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <title
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Title"
+                                    name="./jcr:title"
+                                    xtype="textfield"/>
+                                <description
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Description"
+                                    name="./jcr:description"
+                                    xtype="textarea"/>
+                                <approve
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Approve"
+                                    name="./metaData/APPROVE"
+                                    xtype="textfield"/>
+                                <offlineapprover
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Offline Approver"
+                                    name="./metaData/APPROVE_BY"
+                                    xtype="textfield"/>
+                            </items>
+                        </basic>
+                        <timeout
+                            jcr:primaryType="cq:Widget"
+                            collapsed="{Boolean}true"
+                            collapsible="{Boolean}true"
+                            title="Timeout Settings"
+                            xtype="dialogfieldset">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <timeout
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Timeout"
+                                    name="./metaData/timeoutMillis"
+                                    type="select"
+                                    xtype="selection">
+                                    <options jcr:primaryType="cq:WidgetCollection">
+                                        <off
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Off"
+                                            value=""/>
+                                        <immediate
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Immediate"
+                                            value="0"/>
+                                        <_x0031_h
+                                            jcr:primaryType="nt:unstructured"
+                                            text="1h"
+                                            value="{Long}3600"/>
+                                        <_x0036_h
+                                            jcr:primaryType="nt:unstructured"
+                                            text="6h"
+                                            value="{Long}21600"/>
+                                        <_x0031_2h
+                                            jcr:primaryType="nt:unstructured"
+                                            text="12h"
+                                            value="{Long}43200"/>
+                                        <_x0032_4h
+                                            jcr:primaryType="nt:unstructured"
+                                            text="24h"
+                                            value="{Long}86400"/>
+                                    </options>
+                                    <optionsConfig
+                                        jcr:primaryType="nt:unstructured"
+                                        editable="{Boolean}true"/>
+                                </timeout>
+                                <timeoutHandler
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Timeout Handler"
+                                    name="./metaData/timeoutHandler"
+                                    options="/libs/cq/workflow/content/console/process.list.json"
+                                    sortDir="ASC"
+                                    type="select"
+                                    xtype="selection">
+                                    <optionsConfig
+                                        jcr:primaryType="nt:unstructured"
+                                        editable="{Boolean}true"/>
+                                </timeoutHandler>
+                            </items>
+                        </timeout>
+                    </items>
+                </common>
+                <process
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/cq/workflow/components/model/process/tab_process.infinity.json"
+                    xtype="cqinclude"/>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

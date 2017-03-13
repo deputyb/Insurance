@@ -1,0 +1,60 @@
+body{
+	position:relative;
+}
+footer{
+	min-height: 100px;
+	width: 100%;
+}
+.vgrid, .hgrid{
+	/*padding-top: 12px;*/
+}
+.vgrid{
+	background: url(../../../images/designs/24px-vgrid.jpg) repeat;
+}
+.vgrid6px{
+	background: url(../../../images/designs/6px-vgrid.jpg) repeat;
+}
+.vgrid .row-fluid.gridParent{
+	position:relative;
+}
+.hgrid .absolute .span1{
+	background: #ffbfbf;
+	opacity: .5;
+}
+.absolute .span12{
+	max-width: 1200px;
+}
+.absolute{
+	position:absolute;
+	z-index: -1;
+}
+.absoluteGrid{
+	position:absolute;
+	top: 0;
+	width: 100%;
+	z-index: -100;
+}
+.fixedGridControls{
+	width: 40%;
+	height: 50px;
+	position:fixed;
+	bottom: 0;
+	background: #ccc;
+	opacity: .9;
+	padding-top: 30px;
+	left: 0;
+	text-align:center;
+}
+.fixedGridControls a{
+	color: black;
+	padding-left: 30px;
+}
+
+@media (max-width: 768px){
+	.row-fluid [class*="span"]{
+		margin-bottom: 24px;
+	}
+	.absolute{
+		display:none;
+	}
+}

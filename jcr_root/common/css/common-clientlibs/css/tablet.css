@@ -1,0 +1,767 @@
+@media only screen and (min-width : 1024px) and (max-width : 1168px) {
+	.pathSelector a {
+		font-size: 0.935em;
+		font-size: 0.9em\9;
+		line-height: 3.5;
+	}
+	/* IE11 hack */
+	_:-ms-fullscreen, :root .pathSelector a {
+		font-size: 0.9em;
+	}
+	.pathSelector .arrowSmallDown {
+		padding-right: 10px
+	}	
+	.megaMenuLink a {
+		font-size: 0.925em;
+	}
+	.topicLink a {
+		font-size: 1.25em;
+	}
+	input.globalSearch {
+		width: 65.2%\9;
+	}
+}
+@media only screen and (min-width : 914px) and (max-width : 1024px) {
+	.megaMenuLink a {
+		font-size: 0.8em;
+		line-height: 0.9;
+	}
+	.pathSelector .right-link a {
+		padding: 0 11px 0 13px;
+	}
+}
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+	/*General Grid Styles */
+	input.globalSearch {
+		width: 70.65%\9;
+	}
+	.topicLink a {
+		font-size: 1.2em;
+	}
+	
+	/*Universal Menu Styles*/
+	.universalMenu .row-fluid .span2{
+		width: 31.4%;
+	  *width: 31.861702127659576%;
+		margin-bottom: 0;
+	}
+	.pathSelector li a, .pathSelector li.current:first-child a{
+		font-size: 1em;
+		line-height: 1;
+		padding: 0;
+	}
+	/* IE11 hack */
+	_:-ms-fullscreen, :root .pathSelector a {
+		font-size: 1.02em;
+	}
+	.pathSelector .arrowSmallDown{
+		font-size: 1em;
+		line-height: 1;
+		padding-right:10px
+	}	
+	.pathSelector .right-link {
+		padding: 11px 0;
+	}
+	/* IE11 hack */
+	_:-ms-fullscreen, :root .pathSelector .right-link {
+		padding: 12px 0;
+	}
+	.right-content-panel {
+		margin-top: 11px;
+	}
+	.nextStepCont .left {
+		top: 50%;
+		margin-top: -20px;
+		padding-top: 0 !important;
+	}
+	.pathSelector li{
+		width: 19.5%;
+		padding: 10px 0;
+		text-align:center;
+		min-height: 50px;
+	}
+	.universalMenu .row-fluid .span2.firstTablet{
+		margin-left: 0;
+	}
+	.span12.rowBreak{
+		display:block;
+		height: 24px;
+		float:left;
+		width: 100%;
+		margin-left: 0px;
+		margin-bottom: 0px;
+	}
+	.row-fluid [class*="span"]{
+		margin-bottom: 0;
+	}
+	/*END Universal Menu styles*/
+	
+	.slide[style*="42-30300905_rf-t-ov2.jpg"] .blueBtn, .slide[style*="42-30300905_rf-d-ov2.jpg"] .blueBtn {
+		padding: 9.5px 40px !important;
+	}
+	.slide[style*="scuba_rf-d-ov2.jpg"] {
+		background-position: 64% 50% !important;
+	}
+	.biographyItem .bio-item-toggle {
+		width: auto;
+		margin-left: auto;
+		float: right;
+		margin-right: 20px;
+	}
+	.biographyItem .bio-item-toggle a {
+		padding: 0 10px;
+	}
+	/*BEGIN Header bar styles*/
+	input.globalSearch{
+	
+	}
+	.row-fluid .span3.logo{
+		width: 20%;
+		padding-right: 0;
+	}
+	.row-fluid .span3.logo img{
+		max-width: 100%;
+	}
+	.headerBar .row-fluid .span3.mainMenu{
+		padding-right: 0;
+		width: 20%;
+	}
+	/*END Header bar styles*/
+	.txtDivide.graybg .span3 br {
+		line-height: 35px;
+	}
+	/*BEGIN: general module styles*/
+	
+		/*find a doc/medfind modules*/
+		.find .span6{
+			padding-top: 75px;
+			padding-bottom: 75px;
+		}
+		.find .findBox .findText {
+			width: 100%;
+			float: left;
+		}
+		.find .findBox .findText p {
+			margin: 0;
+		}
+		.find .findBox .findButton {
+			float: left;
+			padding: 24px 0;
+			width: 100%;
+		}
+		.find .findBox .findButton .blueBtn{
+			float:left;
+		}
+		.topic-template .sidebarFind .findBox{
+			margin-top: 80px;
+		}
+		/*end find a doc/medfind modules*/
+		/*BEGIN: quick link styles*/
+		.quicklinksExpand ul.span3{
+			width: 50%;
+		}
+		.quicklinksExpand ul.borderRight.noTabletBorder{
+		border-right: none;
+		}
+		/*END: quick link styles*/
+		
+		
+	/*END: general modules styles*/
+	
+	/*topic template styles*/
+	.topic-header{
+		width: 100%;
+		margin: 0 auto;
+		height: 336px;
+		margin-bottom: -24px;
+	}
+	.header-bg {
+		height: 336px;
+	}
+	.right.header-bg {
+		background: #5f9732 no-repeat center top;
+	}
+	.topic-header .container-fluid {
+		/*padding: 120px 0 0 0;*/
+	}
+	.topic-header h1 {
+		font-size: 2.25em;
+	}
+	.topic-header p{
+		font-size: 1.25em;
+	}
+	.mapMod h2{
+		float:none;
+	}
+	.mapMod .row-fluid .offset10{
+		margin-left: 0;
+		margin-top: 24px;
+	}
+	.mapMod .selectWrap{
+		float:none;
+		margin-bottom: 24px;
+	}
+	.mapMod .wrapMiddle{
+		float:none;
+		text-align:left;
+	}
+	.mapMod .span8{
+		width: 100%;
+	}
+	.mapMod .span2.offset2{
+		margin-left: 0;
+		width: 100%;
+	}
+	#usMap{
+		/*position:relative;
+		width: 768px;
+		height: 310px;
+		display:block;
+		background: url(../../../images/designs/topic/map768.jpg);
+		margin: 0 auto;*/
+		display:none;
+	}
+	#usMap a{display:none}
+	.reachUs .number{
+		font-family: 'Foco W01 Regular', Arial, sans-serif;
+		font-size: 1.5em;
+	}
+	.reachUs .hixNumbers .span6:first-child{
+		margin-bottom: 24px;
+	}
+	.reachUs .hixNumbers .span6{
+		padding-left: 0;
+		width: 100%;
+	}
+	.step { 
+		min-height: 91px;
+	}
+	h4.enrollStepText.noPadding{
+		padding: 0;
+	}
+	h4.enrollStepText{
+		padding-top: 7px;
+		font-size: 1.25em;
+		padding-left: 60px;
+	}
+	/*end topic template styles*/
+	
+	/*begin: individual and families overview page specific styles*/
+	.col1bgMod.healthy{
+		
+	}
+	/*.col1bgMod.healthy h2, .whyAetna .span12 h2, .col1bgMod.education h2, .col1bgMod h2{*/
+	.col1bgMod.healthy h2, .whyAetna .span12 h2, .col1bgMod.education h2, .col1bgMod h2, h2{	
+		font-size: 2.25em;
+	}
+	.col1bgMod.healthy ul li{
+		line-height: 1.1;
+		margin-bottom: 6px;
+	}
+	/*adjustment for map bg image text overlap*/
+	.employerMod1 {
+		background: #ffffff url(../../../images/dam/overview_E/employers-mod-1-d.jpg) no-repeat right;
+		background-size: 50%;
+	}
+	.employerMod2 .col2Mod{
+		padding-top: 70px;
+	}
+	.col2Mod h2{
+		font-size: 2.25em;
+	}
+	.col2bgMod .span6{
+		padding-top: 70px;
+	}
+	.tall.whitebg.col2bgMod .span6{
+		padding-top: 20px;
+	}
+	.col2bgMod30tp .span6{
+		padding-top: 30px!important;
+	}
+	.col2bgMod.lessPadding .span6{
+		padding-top: 50px;
+	}
+	.tall.whitebg.col2bgMod.lessPadding .span6{
+		padding-top: 20px;
+	}
+	.employerMod3 .headline {
+		padding-top: 40%;
+	}
+	.col2bgMod.hereForYou .span6{
+		padding-top: 24px;
+	}
+	.plans .col4text h3 {
+        min-height: 120px;
+    }
+    .plans .col4text p.desc {
+		min-height: 192px;
+	}
+	/*end: individual and families overview page specific styles*/
+	
+/*ARTICLE TEMPLATE GENERAL MODULE STYLES*/
+
+/*BEGIN: 3 box module (title & paragraph)*/
+.article-template .row-fluid .boxMod3 .span4{
+	padding: 0;
+	width: 100%;
+	margin-right: 0;
+	margin-bottom: 24px;
+	min-height: auto;
+}
+.article-template .row-fluid .boxMod3:last-child .span4{
+	margin-bottom: 0;
+}
+.article-template table td {
+	width: auto;
+}
+/*END: 3 box module (title & paragraph)*/
+/*BEGIN: 2 box module (title & links)*/
+.article-template .row-fluid .boxMod2.span6{
+	min-height: auto;
+	margin-bottom: 24px;
+}
+.article-template .row-fluid .boxMod2.span6{
+	width: 100%;
+	margin-right: 0%;
+}
+.article-template .boxMod2.span6:last-child{
+	margin-bottom: 0;
+}
+/*END: 2 box module (title & links)*/
+
+.bottom-utilities {
+	/*padding: 30px 0;*/
+}
+.row-fluid ul.span6{
+	margin-bottom: 24px;
+}
+/*BEGIN TOPIC PAGE IF HEADER STYLES*/
+
+/*END TOPIC PAGE IF HEADER STYLES*/
+
+/*END: ARTICLE TEMPLATE GENERAL MODULE STYLES*/
+/*SEARCH TEMPLATE STYLES*/
+.article-template .searchAgainForm input[type=text]{
+	width: 200px;
+}
+.form-wrapper .text.section, .form-wrapper .text.section .form_field_text {
+	width: 145%;
+}
+.form-wrapper .text.section .form_field_text  {
+	
+}
+
+
+
+/*END SEARCH TEMPLATE STYLES*/
+
+	.columnLayout .titleBar h2 {
+		font-weight: bold;
+	}
+	.topic-template .columnLayout .titleBar h2 {
+		font-weight: normal;
+	}
+	.tablet-space {
+		display: block;
+		height: 50px;
+		width: 100%;
+	}
+	
+	.col2bgMod.lessPadding .span6 h2[style*="margin-top: -20px;"] {
+		margin-top: 0 !important;
+	}
+	.span6.modBG[style*="AetnaMap-d-to1.jpg"] {
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	
+	.interstitialVideo .interout.terms .interstitial {
+		left: 44%;
+	}
+    .interstitialVideo .interout.terms .close {
+        right: 4%;
+        top: 15%;
+    }
+	.interstitialParsys .interout.terms .interstitial.mediumW {
+		left: 45%
+	}     
+}          
+@media only screen and (min-width : 768px) and (max-width : 979px) {
+	
+.bottom-utilities ul li:first-child a{
+	border-left: 2px solid rgba(0,0,0,.14);
+	padding-left: 20px;
+	min-height: 38px;
+
+}
+	.plans .col4text p.desc {
+        min-height: 192px;
+    }
+/*BEGIN: Router Page tablet styles*/
+	.router {
+		background: #ffffff url(../../../images/designs/routerbg.jpg) no-repeat 65% top;
+	}
+	.animContainer {
+		background: url(../../../images/designs/router/animated_stretch.gif) no-repeat 65% top;
+	}
+	.routerTopLinks li{
+		float:left;
+		margin-right: 30px;
+	}
+	.routerTopLinks li:last-child{
+		margin-right: 0;
+	}
+	.router .span5.offset6 {
+		width: 47%;
+		padding-left: 0;
+	}
+	.router h3 {
+		font-size: 1.875em;
+	}
+	.router .router-footer .row-fluid .span3 {
+		padding-left: 2.5%;	
+		padding-right: 2.5%;
+	}
+/*END: Router Page tablet styles*/
+	#sidebar-right .sidebarFind {
+		padding-top: 24px;
+	}
+	.printShare, .breadcrumb .span2 {
+		display:none;
+	}
+	.row-fluid nav .fiveCol, .row-fluid nav .fiveCol.twoCol {
+		padding-left: 0;
+		padding-right: 0;
+		width: 100%;
+		float: none;
+		display:block;
+	}
+	.universalMenu .row-fluid nav .fiveCol {
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+		float: left;
+		width: 15%;
+	}
+	.row-fluid nav .fiveCol ul li .lock {
+		padding-left: 20px;
+		background: url(../../../images/designs/global/spr-icn-desktop-18x18.png) no-repeat;
+		background-position: 0px -268px;
+		line-height: 17px;
+		margin-top: -3px;
+		margin-bottom: 4px;
+	}
+	/*exception for combined 2 column within last of 5 column spans*/
+	.row-fluid nav .fiveCol.twoCol ul li .lock {
+		margin-bottom: 24px;
+	}
+	.universalMenu .twoCol .col1 ul {
+		padding-bottom: 8px;
+	}
+	.universalMenu .twoCol .col2 ul {
+		padding-bottom: 2px;
+	}
+	.fiveCol.selectedTopic{
+		background: #098ba7 url(../../../images/designs/universalNav/shadow-left.png) repeat-y;
+	}
+	.row-fluid .fiveCol .span6{
+		width: 100%;
+	}
+	.row-fluid nav .fiveCol.twoCol ul li .lock{
+		margin-bottom: 0;
+	}
+}
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+	.usIntMap{
+		display: none !important;
+	}
+	.mapMod .span9{
+		width: 100%;
+	}
+	.mapMod .span2.offset1{
+		width: 100%;
+		margin-top: 24px;
+		margin-left: 0;
+	}
+	.mapMod .otherPlans{
+		margin-top: 0;
+	}
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	.newsTop .newsPosts {
+		height: 35px;
+		/*display: table;*/
+	}
+	.newsTop a.alert, .newsTop a:hover.alert {
+		display: inline !important;
+	}
+	#at20mc {
+		display: none;
+	}
+	.template.article-template .breadcrumb .span10 {
+		width: 100%;
+	}
+	body.errorPage{
+		background: white;
+	}
+	/*.errorPage footer{
+		min-height: 240px;
+		padding: 90px 0 40px 0;
+	}*/
+	
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	.ipad-background-left .modBG{
+		background-position: left!important;
+	}
+	
+	.right.header-bg[style*="42-28135235_rf-d-to1.jpg"] {
+		background-position: left top;
+	}
+	.col1bgMod.tall[style*="42-21780899_rf-m-to1.jpg"] {
+		background-size: cover;
+		background-position: 40% 0;
+	}
+	.col1bgMod.tall[style*="2-21780899_rf-d-to1.jpg"] {
+		background-position: 5% 50%;
+	}
+	.module.col1bgMod[style*="2-28710662_rf-d-to2.jpg"] {
+		background-position: 60% 0%;
+	}
+	.right.header-bg[style*="42-25843944_rf-d-to1.jpg"] {
+		background-position: 15% 0% !important;
+	}
+	.slideshow-wrapper .heroSlideshowItem .slide[style*="42-28135537_rf-t-ov1"] {
+		background-position: 130% 0%;
+	}
+	.slide[style*="08226555_5-t-ov1.jpg"] {
+		background-position: 130% 0% !important;
+	}
+	.slide[style*="08226555_5-t-ov1.jpg"] .slide-copy.span6 {
+		width: 47.5%;
+	}
+	.slide[style*="2-22565757_rf-t-ov1.jpg"] .slide-copy.span6 {
+		width: 39.5%;
+	}
+	.slide[style*="2-22565757_rf-t-ov1.jpg"] {
+		background-position: 108% 0!important;
+	}
+	.slide[style*="scuba_rf-t-ov3.jpg"], .slide[style*="iTriage_carepass-t-ov3.jpg"]  {
+		background-position: 25% 50% !important;
+	}
+	.slide[style*="BLP0099065_rf-t-ov1"]  {
+		background-position: 50% 50% !important;
+	}
+	.col1bgMod.tall[style*="42-22790126_rf-d-to1.jpg"] {
+		background-position: 15% 100% !important;
+	}
+	.col1bgMod.short[style*="42-27857151_rf-d-to1.jpg"] {
+		background-position: top center;
+		background-size: cover;
+		padding-bottom: 40px;
+	}
+	.module.col1bgMod[style*="Values_Chart-d-to1.jpg"] {
+		background-position: 9% 50%;
+		background-size: 123%;
+		background-color: #fff;
+	}
+	.col1bgMod.short[style*="42-17076824_rf-d-to1.jpg"] {
+		background-size: 100% auto;
+		background-position: bottom center;
+		background-color: #FBFBFB;
+	}
+	.col1bgMod.tall[style*="42-44145113_rf-d-to1.jpg"] {
+		background-position: 28% 50%;
+	}
+	.slide[style*="42-18500780_rf-d-ov1.jpg"] {
+		background-position: 53% 50%!important;
+		background-size: auto 100%;
+	}
+	.right.header-bg[style*="42-27933042_rf-d-to1.jpg"] {
+		background-position: 15% top;
+		background-size: 184% auto;
+	}
+	.slide[style*="42-18500780_rf-d-ov1.jpg"] {
+		background-position: 50% 0% !important;
+	}
+	.columnLayout.section .whitebg .span3 h3 {
+		word-wrap: break-word;
+	}
+	.vcenter {
+		margin-top: 25%;
+	}
+	.article-template .nextStepCont {
+		/*height: 140px;*/
+	}
+	.megaMenuLinkList.section {
+			padding-bottom: 0;
+		}
+	.col2bgMod ul.underlined.span6 li a {
+		margin-right: -16px;
+	}
+	.newsTop .newsFeed a {
+		line-height: 18px;
+		position: static; 
+	}
+	.newsTop .newsFeed {
+		/*display: table-cell;*/
+		vertical-align: middle;
+		height: 100%;
+		padding-left: 5px;
+		display: inline-block;
+	}
+	.article-template .searchAgainForm input[type=text] {
+		width: 100px;
+	}
+	table.stacktable {
+		border: 0 solid #dbdbdb;
+	}
+	table.stacktable td {
+		display: block;
+		margin: 0;
+		width: 90%;
+		border: 1px solid #dbdbdb;
+	}
+	vcenter {
+		margin-top: 25%;
+	}
+	
+}
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape){
+	.fixedHeaderWrap.removeMobile.lose {
+		position: absolute;
+	}
+	.slide[style*="hero-pr2-d.jpg"] .row-fluid .span6 span.whiteText {
+		width: 276px;
+		display: block;
+	}
+	.slide[style*="hero-about2-d.jpg"] {
+		background-position: 50% 23% !important;
+	}
+	.slide[style*="hero-about2-d.jpg"] .slide-copy {
+		width: 51%;
+	}
+	.slide[style*="hero-pr3-d.jpg"] {
+		background-position: 60% 29% !important;
+	}
+	.slideshow-wrapper .heroSlideshowItem .slide[style*="42-28135537_rf-d-ov1.jpg"] {
+		background-position: 90% 0%;
+	}
+	.slideshow-wrapper .heroSlideshowItem .slide[style*="30300905_rf-d-ov2.jpg"] {
+		background-position: 80% 0%;
+	}
+	.slide[style*="108226555_5_rf-d-ov1.jpg"], .slide[style*="22565757_rf-d-ov1.jpg"] {
+		background-position: 86% 0 !important;
+	}
+	.slide[style*="108226555_5_rf-d-ov1.jpg"] .span6, .slide[style*="22565757_rf-d-ov1.jpg"] .span6 {
+		width: 45%;
+	}
+	.slide[style*="aetna-tools-d-ov1.jpg"]  {
+		background-position: 67% 34% !important;
+	}
+	.col1bgMod.tall[style*="42-50148558_rf-d-to1.jpg"] .span6 {
+		width: 48%;
+	}
+	.col1bgMod.tall[style*="Values_Chart-d-to1.jpg"] {
+		background-position: 16% 50%;
+	}
+	.slide[style*="42-18500780_rf-d-ov1.jpg"], .slide[style*="hero-pr1-d.jpg"] {
+		background-position: 50% 0% !important;
+	}
+	
+	.slide[style*="42-30300905_rf-d-to1.jpg"] {
+		background-position: 53% 0% !important;
+	}
+	
+	.right.header-bg[style*="42-27933042_rf-d-to1.jpg"] {
+		background-position: 15% top;
+		background-size: 161% auto;
+	}
+	.interstitialVideo .interout.terms .interstitial {
+		left: 36%;
+	}
+    .interstitialVideo .interout.terms .close {
+        right: 7%;
+        top: 3%;
+    }
+	.interstitialParsys .interout.terms .interstitial.mediumW {
+		left: 39%;
+	}    
+	
+	.row-fluid nav .fiveCol.quickLinksArea {
+		width: 20%;
+	}
+	.row-fluid nav .fiveCol.narrowCol.quickLinksArea {
+		width: 27%;
+	}	 
+	.row-fluid nav .fiveCol.quickLinksArea .quickLinksAreaContent {
+		width: 82%;
+	}	
+	.row-fluid nav .fiveCol.quickLinksArea.twoCol .quickLinksAreaContent{
+		width: 87%;
+	}
+	.togglePanelWrapper.overthrow {
+		top:133px
+	}
+}
+@media (min-width: 1140px) {
+#show-ipad .greenText {white-space: nowrap;}
+}
+
+@media (max-device-width : 1280px) and (orientation : landscape) { 
+	.columnLayout .titleBar h2 {
+		font-weight: bold;
+	}
+}
+@media (max-width: 914px) and (min-width: 768px) {
+		.universalMenu .row-fluid nav .fiveCol {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+			width: 100% !important;
+			float: none !important;
+			display:block;
+		}
+		.megaMenuLinkList.section {
+			padding-bottom: 0 !important;
+		}
+}
+
+@media only screen and (max-width : 1024px) {
+	.topic-template .titleBar h2 {
+		font-family: 'Foco W01 bold', Arial, sans-serif;
+	}
+	.topic-template .columnLayout .titleBar h2 {
+		font-family: 'Foco W01 light', Arial, sans-serif;
+	}
+
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+	/*.slideshow-wrapper .heroSlideshowItem .slide {
+		background-position: 50% -60%;
+	}*/
+	table.sumTable{
+		width: 63%;
+	}	
+}
+@media only screen and (min-width : 914px) and (max-width : 1280px) and (orientation : landscape) {
+	.togglePanelWrapper.overthrow {
+		right: auto !important;
+	}
+}
+@media only screen and (min-width : 914px) and (orientation : landscape) {
+	.togglePanelWrapper.overthrow {
+		/*padding-top: 32px;*/
+	}
+	.fixedHeaderWrap {
+		min-height: 114px;
+	}
+}

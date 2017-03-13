@@ -1,0 +1,25 @@
+.plHeader {
+	text-align:right;
+}
+
+.plHeader p{
+	text-align:right;
+	width:auto;
+	padding:10px;
+}
+
+.plRefresh {
+	height: 20px;
+	width: 20px;
+	border: solid 1px black;
+    background: url('/apps/aetna/reporting/clientlibs/reports/image/refresh.png') 
+                50% 50% 
+                white
+                no-repeat;
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	cursor:pointer;
+	display:inline-block;
+	margin: 5px;
+}

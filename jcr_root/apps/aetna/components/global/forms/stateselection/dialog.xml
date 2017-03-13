@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="State Selection"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <type
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="false"
+                        defaultValue="dropdown"
+                        fieldDescription="Select the type of state selection to render."
+                        fieldLabel="Type"
+                        name="./type"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <dropdown
+                                jcr:primaryType="nt:unstructured"
+                                text="Dropdown"
+                                value="dropdown"/>
+                            <multiple
+                                jcr:primaryType="nt:unstructured"
+                                text="Multiple selection"
+                                value="multiple"/>
+                        </options>
+                    </type>
+                    <label
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/forms/basicformcomponent/dialog/items/items/configuration/items/label.infinity.json"
+                        xtype="cqinclude"/>
+                    <descriptiontext
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/forms/basicformcomponent/dialog/items/items/configuration/items/descriptiontext.infinity.json"
+                        xtype="cqinclude"/>
+                    <defaultoption
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/forms/addressfield/dialog/items/items/state/items/defaultoption.infinity.json"
+                        xtype="cqinclude"/>
+                    <anotherdefaultoption
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Second option to render in the dropdown. Only valid if first default option is specified."
+                        fieldLabel="Second option"
+                        name="./stateanotherdefaultoption"
+                        xtype="textfield"/>
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="HTML name attribute to be submitted."
+                        fieldLabel="Input name"
+                        name="./statename"
+                        xtype="textfield"/>
+                </items>
+            </configuration>
+            <validations
+                jcr:primaryType="cq:Panel"
+                title="Validations">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <validations
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Include each validation for the field."
+                        fieldLabel="Validations"
+                        name="./statevalidations"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="aetna.formvalidation"/>
+                    </validations>
+                </items>
+            </validations>
+        </items>
+    </items>
+</jcr:root>

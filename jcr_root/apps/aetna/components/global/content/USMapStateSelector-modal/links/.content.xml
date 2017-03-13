@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <link01
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-az"
+        href="javascript:void(0)"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','Select Your State',this,'Arizona');s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Arizona"/>
+    <link02
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-de"
+        href="javascript:void(0)"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','Select Your State',this,'Delaware');s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Delaware"/>
+    <link03
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-de two"
+        href="javascript:void(0)"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','Select Your State',this,'Delaware');s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Delaware"/>
+    <link04
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-il"
+        href="javascript:void(0)"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','Select Your State',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Illinois"/>
+    <link05
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-il two"
+        href="javascript:void(0)"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','Select Your State',this,'Illinois');s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Illinois"/>
+    <link06
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-ny"
+        href="javascript:void(0)"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','Select Your State',this,'New York');s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="New York"/>
+    <link07
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-ny two"
+        href="javascript:void(0)"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','Select Your State',this,'New York');s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="New York"/>
+    <link08
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-pa"
+        href="javascript:void(0)"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','Select Your State',this,'Pennsylvania');s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Pennsylvania"/>
+    <link09
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-tx"
+        href="javascript:void(0)"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','Select Your State',this,'Texas');s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Texas"/>
+    <link10
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-tx two"
+        href="javascript:void(0)"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','Select Your State',this,'Texas');s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Texas"/>
+    <link11
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-tx three"
+        href="javascript:void(0)"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','Select Your State',this,'Texas');s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Texas"/>
+    <link12
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-va"
+        href="javascript:void(0)"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','Select Your State',this,'Virginia');s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Virginia"/>
+    <link13
+        jcr:primaryType="nt:unstructured"
+        class="aetnamap-va two"
+        href="javascript:void(0)"
+        onclick="Aetna.analytics.omniture.linkCode('aeCustLnk','Select Your State',this,'Virginia');s.tl(this,'o',linkText,null,'navigate');return false;"
+        text="Virginia"/>
+    <link14
+        jcr:primaryType="nt:unstructured"
+        href="http://parklandhmo.com/"
+        onclick="Aetna.analytics.omniture.linkCode('aeAetnaExit','State tooltip links',this);s.tl(this,'e',linkText);"
+        target="_blank"
+        text="Parkland Community Health Plan (Dallas)"/>
+    <linl15
+        jcr:primaryType="nt:unstructured"
+        href="http://www.christushealthplan.org/"
+        onclick="Aetna.analytics.omniture.linkCode('aeAetnaExit','State tooltip links',this);s.tl(this,'e',linkText);"
+        target="_blank"
+        text="CHRISTUS Health Plan (Nueces)"/>
+    <link16
+        jcr:primaryType="nt:unstructured"
+        href="http://www.aetnamedicaid.com/default_en.asp"
+        onclick="Aetna.analytics.omniture.linkCode('aeAetnaExit','State tooltip links',this);s.tl(this,'e',linkText);"
+        target="_blank"
+        text="Aetna Better Health of Texas (Bexar and Tarrant)"/>
+    <link17
+        jcr:primaryType="nt:unstructured"
+        class="close"
+        href="#"
+        text=""/>
+    <link18
+        jcr:primaryType="nt:unstructured"
+        href="http://www.mercycareplan.com/default.aspx"
+        onclick="Aetna.analytics.omniture.linkCode('aeAetnaExit','State tooltip links',this);s.tl(this,'e',linkText);"
+        target="_blank"
+        text="Mercy Care Plan"/>
+    <link19
+        jcr:primaryType="nt:unstructured"
+        href="http://www.mercycareplan.com/mca/"
+        onclick="Aetna.analytics.omniture.linkCode('aeAetnaExit','State tooltip links',this);s.tl(this,'e',linkText);"
+        target="_blank"
+        text="Mercy Care Advantage (HMO SNP)"/>
+    <link20
+        jcr:primaryType="nt:unstructured"
+        class="close"
+        href="#"
+        text=""/>
+    <link21
+        jcr:primaryType="nt:unstructured"
+        href="http://www.delawarephysicianscare.com/"
+        onclick="Aetna.analytics.omniture.linkCode('aeAetnaExit','State tooltip links',this);s.tl(this,'e',linkText);"
+        target="_blank"
+        text="Delaware Physicians Care"/>
+    <link22
+        jcr:primaryType="nt:unstructured"
+        class="close"
+        href="#"
+        text=""/>
+    <link23
+        jcr:primaryType="nt:unstructured"
+        href="http://www.aetnabetterhealth.com/Illinois/default.aspx"
+        onclick="Aetna.analytics.omniture.linkCode('aeAetnaExit','State tooltip links',this);s.tl(this,'e',linkText);"
+        target="_blank"
+        text="Aetna Better Health of Illinois"/>
+    <link24
+        jcr:primaryType="nt:unstructured"
+        class="close"
+        href="#"
+        text=""/>
+    <link25
+        jcr:primaryType="nt:unstructured"
+        href="http://www.aetnabetterhealth.com/ny/"
+        onclick="Aetna.analytics.omniture.linkCode('aeAetnaExit','State tooltip links',this);s.tl(this,'e',linkText);"
+        target="_blank"
+        text="Aetna Better Health of New York"/>
+    <link26
+        jcr:primaryType="nt:unstructured"
+        class="close"
+        href="#"
+        text=""/>
+    <link27
+        jcr:primaryType="nt:unstructured"
+        href="http://www.aetnabetterhealth.com/Pennsylvania/default.aspx"
+        onclick="Aetna.analytics.omniture.linkCode('aeAetnaExit','State tooltip links',this);s.tl(this,'e',linkText);"
+        target="_blank"
+        text="Aetna Better Health"/>
+    <link28
+        jcr:primaryType="nt:unstructured"
+        href="http://www.aetnabetterhealth.com/pennsylvania"
+        onclick="Aetna.analytics.omniture.linkCode('aeAetnaExit','State tooltip links',this);s.tl(this,'e',linkText);"
+        target="_blank"
+        text=" Aetna Better Health Kids CHIP"/>
+    <link29
+        jcr:primaryType="nt:unstructured"
+        class="close"
+        href="#"
+        text=""/>
+    <link30
+        jcr:primaryType="nt:unstructured"
+        href="http://www.majestacare.com/"
+        onclick="Aetna.analytics.omniture.linkCode('aeAetnaExit','State tooltip links',this);s.tl(this,'e',linkText);"
+        target="_blank"
+        text="MajestaCare"/>
+    <link31
+        jcr:primaryType="nt:unstructured"
+        class="close"
+        href="#"
+        text=""/>
+</jcr:root>

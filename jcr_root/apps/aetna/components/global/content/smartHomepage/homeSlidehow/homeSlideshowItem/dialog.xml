@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    title="Home Slideshow Item"
+    width="650"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <layout
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Select the way you want to order the elements."
+                        fieldLabel="Layout"
+                        name="./layout"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <contentimage
+                                jcr:primaryType="nt:unstructured"
+                                text="Content - Image"
+                                value="contentimage"/>
+                            <imagecontent
+                                jcr:primaryType="nt:unstructured"
+                                text="Image - Content"
+                                value="imagecontent"/>
+                        </options>
+                    </layout>
+                    <heading
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to include as the item heading."
+                        fieldLabel="Heading"
+                        name="./heading"
+                        xtype="textfield"/>
+                    <subheading
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to include as the item subheading."
+                        fieldLabel="Subheading"
+                        name="./subheading"
+                        xtype="textfield"/>
+                    <subheadingstyle
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select the way you want to order the elements."
+                        fieldLabel="Subheading style"
+                        name="./subheadingstyle"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <lightgray
+                                jcr:primaryType="nt:unstructured"
+                                text="Light Gray"
+                                value="lightgray"/>
+                            <darkgray
+                                jcr:primaryType="nt:unstructured"
+                                text="Dark Gray"
+                                value="darkgray"/>
+                        </options>
+                    </subheadingstyle>
+                    <paginationheading
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to include as the pagination item first text. Leave it empty if you want to use the same text as the Heading"
+                        fieldLabel="Pagination Heading"
+                        name="./paginationheading"
+                        xtype="textfield"/>
+                    <paginationsubheading
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to include as the pagination item second text. Leave it empty if you want to use the same text as the Subheading"
+                        fieldLabel="Pagination Subheading"
+                        name="./paginationsubheading"
+                        xtype="textfield"/>
+                    <paginationonclick
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="JavaScript code to execute when the Pagination item is clicked"
+                        fieldLabel="Pagination onClick"
+                        name="./paginationonclick"
+                        xtype="textarea"/>
+                </items>
+            </configuration>
+            <image
+                jcr:primaryType="cq:Widget"
+                path="/apps/aetna/components/global/content/heroSlideshow/heroSlideshowItem/dialog/items/items/image.infinity.json"
+                xtype="cqinclude"/>
+            <imageconfigs
+                jcr:primaryType="cq:Widget"
+                title="Image Config"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <resTypeImage
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="true"
+                        name="./image/sling:resourceType"
+                        value="foundation/components/image"
+                        xtype="hidden"/>
+                    <specialTabletClass
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want align the tablet layout image to the left."
+                        fieldLabel="Special Tablet Class"
+                        name="./specialTabletClass"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <specialTabletLandscapeClass
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want align the tablet layout image in landscape mode to the center."
+                        fieldLabel="Special Tablet Landscape Class"
+                        name="./specialTabletLandscapeClass"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </imageconfigs>
+        </items>
+    </items>
+</jcr:root>

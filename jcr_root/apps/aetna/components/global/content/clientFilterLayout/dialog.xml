@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Client Filter Layout"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <hideDefaultContainer
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Check it if you want to hide content on default container when a filter is applied."
+                        fieldLabel="Hide Default Container"
+                        name="./hideDefaultContainer"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <filter
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="true"
+                        fieldDescription="If not filter is selected or Everyone is selected, this panel won't be shown"
+                        fieldLabel="Filter"
+                        name="./filter"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <if
+                                jcr:primaryType="nt:unstructured"
+                                text="Individuals &amp; Families"
+                                value="path if"/>
+                            <employers
+                                jcr:primaryType="nt:unstructured"
+                                text="Employers"
+                                value="path employers"/>
+                            <hcp
+                                jcr:primaryType="nt:unstructured"
+                                text="Healthcare Professionals"
+                                value="path hcp"/>
+                            <producers
+                                jcr:primaryType="nt:unstructured"
+                                text="Producers"
+                                value="path producers"/>
+                            <navinet
+                                jcr:primaryType="nt:unstructured"
+                                text="Navinet"
+                                value="path navinet"/>
+                            <clinicalPolicy
+                                jcr:primaryType="nt:unstructured"
+                                text="Clinical Policy"
+                                value="path clinical-policy"/>
+                            <precertification
+                                jcr:primaryType="nt:unstructured"
+                                text="Precertification"
+                                value="path precertification"/>
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                text="Everyone"
+                                value=""/>
+                        </options>
+                    </filter>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

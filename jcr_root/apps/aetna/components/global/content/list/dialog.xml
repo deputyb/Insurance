@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Topic Slideshow"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <colqty
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Number of columns to include in the list"
+                        fieldLabel="Column quantity"
+                        name="./colqty"
+                        xtype="numberfield"/>
+                    <itemqty
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Number of items to include per column"
+                        fieldLabel="Item quantity"
+                        name="./itemqty"
+                        xtype="numberfield"/>
+                    <underlined
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Adds underlined CSS class"
+                        fieldLabel="Add underlined CSS class?"
+                        name="./underlined"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <audience
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="true"
+                        fieldDescription="Audience"
+                        fieldLabel="Audience"
+                        name="./audience"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <if
+                                jcr:primaryType="nt:unstructured"
+                                text="Individuals &amp; Families"
+                                value="path if"/>
+                            <employers
+                                jcr:primaryType="nt:unstructured"
+                                text="Employers"
+                                value="path employers"/>
+                            <hcp
+                                jcr:primaryType="nt:unstructured"
+                                text="Healthcare Professionals"
+                                value="path hcp"/>
+                            <producers
+                                jcr:primaryType="nt:unstructured"
+                                text="Producers"
+                                value="path producers"/>
+                            <defualt
+                                jcr:primaryType="nt:unstructured"
+                                text="Leave empty"
+                                value=""/>
+                        </options>
+                    </audience>
+                </items>
+            </configuration>
+            <menuconfig
+                jcr:primaryType="cq:Widget"
+                title="Items Config"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <itemsList
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="List of items to include in columns"
+                        fieldLabel="List of Items"
+                        name="./links"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            width="155"
+                            xtype="aetna.listitem"/>
+                    </itemsList>
+                </items>
+            </menuconfig>
+        </items>
+    </items>
+</jcr:root>

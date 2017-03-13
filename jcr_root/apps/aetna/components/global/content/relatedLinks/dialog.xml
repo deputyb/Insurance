@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Related Links"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="true"
+                        fieldDescription="Text to display as the module header of the box"
+                        fieldLabel="Module Header"
+                        name="./title"
+                        xtype="textfield"/>
+                    <linksqty
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Number of links to add inside the box."
+                        fieldLabel="Links Quantity"
+                        name="./linksqty"
+                        xtype="numberfield"/>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

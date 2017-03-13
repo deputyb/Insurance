@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Mega Menu Item Title"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Title to use as the mega menu item title"
+                        fieldLabel="Title"
+                        name="./title"
+                        xtype="textfield"/>
+                    <subtitle
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Subtitle to use as a subtitle to render before the columns."
+                        fieldLabel="Subtitle"
+                        name="./subtitle"
+                        xtype="textfield"/>
+                    <href
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Address that the link will redirect. Leave it blank to open it's internal panels."
+                        fieldLabel="href"
+                        name="./href"
+                        xtype="pathfield"/>
+                    <target
+                        jcr:primaryType="nt:unstructured"
+                        name="./target"
+                        xtype="hidden"/>
+                    <linktarget
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Check it if you want to open the link in a new window/tab"
+                        fieldLabel="New tab/window"
+                        name="./linktarget"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <audience
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="true"
+                        defaultValue="Audience"
+                        fieldDescription="Audience"
+                        fieldLabel="Audience"
+                        name="./audience"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <if
+                                jcr:primaryType="nt:unstructured"
+                                text="Individuals &amp; Families"
+                                value="path if"/>
+                            <employers
+                                jcr:primaryType="nt:unstructured"
+                                text="Employers"
+                                value="path employers"/>
+                            <hcp
+                                jcr:primaryType="nt:unstructured"
+                                text="Healthcare Professionals"
+                                value="path hcp"/>
+                            <producers
+                                jcr:primaryType="nt:unstructured"
+                                text="Producers"
+                                value="path producers"/>
+                            <defualt
+                                jcr:primaryType="nt:unstructured"
+                                text="Leave empty"
+                                value=""/>
+                        </options>
+                    </audience>
+                    <onclick
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="JS code to execute when the link is clicked"
+                        fieldLabel="onClick event"
+                        name="./onclick"
+                        xtype="textarea"/>
+                    <defaultsubmenuitem
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to make this item, the default selected in the submenu"
+                        fieldLabel="Default Submenu Item"
+                        name="./defaultsubmenuitem"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <panelsqty
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Number of internal panels to include for the actual MegaMenu Item"
+                        fieldLabel="Panels Quantity"
+                        maxValue="5"
+                        name="./panelsqty"
+                        xtype="numberfield"/>
+                    <includeSearch
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to include a the search form in the actual panel item for mobile layout"
+                        fieldLabel="Search Form"
+                        name="./includeSearch"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <feedbackTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Title to use as the Feedback link title"
+                        fieldLabel="Feedback Title"
+                        name="./feedbackTitle"
+                        xtype="textfield"/>
+                    <hideNavOnDesktop
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to hide sub nav links on desktop and shown only on mobile menu layout"
+                        fieldLabel="Hide Nav Links"
+                        name="./hideNavOnDesktop"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <narrowColumns
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to render narrow columns"
+                        fieldLabel="Narrow Columns"
+                        name="./narrowColumns"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <twoColumnsRightPanel
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to render the right panel in a two column layout"
+                        fieldLabel="Two Columns Right Panel"
+                        name="./twoColumnsRightPanel"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </configuration>
+        </items>
+    </items>
+    <listeners
+        jcr:primaryType="nt:unstructured"
+        beforesubmit="function(dialog){ var target = dialog.getField('./target'); var linkTarget = dialog.getField('./linktarget'); if (linkTarget.getValue() == 'true') { target.setValue('_blank'); } else { target.setValue(''); } }"
+        loadContent="function(dialog){ var target = dialog.getField('./target'); var linkTarget = dialog.getField('./linktarget'); if (target.getValue() == '_blank') { linkTarget.setValue('true'); } else { linkTarget.setValue('false'); } }"/>
+</jcr:root>

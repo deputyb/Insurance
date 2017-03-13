@@ -1,0 +1,3 @@
+#base=js
+controller/dam-renditions-management-controller.js
+scripts.js

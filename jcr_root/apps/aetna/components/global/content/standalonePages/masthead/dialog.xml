@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="{Long}0"
+    title="Masthead"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <searchOptions
+            jcr:primaryType="cq:Widget"
+            title="Search Options"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <showSearchbox
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Show Searchbox"
+                    name="./showSearchbox"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </searchOptions>
+    </items>
+</jcr:root>

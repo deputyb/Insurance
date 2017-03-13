@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Topic Contact Us"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <printlinktext
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to display as the title of the Print link"
+                        fieldLabel="Print link text"
+                        name="./printlinktext"
+                        xtype="textfield"/>
+                    <sharelinktext
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to display as the title of the Share link"
+                        fieldLabel="Share link text"
+                        name="./sharelinktext"
+                        xtype="textfield"/>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

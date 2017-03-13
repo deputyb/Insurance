@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Survey Scale Field"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <surveytoplabel
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to include at the top of the survey scale questions"
+                        fieldLabel="Survey Top Label"
+                        name="./surveytoplabel"
+                        xtype="textfield"/>
+                    <label
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/forms/basicformcomponent/dialog/items/items/configuration/items/label.infinity.json"
+                        xtype="cqinclude"/>
+                    <label1item
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to include in the first item of the survey scale field"
+                        fieldLabel="First item label"
+                        name="./label1item"
+                        xtype="textfield"/>
+                    <label2item
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to include in the second item of the survey scale field"
+                        fieldLabel="Second item label"
+                        name="./label2item"
+                        xtype="textfield"/>
+                    <label3item
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to include in the third item of the survey scale field"
+                        fieldLabel="Third item label"
+                        name="./label3item"
+                        xtype="textfield"/>
+                    <label4item
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to include in the fourth item of the survey scale field"
+                        fieldLabel="Fourth item label"
+                        name="./label4item"
+                        xtype="textfield"/>
+                    <label5item
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to include in the fifth item of the survey scale field"
+                        fieldLabel="Fifth item label"
+                        name="./label5item"
+                        xtype="textfield"/>
+                    <descriptiontext
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/forms/basicformcomponent/dialog/items/items/configuration/items/descriptiontext.infinity.json"
+                        xtype="cqinclude"/>
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="HTML name attribute to be submitted."
+                        fieldLabel="Input name"
+                        name="./name"
+                        xtype="textfield"/>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

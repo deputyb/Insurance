@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:lastReplicated="{Date}2014-11-17T15:26:10.178-05:00"
+    cq:lastReplicatedBy="N629546"
+    cq:lastReplicationAction="Activate"
+    jcr:description="Component to render a layout of 2 columns"
+    jcr:mixinTypes="[cq:ReplicationStatus]"
+    jcr:primaryType="cq:Component"
+    jcr:title="2 Column Layout"
+    allowedParents="[*/parsys]"
+    componentGroup="Aetna CQ Healthy Commitments"/>

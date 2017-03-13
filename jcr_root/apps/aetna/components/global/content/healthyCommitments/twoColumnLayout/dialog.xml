@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="2 Column Layout - Healthy Commitments"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <columndistribution
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Select the distribution for the 2 column component"
+                        fieldLabel="Column Distribution"
+                        name="./columndistribution"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <w3070
+                                jcr:primaryType="nt:unstructured"
+                                text="30% - 70%"
+                                value="30-70"/>
+                            <w70-30
+                                jcr:primaryType="nt:unstructured"
+                                text="70% - 30%"
+                                value="70-30"/>
+                        </options>
+                    </columndistribution>
+                    <bluebg
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to use the blue background for the component"
+                        fieldLabel="Blue background"
+                        name="./bluebg"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <separator
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to include a separator between columns"
+                        fieldLabel="Separator"
+                        name="./separator"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <resTypeImage
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="true"
+                        name="./image/sling:resourceType"
+                        value="foundation/components/image"
+                        xtype="hidden"/>
+                </items>
+            </configuration>
+            <image
+                jcr:primaryType="cq:Widget"
+                cropParameter="./image/imageCrop"
+                ddGroups="[media]"
+                fieldLabel="Bottom Image - Left Panel"
+                fileNameParameter="./image/fileName"
+                fileReferenceParameter="./image/fileReference"
+                mapParameter="./image/imageMap"
+                name="./image/file"
+                requestSuffix="/image.img.png"
+                rotateParameter="./image/imageRotate"
+                sizeLimit="100"
+                title="Bottom Image"
+                uploadUrl="/tmp/upload/*"
+                xtype="smartimage"/>
+        </items>
+    </items>
+</jcr:root>

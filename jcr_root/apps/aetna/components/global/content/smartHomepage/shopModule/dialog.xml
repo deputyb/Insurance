@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Shop Module"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <dropdownlabel
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to use as the dropdown label."
+                        fieldLabel="Dropdown Label"
+                        name="./dropdownlabel"
+                        xtype="textfield"/>
+                    <dropdownoptions
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Options to include in the dropdown besides the default option."
+                        fieldLabel="Dropdown Options"
+                        name="./dropdownoptions"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield"/>
+                    </dropdownoptions>
+                    <dropdowndefaultoption
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to use as the dropdown default option that will be displayed."
+                        fieldLabel="Dropdown Default Option"
+                        name="./dropdowndefaultoption"
+                        xtype="textfield"/>
+                    <dropdownoptionseparator
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="--------------------------"
+                        fieldDescription="Separator text to use in the dropdown. Leave empty if no separator is required."
+                        fieldLabel="Dropdown Option Separator"
+                        name="./dropdownoptionseparator"
+                        xtype="textfield"/>
+                    <defaultshopbuttonlabel
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text that will be used as the default Shop button label."
+                        fieldLabel="Default Shop Button Label"
+                        name="./defaultshopbuttonlabel"
+                        xtype="textfield"/>
+                </items>
+            </configuration>
+            <mobileconfiguration
+                jcr:primaryType="cq:Panel"
+                title="Mobile Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <defaultmobileshopbuttonlabel
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text that will be used as the default Shop button label in the mobile layout."
+                        fieldLabel="Default Mobile Shop Button Label"
+                        name="./defaultmobileshopbuttonlabel"
+                        xtype="textfield"/>
+                    <mobilelinks1
+                        jcr:primaryType="cq:Widget"
+                        title="Mobile link 1"
+                        xtype="fieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <text
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Text"
+                                name="./mobilelink1text"
+                                width="250"
+                                xtype="textfield"/>
+                            <url
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="URL"
+                                name="./mobilelink1url"
+                                width="250"
+                                xtype="pathfield"/>
+                            <target
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Open in a new window/tab"
+                                name="./mobilelink1targetblank"
+                                type="checkbox"
+                                xtype="selection"/>
+                            <interstitial
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Select the interstitial window to display when the link is clicked."
+                                fieldLabel="Interstitial to Display"
+                                name="./mobilelink1interstitial"
+                                options="/services/article-module-interstitial?page=/content/aetna/en_us/index"
+                                type="select"
+                                width="80%"
+                                xtype="selection"/>
+                            <interstitialdeeplink
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="ID of the interstitial deep link configured in the market"
+                                fieldLabel="Interstitial Deep Link"
+                                name="./mobilelink1interstitialdeeplink"
+                                width="250"
+                                xtype="textfield"/>
+                            <onclick
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="OnClick"
+                                name="./mobilelink1onclick"
+                                width="250"
+                                xtype="textarea"/>
+                        </items>
+                    </mobilelinks1>
+                    <mobilelinks2
+                        jcr:primaryType="cq:Widget"
+                        title="Mobile link 2"
+                        xtype="fieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <text
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Text"
+                                name="./mobilelink2text"
+                                width="250"
+                                xtype="textfield"/>
+                            <url
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="URL"
+                                name="./mobilelink2url"
+                                width="250"
+                                xtype="pathfield"/>
+                            <target
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Open in a new window/tab"
+                                name="./mobilelink2targetblank"
+                                type="checkbox"
+                                xtype="selection"/>
+                            <interstitial
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Select the interstitial window to display when the link is clicked."
+                                fieldLabel="Interstitial to Display"
+                                name="./mobilelink2interstitial"
+                                options="/services/article-module-interstitial?page=/content/aetna/en_us/index"
+                                type="select"
+                                width="80%"
+                                xtype="selection"/>
+                            <interstitialdeeplink
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="ID of the interstitial deep link configured in the market"
+                                fieldLabel="Interstitial Deep Link"
+                                name="./mobilelink2interstitialdeeplink"
+                                width="250"
+                                xtype="textfield"/>
+                            <onclick
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="OnClick"
+                                name="./mobilelink2onclick"
+                                width="250"
+                                xtype="textarea"/>
+                        </items>
+                    </mobilelinks2>
+                </items>
+            </mobileconfiguration>
+        </items>
+    </items>
+</jcr:root>

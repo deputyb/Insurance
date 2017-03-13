@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    title="One-Column with Image on Side"
+    width="650"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Widget"
+                path="/apps/aetna/components/global/content/topicTextimageCol2/dialog/items/items/configuration.infinity.json"
+                xtype="cqinclude"/>
+            <image
+                jcr:primaryType="cq:Widget"
+                path="/apps/aetna/components/global/content/topicTextimageCol2/dialog/items/items/image.infinity.json"
+                xtype="cqinclude"/>
+            <imageconfigs
+                jcr:primaryType="cq:Widget"
+                title="Image Config"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <resTypeImage
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="true"
+                        name="./image/sling:resourceType"
+                        value="foundation/components/image"
+                        xtype="hidden"/>
+                    <imageConfigs
+                        jcr:primaryType="cq:Widget"
+                        title="Image configuration"
+                        xtype="fieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <imageURL
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image URL"
+                                name="./imageURL"
+                                width="250"
+                                xtype="pathfield"/>
+                            <interstitial
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Select the interstitial window to display"
+                                fieldLabel="Interstitial"
+                                name="./interstitial"
+                                options="/services/article-module-interstitial?page=$PATH"
+                                type="select"
+                                xtype="selection"/>
+                            <onclick
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="JavaScript Onclick code"
+                                name="./onclick"
+                                width="250"
+                                xtype="textarea"/>
+                        </items>
+                    </imageConfigs>
+                </items>
+            </imageconfigs>
+        </items>
+    </items>
+</jcr:root>

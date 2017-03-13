@@ -1,0 +1,363 @@
+/**
+ * BxSlider v4.0 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2012
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+	position: relative;
+	/*margin: 0 auto 60px;*/
+	padding: 0;
+	*zoom: 1;
+	z-index: 0;
+}
+
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+
+/*for IE8 bug*/
+.bx-wrapper, .bx-wrapper .bx-viewport {
+	height: 334px\9 !important; 
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+/*	-moz-box-shadow: 0 0 5px #ccc;
+	-webkit-box-shadow: 0 0 5px #ccc;
+	box-shadow: 0 0 5px #ccc;
+	border: solid #fff 5px;
+	left: -5px;
+	background: #fff;*/
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	/*bottom: -30px;*/
+	/*width: 100%;*/
+	z-index: 999;
+/*	top: 80%;
+	right: 0;*/
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(../../../images/designs/global/bx_loader.gif) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	/*padding-top: 20px;*/
+}
+
+/*.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {*/
+.bx-pager .bx-pager-item,
+.bx-controls-auto .bx-controls-auto-item {	
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+/*.bx-wrapper .bx-pager.bx-default-pager a {*/
+.bx-pager.bx-default-pager a {	
+/*	background: #666;
+	text-indent: -9999px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	outline: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;*/
+	display: block;
+    width: 14px;
+    height: 0;
+    padding-top: 15px;
+    background-image: url(../../../images/designs/universalNav/spr-icn-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+    float: left;
+    overflow: hidden;
+    padding-left: 15px;
+}
+
+/*.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {*/
+.bx-pager.bx-default-pager a:hover,
+.bx-pager.bx-default-pager a.active {	
+	background-position: 0 -76px;
+}
+ /* HERO IMAGES */
+ @media (min-width:1024px) {
+ 	.slideshow-wrapper .pagination-holder {
+		margin-top: -30px;
+	}
+ 	.slideshow-wrapper .slide-copy {
+		padding-top: 45px;
+	}
+	.slideshow-wrapper .slide-copy h1 {
+		margin-bottom: 18px;
+	}
+	.slideshow-wrapper {
+ 		height: 334px;
+		margin-bottom: -24px;
+ 	}
+ 	.slideshow-wrapper .heroSlideshowItem {
+ 		height: 334px;
+		background-repeat: no-repeat;
+		background-position: center;
+ 	}
+	.slideshow-wrapper .heroSlideshowItem .slide{
+		height: 334px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: #eee;
+	}
+	.content-wrapper .campaign-i-f-hero .slideshow-wrapper {
+		margin-bottom: 0;
+ 	}
+ 	
+ 	.content-wrapper .campaign-i-f-hero {
+ 		margin-bottom: -24px;
+ 	}
+}
+/*TABLET*/
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+	/*for IE8 bug*/
+	.bx-wrapper, .bx-wrapper .bx-viewport {
+		height: 331px\9 !important; 
+	}
+
+	.slideshow-wrapper .slide-copy {
+		padding-top: 80px;
+	}
+	.slideshow-wrapper .slide-copy h1 {
+		font-size: 2.25em;
+	}
+	.slideshow-wrapper {
+ 		margin-bottom: 0;
+		height: 331px;
+ 	}
+	.slideshow-wrapper .heroSlideshowItem {
+		height: 331px;
+		overflow: hidden;
+	}
+	.slideshow-wrapper .heroSlideshowItem .slide{
+		height: 331px;
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-color: #eee;
+		
+	}
+	.slideshow-wrapper .heroSlideshowItem .slide[style*="42-28135537_rf-t-ov1"], .slideshow-wrapper .heroSlideshowItem .slide[style*="42-30300905_rf-t-ov2"]{
+	background-position: right top;	}
+}
+/*TABLET portrait*/
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+	.slideshow-wrapper .slide-copy {
+		padding-top: 40px;
+	}
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+	.slideshow-wrapper .heroSlideshowItem .slide.tablet-center-landscape {
+		background-position: center top;
+	}
+}
+
+/*SMARTPHONE*/
+@media only screen and (max-width : 767px) {
+	.slideshow-wrapper {
+		/*prevents light grey bg from showing on shorter slides*/
+		background: #5e9732;
+		height: auto;
+		max-width: 100%;
+		overflow:hidden;
+	}
+	.slideshow-wrapper .heroSlideshowItem .slide{
+		background-color: #eee;
+	}
+	.slideshow-wrapper .slide-copy {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background: #5e9732;
+	}
+	.slideshow-wrapper .slide-copy h1 {
+		font-size: 2em;
+		color: #ffffff;
+		padding-bottom: 0;
+		margin-bottom: 12px;
+	}
+	.slideshow-wrapper .slide-copy p {
+		color: #ffffff;
+		margin-bottom: 12px;
+	}
+	.slideshow-wrapper .slide-copy p .noMargin {
+		margin-bottom: 0;
+	}
+	.pagination {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+	}
+	.bx-pager.bx-default-pager a:hover {
+		background-position: 0 bottom;
+	}
+	.bx-pager.bx-default-pager a.active {
+		background-position: 0 -76px;
+	}
+	.pagination-holder {
+		margin-top: 25%;
+	}
+	.slideshow-wrapper .hero1 {
+/*		background: #ffffff url(../../../images/dam/overview_E/employers-hero-1-m.jpg) no-repeat center top;
+		background-size: 100%;*/
+		background: none;
+
+		/*background: red;*/
+/*		min-height: 350px;
+		max-height: 350px;*/
+		/*overflow: visible;*/
+	}
+}
+/*Landscape SMARTPHONE*/
+@media only screen and (min-width : 321px) and (max-width : 767px) {
+	.pagination-holder {
+		margin-top: 22%;
+	}
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+	left: 10px;
+	background: url(../../../images/designs/global/controls.png) no-repeat 0 -32px;
+}
+
+.bx-wrapper .bx-next {
+	right: 10px;
+	background: url(../../../images/designs/global/controls.png) no-repeat -43px -32px;
+}
+
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
+}
+
+.bx-wrapper .bx-next:hover {
+	background-position: -43px 0;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 9999;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	background: url(../../../images/designs/global/controls.png) -86px -11px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+	background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	background: url(../../../images/designs/global/controls.png) -86px -44px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}

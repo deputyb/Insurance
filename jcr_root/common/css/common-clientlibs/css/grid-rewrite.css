@@ -1,0 +1,228 @@
+/*TAKEN FROM BOOTSTRAP*/
+.row-fluid:before, .row-fluid:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.row-fluid:after {
+    clear: both;
+}
+
+.row-fluid [class*="span"] {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+}
+[class*="span"].hide, .row-fluid [class*="span"].hide {
+    display: none;
+}
+
+[class*="span"].pull-right, .row-fluid [class*="span"].pull-right {
+    float: right;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    *zoom: 1;
+}
+.container:before, .container:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.container:after {
+    clear: both;
+}
+
+/*CUSTOM REWRITES*/
+.container-fluid{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-left: 0;
+	padding-right: 0;
+}
+.template .row-fluid [class*="span"]{
+	min-height: 24px;
+	/*padding-left: 1.25%;
+	padding-right: 1.25%;*/
+}
+
+.row-fluid [class*="span"]:first-child,.row-fluid [class*="span"]{
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}
+.template .row-fluid [class*="span"].noPadding{
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 25px; /* */
+}
+/*fluid span widths*/
+.row-fluid .span1{
+	width: 8.333333%;
+}
+.row-fluid .span2{
+	width: 16.666667%;
+}
+.row-fluid .span3{
+	width: 25%;
+}
+.row-fluid .span4{
+	width: 33.333333%;
+}
+.row-fluid .span5{
+	width: 41.666667%;
+}
+.row-fluid .span6{
+	width: 50%;	
+}
+.row-fluid .span7{
+	width: 58.333333%;
+}
+.row-fluid .span8{
+	width: 66.666667%;
+}
+.row-fluid .span9{
+	width: 75%;
+}
+.row-fluid .span10{
+	width: 83.333333%;
+}
+.row-fluid .span11{
+	width: 91.666667%;
+}
+.row-fluid .span12{
+	width: 100%;
+}
+/*OFFSETS*/
+.row-fluid .offset1{
+	margin-left: 8.333333%;
+}
+.row-fluid .offset2{
+	margin-left: 16.666667%;
+}
+.row-fluid .offset3{
+	margin-left: 25%;
+}
+.row-fluid .offset4{
+	margin-left: 33.333333%;
+}
+.row-fluid .offset5{
+	margin-left: 41.666667%;
+}
+.row-fluid .offset6{
+	margin-left: 50%;	
+}
+.row-fluid .offset7{
+	margin-left: 48.333333%;
+}
+.row-fluid .offset8{
+	margin-left: 66.666667%;
+}
+.row-fluid .offset9{
+	margin-left: 75%;
+}
+.row-fluid .offset10{
+	margin-left: 83.333333%;
+}
+.row-fluid .offset11{
+	margin-left: 91.666667%;
+}
+.row-fluid .offset12{
+	margin-left: 100%;
+}
+
+@media only screen and (min-width : 1px) and (max-width:767px) {
+	[class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"] {
+	    float: none;
+	    display: block;
+	    width: 100%;
+	    margin-left: 0;
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+	 .span12, .row-fluid .span12 {
+	    width: 100%;
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+	 .row-fluid [class*="offset"]:first-child {
+	    margin-left: 0;
+	}
+}
+/*BOOTSTRAP CUSTOM CLASSES*/
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.visible-phone {
+    display: none !important;
+}
+
+.visible-tablet {
+    display: none !important;
+}
+
+.hidden-desktop {
+    display: none !important;
+}
+
+.visible-desktop {
+    display: inherit !important;
+}
+
+@media only screen and (min-width:768px) and (max-width:979px) {
+    .hidden-desktop {
+    display: inherit !important;
+}
+ .visible-desktop {
+    display: none !important ;
+}
+ .visible-tablet {
+    display: inherit !important;
+}
+ .hidden-tablet {
+    display: none !important;
+}
+}
+@media only screen and (min-width:914px) {
+	.hidden-desktop.narrow-widths {
+	    display: none !important;
+	}
+	.visible-desktop.narrow-widths {
+	    display: inherit !important;
+	}
+}
+@media only screen and (max-width:767px) {
+.hidden-desktop {
+    display: inherit !important;
+}
+ .visible-desktop {
+    display: none !important;
+}
+ .visible-phone {
+    display: inherit !important;
+}
+ .hidden-phone {
+    display: none !important;
+}
+}
+.visible-print {
+    display: none !important;
+}
+
+@media print {
+    .visible-print {
+    display: inherit !important;
+}
+ .hidden-print {
+    display: none !important;
+}
+}

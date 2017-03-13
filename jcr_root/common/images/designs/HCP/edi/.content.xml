@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="sling:OrderedFolder">
+    <jcr:content
+        cq:lastReplicated="{Date}2014-11-18T09:25:51.888-05:00"
+        cq:lastReplicatedBy="A814098"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="nt:unstructured"/>
+    <button1.jpg/>
+    <button1-hover.jpg/>
+    <left_wing.png/>
+    <right_wing.png/>
+    <bg3test.jpg/>
+    <button1.png/>
+    <bg2test-sm.jpg/>
+    <button1-hover.png/>
+    <flag.png/>
+    <bg1test.jpg/>
+    <bg2test.jpg/>
+    <table_bg3.png/>
+    <button3-hover.jpg/>
+    <bg3.jpg/>
+    <text_box3.jpg/>
+    <button3.jpg/>
+    <bg2.jpg/>
+    <flag.jpg/>
+    <button2-hover.jpg/>
+    <button2.jpg/>
+    <bg2test-sm.png/>
+    <text_box2.jpg/>
+    <bg2tes-smt.png/>
+    <pg2_img.jpg/>
+    <transparent_white.png/>
+    <text_box.jpg/>
+    <table_bg.png/>
+    <bg1.jpg/>
+</jcr:root>

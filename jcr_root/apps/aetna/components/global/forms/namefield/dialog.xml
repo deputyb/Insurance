@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Name Field"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <label
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/forms/basicformcomponent/dialog/items/items/configuration/items/label.infinity.json"
+                        xtype="cqinclude"/>
+                    <descriptiontext
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/forms/basicformcomponent/dialog/items/items/configuration/items/descriptiontext.infinity.json"
+                        xtype="cqinclude"/>
+                    <firstname
+                        jcr:primaryType="cq:Widget"
+                        title="First Name"
+                        xtype="fieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <placeholder
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Copy to render inside the first name field as a placeholder."
+                                fieldLabel="Placeholder text"
+                                name="./firstnameplaceholder"
+                                width="95%"
+                                xtype="textfield"/>
+                            <name
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="false"
+                                fieldDescription="HTML name attribute to be submitted for the first name field."
+                                fieldLabel="Input name"
+                                name="./firstnamename"
+                                width="95%"
+                                xtype="textfield"/>
+                        </items>
+                    </firstname>
+                    <lastname
+                        jcr:primaryType="cq:Widget"
+                        title="Last Name"
+                        xtype="fieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <placeholder
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Copy to render inside the last name field as a placeholder."
+                                fieldLabel="Placeholder text"
+                                name="./lastnameplaceholder"
+                                width="95%"
+                                xtype="textfield"/>
+                            <name
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="false"
+                                fieldDescription="HTML name attribute to be submitted for the last name field."
+                                fieldLabel="Input name"
+                                name="./lastnamename"
+                                width="95%"
+                                xtype="textfield"/>
+                        </items>
+                    </lastname>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

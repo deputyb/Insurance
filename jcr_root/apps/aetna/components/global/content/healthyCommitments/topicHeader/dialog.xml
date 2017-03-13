@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Overview Module - Healthy Commitments"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to include as the header of the item in the slideshow"
+                        fieldLabel="Header"
+                        name="./title"
+                        xtype="textfield"/>
+                    <text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to display under header"
+                        fieldLabel="Subhead"
+                        name="./text"
+                        xtype="textarea"/>
+                    <resTypeImage
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="true"
+                        name="./image/sling:resourceType"
+                        value="foundation/components/image"
+                        xtype="hidden"/>
+                </items>
+            </configuration>
+            <image
+                jcr:primaryType="cq:Widget"
+                allowBlank="false"
+                cropParameter="./image/imageCrop"
+                ddGroups="[media]"
+                fieldLabel="Image"
+                fileNameParameter="./image/fileName"
+                fileReferenceParameter="./image/fileReference"
+                mapParameter="./image/imageMap"
+                name="./image/file"
+                requestSuffix="/image.img.png"
+                rotateParameter="./image/imageRotate"
+                title="Image"
+                uploadUrl="/tmp/upload/*"
+                xtype="smartimage"/>
+        </items>
+    </items>
+</jcr:root>

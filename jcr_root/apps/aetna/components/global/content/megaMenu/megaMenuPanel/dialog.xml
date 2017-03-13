@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Mega Menu Panel"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <itemsqty
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Number of items to include in the mega menu panel."
+                        fieldLabel="Items quantity"
+                        name="./itemsqty"
+                        xtype="numberfield"/>
+                    <shopmenu
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Check it if you want to include Shop menu styles."
+                        fieldLabel="Shop Menu"
+                        name="./shopmenu"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <hidetopnav
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Check it if you want to hide the top navigation items."
+                        fieldLabel="Hide Top Navigation"
+                        name="./hidetopnav"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <hideonmobile
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Check it if you want to hide this panel on mobile layout."
+                        fieldLabel="Hide On Mobile"
+                        name="./hideonmobile"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

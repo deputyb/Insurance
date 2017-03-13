@@ -1,0 +1,152 @@
+.article-template .tabs ul.ui-tabs-nav li {
+	list-style: none;
+}
+
+.tabs .ui-widget-header {
+	background: white url(../images/tabs-bg.png) repeat-x;
+	height: 40px;	
+}
+
+.tabs .ui-tabs .ui-tabs-nav {
+	padding: 0 0 0 3px;
+	border: 0;
+}
+
+.tabs .ui-tabs .ui-tabs-nav li {
+	margin: 3px;
+	white-space: normal;
+	outline: none;
+}
+
+.tabs .ui-tabs .ui-tabs-nav li a {
+	position: relative;
+    background-color: transparent;
+    display: block;
+	padding-right: 7px;
+	padding-left:7px;
+	padding-bottom:2px;
+	float:left;
+	width:100%;
+}
+
+.tabs .ui-tabs-panel {
+	background: white;
+	top: 0px;
+	position: relative;
+}
+
+.tabs .ui-widget-content {
+	border: none;
+}
+
+.tabs .ui-widget-header .ui-state-active,
+.tabs .ui-state-hover,
+.tabs .ui-widget-content .ui-state-hover,
+.tabs .ui-widget-header .ui-state-hover {
+	border: 0;
+	-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.26);
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.26);
+	background: none;
+	height: 45px !important;
+}
+
+.tabs .ui-widget-header .ui-state-active {
+	background: white;
+	margin-bottom:0px;
+	margin-top: -6px !important; 
+	-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.26) !important;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.26) !important;
+}
+
+.tabs .ui-widget-header .ui-state-default{
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+	width: auto !important;
+	height: 40px;
+	-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.26),inset 0 -30px 10px -30px #333;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.26),inset 0 -30px 10px -30px #333;
+}
+
+.tabs .ui-widget-header .ui-state-default a {
+	color: #69747A;
+}
+.tabs .ui-widget-header .ui-state-active a {
+	color: #5E9732;
+}
+
+@media only screen and (min-width:768px) and (max-width:1140px) {
+	.tabs .ui-tabs .ui-tabs-nav {
+		font-size: 0.9em;
+		padding-left: 3px;
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width:1164px) {
+	.tabs .ui-tabs .ui-tabs-nav {
+		font-size: 0.8em;
+		padding-left: 3px;
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width:1039px) {	
+	.tabs .ui-tabs .ui-tabs-nav li {
+		padding: 0 0 0;
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width:900px) {
+	.tabs .ui-tabs .ui-tabs-nav {
+		font-size: 0.7em;
+	}
+	
+	.tabs .ui-tabs .ui-tabs-nav li {
+		padding: 0 0 0;
+	}
+}
+
+@media only screen and (max-width:767px) {
+	.tabs .ui-tabs .ui-tabs-nav {
+		font-size: 1em;
+	}
+	
+	.tabs .ui-tabs .ui-tabs-nav li {
+		padding: 0 0 0;
+	}
+}
+
+@media only screen and (max-width:674px) {
+	.tabs {
+		width: 110%;
+		left: -5%;
+		position: relative;
+	}
+	
+	.tabs .ui-tabs .ui-tabs-nav {
+		font-size: 0.7em;
+		padding-left: 5px;
+	}
+	
+	.tabs .ui-tabs .ui-tabs-nav li {
+		padding: 0 0 0;
+	}
+}
+
+@media only screen and (max-width:460px) {
+	.tabs .ui-tabs .ui-tabs-nav {
+		font-size: 0.65em;
+	}
+	
+	.tabs .ui-tabs .ui-tabs-nav li {
+		padding: 0 0 0;
+		width: 16.3333333333333% !important;
+		margin-top:3px;
+		margin-left:0px;
+		margin-right: 0px;
+	}
+	
+	.tabs .ui-tabs .ui-tabs-nav li a {
+		padding: 0px !important;
+		text-align: center;
+	}
+	
+}

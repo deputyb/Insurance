@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    layout="form"
+    title="Interstitial window"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <id
+            jcr:primaryType="cq:Widget"
+            fieldDescription="HTML id to include to the actual interstitial video."
+            fieldLabel="HTML id"
+            name="./id"
+            xtype="textfield"/>
+    </items>
+</jcr:root>

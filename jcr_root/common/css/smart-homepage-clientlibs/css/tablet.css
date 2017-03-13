@@ -1,0 +1,166 @@
+@media only screen and (min-width : 915px) and (max-width : 1024px) {
+	.zip-code-wrapper .shop-button .shop-button-error,
+	.zip-code-wrapper .submit-button-error {
+		left: 66%;
+	}
+	
+	.interstitial .zip-code-wrapper .shop-button .shop-button-error,
+	.interstitial .zip-code-wrapper .submit-button-error {
+		font-size: 0.75em\9;
+		padding: 10px 7px\9;
+	}
+	
+	.progressive-page-band-wrapper .zip-code-form input {
+		font-size: 1em;	
+	}
+	
+	.progressive-page-login-wrapper .zip-code-wrapper .zip-code-form input {
+		margin-right: 10px;
+	}
+	
+	.progressive-page-login-wrapper .answers-content .blueBtn.whiteBtn {
+		padding-left: 14px !important;
+		padding-right: 14px !important;
+	}
+}
+
+@media only screen and (min-width : 768px) and (max-width : 914px) {
+	.shopModule select {
+		font-size: 1.15em;
+		padding: 10px 0;
+	}
+	
+	.shopModule h2,
+	.zip-code-form label {
+		font-size: 1.7em;
+		top: 4px;
+		position: relative;
+	}
+	
+	.shopModule .mobile-wrapper.mobile-wrapper-hidden-desktop,
+	.shop-module-preview-wrapper .mobile-wrapper.mobile-wrapper-hidden-desktop {
+		display: block;
+	}
+	
+	.shopModule .mobile-wrapper .mobile-links {
+		margin-top: 30px;
+	}
+	
+	.shop-module-preview-wrapper .mobile-wrapper .mobile-links {
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	
+	.zip-code-wrapper .shop-button .shop-button-error {
+		top: -12%;
+		left: 70%;
+		line-height: 1.4em;
+	}
+	
+	.bodyContent.span7 .zip-code-wrapper .submit-button-error {
+		left: 85%;
+		min-width: 155px;
+	}
+	
+	.zip-code-wrapper .shop-button .shop-button-error .arrow {
+		top: 18px;
+		left: -12%;
+	}
+	
+	.bodyContent.span7 .zip-code-wrapper .submit-button-error .arrow {
+		left: -10%;
+	}
+	
+	.home-slideshow-wrapper .homeSlideshowItem .slide {
+		background-position: center top;
+	}
+	
+	.home-slideshow-wrapper .homeSlideshowItem .slide.tablet-left-image {
+		background-position: left top;
+	}
+	
+	.progressive-page-band-wrapper .zip-code-form input {
+		font-size: 0.8em;	
+	}
+	
+	.bodyContent.span7 .progressive-page-band-wrapper .zip-code-form input {
+		top: -2px;
+	}
+	
+	.interstitial .progressive-page-login-wrapper .zip-code-wrapper .zip-code-form input {
+		width: 25%;
+	}
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+	.interstitial .shop-module-wrapper .row-fluid .offset2 {
+		margin-left: 8.333333%;
+	}
+	
+	.interstitial .shop-module-wrapper .row-fluid .span8 {
+		width: 83.333333%;
+	}
+	
+	.interstitial .shopModule select, 
+	.interstitial .zip-code-form input {
+		font-size: 1em;
+		padding: 12px 0px;
+	}
+	
+	.interstitial .shop-module-wrapper[data-page-language="es"] .shopModule select.js-insurance-type-select {
+		font-size: 0.75em;
+		padding: 14px 0px;
+	}
+
+	.zip-code-wrapper .tooltip-content {
+		max-width: 90%;
+		left: 5%;
+	}
+	
+	.progressive-page-band-wrapper .county-selection .tooltip-content {
+		top: 100px;
+	}
+
+	.home-slideshow-wrapper {
+		height: auto;
+	}
+	
+	.home-slideshow-wrapper .homeSlideshowItem,
+	.home-slideshow-wrapper .heroSlideshowItem .slide {
+		height: 403px;
+	}
+	
+	.home-slideshow-wrapper .content h3 {
+		margin-bottom: 25px;
+	}
+	
+	.home-slideshow-wrapper .module.padding48 {
+		padding: 20px 0 0;
+	}
+	
+	.shopModule .zip-code-wrapper .zip-code-form.county-selection .county-dropdown-wrapper {
+		width: 60%;
+	}
+	
+	.progressive-page-band-wrapper .zip-code-wrapper .zip-code-form.county-selection .county-dropdown-wrapper {
+		width: 40%;
+	}
+	
+	.bodyContent.span7 .progressive-page-band-wrapper .zip-code-wrapper .zip-code-form.county-selection .county-dropdown-wrapper {
+		width: 80%;
+	}
+	
+	.progressive-page-band-wrapper .arrow {
+		left: 44%;
+	}
+	
+	.progressive-page-band-wrapper .tooltip-icon {
+		left: 85%;
+	}
+}
+
+@media only screen and (min-width : 915px) and (max-width : 1024px) and (orientation : landscape) {
+	.right-content .progressive-page-login-wrapper .zip-code-wrapper .county-form-item select {
+		font-size: 0.85em;
+	}
+}

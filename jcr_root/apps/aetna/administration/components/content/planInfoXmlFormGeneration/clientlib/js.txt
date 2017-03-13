@@ -1,0 +1,3 @@
+#base=js
+libs/bootstrap.file-input.js
+controller/plan-info-xml-form-generation-controller.js

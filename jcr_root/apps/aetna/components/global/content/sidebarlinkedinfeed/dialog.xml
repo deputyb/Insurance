@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Sidebar LinkedIn Feed"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to include as the component title."
+                        fieldLabel="Title"
+                        name="./title"
+                        xtype="textfield"/>
+                    <linkedinfeedactive
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to display the LinkedIn feed."
+                        fieldLabel="LinkedIn Feed Active"
+                        name="./linkedinfeedactive"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <linkedinaccount
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Include the LinkedIn account to pull the feed from."
+                        fieldLabel="LinkedIn Account"
+                        name="./linkedinaccount"
+                        xtype="textfield"/>
+                    <linkedinaccountapikey
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Include the LinkedIn API Key to get the information from the account."
+                        fieldLabel="LinkedIn Account API Key"
+                        name="./linkedinaccountapikey"
+                        xtype="textfield"/>
+                    <recentupdatestitle
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to use as the header of the updates."
+                        fieldLabel="Recent Updates Title"
+                        name="./recentupdatestitle"
+                        xtype="textfield"/>
+                    <interstitial
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Select the interstitial window to display when a link is clicked."
+                        fieldLabel="Interstitial for links"
+                        name="./interstitial"
+                        options="/services/article-module-interstitial?page=$PATH"
+                        type="select"
+                        xtype="selection"/>
+                    <onclick
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Code to execute when the article title is clicked."
+                        fieldLabel="JavaScript Onclick code"
+                        name="./onclick"
+                        width="250"
+                        xtype="textarea"/>
+                    <linkedinnotavailablemsg
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        fieldDescription="Text to display when the LinkedIn Feed is not available."
+                        fieldLabel="LinkedIn Not Available Message"
+                        height="200"
+                        name="./linkedinnotavailablemsg"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                            xtype="cqinclude"/>
+                    </linkedinnotavailablemsg>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

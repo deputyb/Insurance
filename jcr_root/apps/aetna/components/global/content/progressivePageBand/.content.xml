@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:isContainer="{Boolean}false"
+    jcr:description="Allows the author to configure questions to display to the final user and will display content based on their answers."
+    jcr:primaryType="cq:Component"
+    jcr:title="Progressive Page Band"
+    componentGroup="Aetna CQ Functional"/>

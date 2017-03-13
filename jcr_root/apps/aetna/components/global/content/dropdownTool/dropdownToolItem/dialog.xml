@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Dropdown Tool Item"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <optiontitle
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to include as the option title that will be displayed in the dropdown."
+                        fieldLabel="Option Title"
+                        name="./optiontitle"
+                        xtype="textfield"/>
+                    <includeborder
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to include a border around the option content."
+                        fieldLabel="Include content border?"
+                        name="./includeborder"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

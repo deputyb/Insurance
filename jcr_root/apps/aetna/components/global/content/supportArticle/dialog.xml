@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    title="Article Contact Us"
+    width="650"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to display as the title of the component"
+                        fieldLabel="Title"
+                        name="./title"
+                        xtype="textfield"/>
+                </items>
+            </configuration>
+            <col1
+                jcr:primaryType="cq:Panel"
+                title="Column 1">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <col1text
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        fieldDescription="Text to display in the first column of the component"
+                        fieldLabel="Column 1 Text"
+                        height="300"
+                        name="./col1text"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <links jcr:primaryType="nt:unstructured">
+                                <linkDialogConfig
+                                    jcr:primaryType="nt:unstructured"
+                                    height="{Long}400">
+                                    <linkAttributes jcr:primaryType="cq:WidgetCollection">
+                                        <class
+                                            jcr:primaryType="cq:Widget"
+                                            attribute="class"
+                                            fieldDescription="For example 'mobileNumber' for Telephone Number, or 'external' to show insterstitial window"
+                                            fieldLabel="Class"
+                                            xtype="textfield"/>
+                                        <linkAdvanced
+                                            jcr:primaryType="cq:Widget"
+                                            collapsed="{Boolean}true"
+                                            collapsible="{Boolean}true"
+                                            inputValue="advanced"
+                                            name="./linkdialog/cq:linkTrackingTab"
+                                            title="Link tracking"
+                                            xtype="dialogfieldset">
+                                            <items jcr:primaryType="cq:WidgetCollection">
+                                                <onclick
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="onclick"
+                                                    fieldDescription="JS code to be triggered on click event"
+                                                    fieldLabel="onClick"
+                                                    name="./linkdialog/cq:onClickEvent"
+                                                    xtype="textarea"/>
+                                            </items>
+                                        </linkAdvanced>
+                                    </linkAttributes>
+                                </linkDialogConfig>
+                            </links>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <subheading
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Subheading (span)"
+                                        tag="span"/>
+                                    <paragraph
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Paragraph"
+                                        tag="p"/>
+                                    <h2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Subheading (h2)"
+                                        tag="h2"/>
+                                    <heading
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading (h3)"
+                                        tag="h3"/>
+                                    <h4
+                                        jcr:primaryType="nt:unstructured"
+                                        description="H4 Tag"
+                                        tag="h4"/>
+                                    <h5
+                                        jcr:primaryType="nt:unstructured"
+                                        description="H5 Tag"
+                                        tag="h5"/>
+                                </formats>
+                            </paraformat>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <subheading
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="subheading"
+                                        text="Subheading"/>
+                                    <noMargin
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="noMargin"
+                                        text="No Margin"/>
+                                    <greenText
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="greenText"
+                                        text="Green Text"/>
+                                    <blueText
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="blueText"
+                                        text="Blue Text"/>
+                                    <whiteText
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="whiteText"
+                                        text="White Text"/>
+                                    <grayText
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="grayText"
+                                        text="Gray Text"/>
+                                    <underlined
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="underlined"
+                                        text="Underlined"/>
+                                    <arrowBlueSmall
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="arrowBlueSmall"
+                                        text="Arrow Blue Small"/>
+                                    <arrowBlueBig
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="arrowBlueBig"
+                                        text="Arrow Blue Big"/>
+                                    <arrowGraySmall
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="arrowGraySmall"
+                                        text="Arrow Gray Small"/>
+                                    <arrowWhiteSmall
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="arrowWhiteSmall"
+                                        text="Arrow White Small"/>
+                                    <arrowWhiteBig
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="arrowWhiteBig"
+                                        text="Arrow White Big"/>
+                                    <pdfLink
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="pdfLink"
+                                        text="PDF Link"/>
+                                    <icnCheckGreen
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="icnCheckGreen"
+                                        text="Icon Check Green"/>
+                                    <bulleted
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="bulleted"
+                                        text="Bulleted List"/>
+                                    <videoLink
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="videoLink"
+                                        text="Video Link"/>
+                                </styles>
+                            </styles>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </col1text>
+                    <isRichTextFlag
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="{Boolean}true"
+                        name="./textIsRich"
+                        value="true"
+                        xtype="hidden"/>
+                </items>
+            </col1>
+            <col2
+                jcr:primaryType="cq:Panel"
+                title="Column 2">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <col2text
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        fieldDescription="Text to display in the second column of the component"
+                        fieldLabel="Column 2 Text"
+                        height="300"
+                        name="./col2text"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <links jcr:primaryType="nt:unstructured">
+                                <linkDialogConfig
+                                    jcr:primaryType="nt:unstructured"
+                                    height="{Long}400">
+                                    <linkAttributes jcr:primaryType="cq:WidgetCollection">
+                                        <class
+                                            jcr:primaryType="cq:Widget"
+                                            attribute="class"
+                                            fieldDescription="For example 'mobileNumber' for Telephone Number, or 'external' to show insterstitial window"
+                                            fieldLabel="Class"
+                                            xtype="textfield"/>
+                                        <linkAdvanced
+                                            jcr:primaryType="cq:Widget"
+                                            collapsed="{Boolean}true"
+                                            collapsible="{Boolean}true"
+                                            inputValue="advanced"
+                                            name="./linkdialog/cq:linkTrackingTab"
+                                            title="Link tracking"
+                                            xtype="dialogfieldset">
+                                            <items jcr:primaryType="cq:WidgetCollection">
+                                                <onclick
+                                                    jcr:primaryType="nt:unstructured"
+                                                    attribute="onclick"
+                                                    fieldDescription="JS code to be triggered on click event"
+                                                    fieldLabel="onClick"
+                                                    name="./linkdialog/cq:onClickEvent"
+                                                    xtype="textarea"/>
+                                            </items>
+                                        </linkAdvanced>
+                                    </linkAttributes>
+                                </linkDialogConfig>
+                            </links>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <subheading
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Subheading (span)"
+                                        tag="span"/>
+                                    <paragraph
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Paragraph"
+                                        tag="p"/>
+                                    <h2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Subheading (h2)"
+                                        tag="h2"/>
+                                    <heading
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading (h3)"
+                                        tag="h3"/>
+                                    <h4
+                                        jcr:primaryType="nt:unstructured"
+                                        description="H4 Tag"
+                                        tag="h4"/>
+                                    <h5
+                                        jcr:primaryType="nt:unstructured"
+                                        description="H5 Tag"
+                                        tag="h5"/>
+                                </formats>
+                            </paraformat>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <styles
+                                jcr:primaryType="nt:unstructured"
+                                features="*">
+                                <styles jcr:primaryType="cq:WidgetCollection">
+                                    <subheading
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="subheading"
+                                        text="Subheading"/>
+                                    <noMargin
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="noMargin"
+                                        text="No Margin"/>
+                                    <greenText
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="greenText"
+                                        text="Green Text"/>
+                                    <blueText
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="blueText"
+                                        text="Blue Text"/>
+                                    <whiteText
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="whiteText"
+                                        text="White Text"/>
+                                    <grayText
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="grayText"
+                                        text="Gray Text"/>
+                                    <underlined
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="underlined"
+                                        text="Underlined"/>
+                                    <arrowBlueSmall
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="arrowBlueSmall"
+                                        text="Arrow Blue Small"/>
+                                    <arrowBlueBig
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="arrowBlueBig"
+                                        text="Arrow Blue Big"/>
+                                    <arrowGraySmall
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="arrowGraySmall"
+                                        text="Arrow Gray Small"/>
+                                    <arrowWhiteSmall
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="arrowWhiteSmall"
+                                        text="Arrow White Small"/>
+                                    <arrowWhiteBig
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="arrowWhiteBig"
+                                        text="Arrow White Big"/>
+                                    <pdfLink
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="pdfLink"
+                                        text="PDF Link"/>
+                                    <icnCheckGreen
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="icnCheckGreen"
+                                        text="Icon Check Green"/>
+                                    <bulleted
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="bulleted"
+                                        text="Bulleted List"/>
+                                    <videoLink
+                                        jcr:primaryType="nt:unstructured"
+                                        cssName="videoLink"
+                                        text="Video Link"/>
+                                </styles>
+                            </styles>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </col2text>
+                    <isRichTextFlag
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="{Boolean}true"
+                        name="./textIsRich"
+                        value="true"
+                        xtype="hidden"/>
+                </items>
+            </col2>
+        </items>
+    </items>
+</jcr:root>

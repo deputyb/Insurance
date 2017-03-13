@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    title="Step Process"
+    width="650"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to include on top of step title. (Optional)"
+                        fieldLabel="Main title"
+                        name="./title"
+                        xtype="textfield"/>
+                    <steptitle
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Text to include next to the step number."
+                        fieldLabel="Step title"
+                        name="./stepTitle"
+                        xtype="textfield"/>
+                    <steptitleURL
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}true"
+                        fieldDescription="Optional, no link will be added if this is left blank"
+                        fieldLabel="Step title URL"
+                        name="./steptitleURL"
+                        xtype="pathfield"/>
+                    <target
+                        jcr:primaryType="nt:unstructured"
+                        name="./target"
+                        xtype="hidden"/>
+                    <linktarget
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Check it if you want to open the link in a new window/tab"
+                        fieldLabel="New tab/window"
+                        name="./linktarget"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <usestepheaderclass
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to style the step title as a header."
+                        fieldLabel="Use Step Header Class"
+                        name="./usestepheaderclass"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <step
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Number to attach to the step title"
+                        fieldLabel="Step number"
+                        name="./step"
+                        xtype="numberfield"/>
+                    <text
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text.infinity.json"
+                        xtype="cqinclude"/>
+                </items>
+            </configuration>
+        </items>
+    </items>
+    <listeners
+        jcr:primaryType="nt:unstructured"
+        beforesubmit="function(dialog){ var target = dialog.getField('./target'); var linkTarget = dialog.getField('./linktarget'); if (linkTarget.getValue() == 'true') { target.setValue('_blank'); } else { target.setValue(''); } }"
+        loadContent="function(dialog){ var target = dialog.getField('./target'); var linkTarget = dialog.getField('./linktarget'); if (target.getValue() == '_blank') { linkTarget.setValue('true'); } else { linkTarget.setValue('false'); } }"/>
+</jcr:root>

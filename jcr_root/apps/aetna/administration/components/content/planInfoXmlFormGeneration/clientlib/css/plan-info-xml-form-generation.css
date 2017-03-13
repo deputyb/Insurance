@@ -1,0 +1,26 @@
+body {
+	background-color: #F0F0F0;
+}
+
+h1 {
+	border-top: none;
+}
+
+#results-wrapper {
+	height: 250px;
+	overflow: auto;
+	margin-bottom: 5px;	
+}
+
+#results thead:first-child tr:first-child th:first-child {
+	width: 15px;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.property-wrapper {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 10px 0;
+}

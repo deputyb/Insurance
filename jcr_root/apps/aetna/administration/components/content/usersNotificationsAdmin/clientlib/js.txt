@@ -1,0 +1,3 @@
+#base=js
+controller/users-notifications-admin-controller.js
+scripts.js

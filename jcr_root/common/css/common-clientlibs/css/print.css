@@ -1,0 +1,55 @@
+@media print{
+	
+	#headerBar {
+		position: static !important;
+	}
+	
+	@page{
+		margin-top: 50px;
+		margin-bottom: 70px;
+	}
+	.headerBar{
+		position:relative!important;
+	}	
+	.fixedHeaderWrap{
+		position:relative;
+	}
+	ul.mainMenu li{
+		display:none;
+	}
+	.searchwrap{
+		display:none;
+	}
+	.content-wrapper{
+		top:0px;
+	}
+	.breadcrumb a:after{
+		display:none;
+	}
+	
+	.legal a:after{
+		display:none;
+	}
+	
+	legalNotice a:after{
+		display:none;
+	}
+	
+	.breadcrumb ul.printShare{
+		display:none;
+	}
+	
+	.footerLink{
+		display:none;
+	}
+	
+	.icons .social{
+		display:none;
+	}
+	.suggestionsLink{
+		display:none;
+	}
+	.pathSelector{
+		display:none;
+	}
+}

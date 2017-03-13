@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Step Properties"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs jcr:primaryType="cq:TabPanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <common
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/cq/workflow/components/model/step/tab_common.infinity.json"
+                    xtype="cqinclude"/>
+                <configuration
+                    jcr:primaryType="cq:Panel"
+                    title="Configuration">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <sendemail
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Notify user via email."
+                            fieldLabel="Email"
+                            name="./metaData/SEND_EMAIL"
+                            type="checkbox"
+                            xtype="selection"/>
+                        <rejectionnotificationusergroup
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="User/Group to be notified that the workflow was rejected."
+                            fieldLabel="User/Group"
+                            name="./metaData/USER_GROUP"
+                            predicate="authorizable"
+                            rootPath="/home"
+                            rootTitle="Home"
+                            showTitlesInTree="true"
+                            xtype="pathfield"/>
+                        <emailtemplate
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Select the path of the template to use for this step."
+                            fieldLabel="Email Template"
+                            name="./metaData/EMAIL_PATH"
+                            rootPath="/"
+                            xtype="pathfield"/>
+                        <host
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Type the host name of your actual server for links inside email notifications."
+                            fieldLabel="Server Host"
+                            name="./metaData/HOST"
+                            xtype="textfield"/>
+                    </items>
+                </configuration>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

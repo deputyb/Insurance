@@ -1,0 +1,3 @@
+#base=css
+libs/cropper.min.css
+dam-renditions-creation.css

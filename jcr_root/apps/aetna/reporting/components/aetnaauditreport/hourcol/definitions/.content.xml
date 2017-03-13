@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    groupable="{Boolean}true"
+    type="date">
+    <queryBuilder
+        jcr:primaryType="nt:unstructured"
+        property="cq:time"/>
+    <filters jcr:primaryType="cq:WidgetCollection">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            filterType="string"
+            id="filter"/>
+    </filters>
+    <aggregates jcr:primaryType="cq:WidgetCollection">
+        <_x0031_
+            jcr:primaryType="nt:unstructured"
+            text="Minimum"
+            type="min"/>
+        <_x0032_
+            jcr:primaryType="nt:unstructured"
+            text="Maximum"
+            type="max"/>
+        <_x0033_
+            jcr:primaryType="nt:unstructured"
+            text="Average"
+            type="average"/>
+        <_x0034_
+            jcr:primaryType="nt:unstructured"
+            text="Count"
+            type="count"/>
+    </aggregates>
+    <data
+        jcr:primaryType="nt:unstructured"
+        resolver="const">
+        <preprocessing jcr:primaryType="nt:unstructured">
+            <apply
+                jcr:primaryType="nt:unstructured"
+                pattern="([A-Za-z]{3} [0-9]{1,2}, [0-9]{4} )([0-9]{1,2})(:[0-9]{1,2}:[0-9]{1,2} )([A-Z]{2})(.*)"
+                replace="$4$2"/>
+            <applyAfter jcr:primaryType="nt:unstructured">
+                <aggregated jcr:primaryType="nt:unstructured">
+                    <average
+                        jcr:primaryType="nt:unstructured"
+                        format="datedelta"/>
+                    <min
+                        jcr:primaryType="nt:unstructured"
+                        format="datedelta"/>
+                    <max
+                        jcr:primaryType="nt:unstructured"
+                        format="datedelta"/>
+                </aggregated>
+            </applyAfter>
+        </preprocessing>
+        <resolverConfig
+            jcr:primaryType="nt:unstructured"
+            AM1="01"
+            AM10="10"
+            AM11="11"
+            AM12="12"
+            AM2="02"
+            AM3="03"
+            AM4="04"
+            AM5="05"
+            AM6="06"
+            AM7="07"
+            AM8="08"
+            AM9="09"
+            PM1="13"
+            PM10="22"
+            PM11="23"
+            PM12="0"
+            PM2="14"
+            PM3="15"
+            PM4="16"
+            PM5="17"
+            PM6="18"
+            PM7="19"
+            PM8="20"
+            PM9="21"/>
+    </data>
+</jcr:root>

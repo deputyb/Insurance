@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Precert Search Results"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Results">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <resultsqty
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Number of results items to render"
+                        fieldLabel="Precert Results Quantity"
+                        name="./resultsqty"
+                        xtype="numberfield"/>
+                    <returnlinktext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to use in the Return link"
+                        fieldLabel="Return link text"
+                        name="./returnlinktext"
+                        xtype="textfield"/>
+                    <returnlinkurl
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Destination to redirect when the Return link is clicked"
+                        fieldLabel="Return link URL"
+                        name="./returnlinkurl"
+                        xtype="pathfield"/>
+                </items>
+            </configuration>
+            <disableresults
+                jcr:primaryType="cq:Panel"
+                title="Show_Results">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <turnoff
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to disable the search functionality"
+                        fieldLabel="Disable search functionality"
+                        name="./turnOffFunctionality"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <precertsearchnotavailablemsg
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        fieldDescription="Text to display when the Search functionality is not available."
+                        fieldLabel="Search Not Available Message"
+                        height="200"
+                        name="./precertsearchnotavailablemsg"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                            xtype="cqinclude"/>
+                    </precertsearchnotavailablemsg>
+                </items>
+            </disableresults>
+        </items>
+    </items>
+</jcr:root>

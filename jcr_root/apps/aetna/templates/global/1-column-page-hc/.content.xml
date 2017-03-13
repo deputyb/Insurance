@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Aetna Healthy Commitments Topic page template"
+    jcr:primaryType="cq:Template"
+    jcr:title="Aetna Healthy Commitments Topic Page"
+    allowedPaths="[/content(/.*)?]"
+    ranking="{Long}2"
+    shortTitle="Healthy Commitments Topic Page">
+    <jcr:content
+        cq:lastReplicated="{Date}2014-11-17T15:25:03.566-05:00"
+        cq:lastReplicatedBy="N629546"
+        cq:lastReplicationAction="Activate"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="aetna/components/global/page/1-column-page-hc"/>
+</jcr:root>

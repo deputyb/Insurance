@@ -1,0 +1,94 @@
+.topic-template-hc .section .container-fluid {
+	background: white;
+}
+
+.blockquote .row-fluid {
+	padding: 20px 0;
+}
+
+.blockquote .quote img {
+	max-width: 100%;	
+}
+
+.blockquote .quoteText {
+	color: #69747A;
+	font-family: "Foco W01 Light Italic";
+	font-size: 30px;
+	line-height: 48px;
+}
+
+.blockquote .close-quote {
+	float: right;
+	text-align: right;
+}
+
+.topic-template-hc .slideshow.section .container-fluid {
+	background: transparent;
+}
+
+.slideshow .row-fluid .bx-viewport {
+	background: white url(../images/slider-bg.png) repeat-x bottom;	
+}
+
+.topic-template .slideshow ul.bxslider {
+	list-style-type: none;
+	margin-left: 0;	
+}
+
+.slideshow .slideshow-wrapper {
+	z-index: 0;
+}
+
+.slideshow .bx-wrapper .bx-controls-direction a {
+	background-color: #00a3c6;
+	width: 47px;
+	height: 47px;
+}
+
+.slideshow .bx-wrapper .bx-prev {
+	background: url(../../../images/designs/global/spr-white-arrows.png) no-repeat;
+	left: 0;
+}
+
+.slideshow .bx-wrapper .bx-next {
+	background: url(../../../images/designs/global/spr-white-arrows.png) no-repeat -48px 0;
+	right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+	.topic-header-bg {
+		background-position: top center;
+	}
+	
+	.topic-header h1 {
+		color: #66970E;
+	}
+	
+	.topic-header p {
+		color: inherit;
+		font-size: inherit;
+	}
+	
+	.blockquote .quote-wrapper {
+		padding: 50px 0;
+	}
+	
+	.blockquote .close-quote {
+		margin-top: -70px;
+	}
+	
+	.topic-template-hc .slideshow.section .container-fluid .row-fluid.row-hc {
+		min-height: 390px;	
+	}
+}
+
+@media only screen and (min-width: 1px) and (max-width: 767px) {
+	.slideshow .slideshow-wrapper .pagination {
+		position: relative;
+		margin-top: 0;
+	}
+	
+	.slideshow .slideshow-wrapper .pagination-holder {
+		margin-top: -35px;
+	}
+}

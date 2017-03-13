@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    title="1-column header component"
+    width="650"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <footnotes
+                jcr:primaryType="cq:Panel"
+                title="Footnote / Disclaimer">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <styles
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select the style to render."
+                        fieldLabel="Select a style:"
+                        name="./style"
+                        type="combo"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <short
+                                jcr:primaryType="nt:unstructured"
+                                text="Disclaimer"
+                                value="disclaimer"/>
+                            <tall
+                                jcr:primaryType="nt:unstructured"
+                                text="Footnote"
+                                value="footnote"/>
+                        </options>
+                    </styles>
+                    <text
+                        jcr:primaryType="cq:Widget"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        height="300"
+                        hideLabel="{Boolean}true"
+                        name="./rtText"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                            xtype="cqinclude"/>
+                    </text>
+                </items>
+            </footnotes>
+            <legalNotices
+                jcr:primaryType="cq:Panel"
+                title="Legal Notices">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to include as the title of the item in legal notices"
+                        fieldLabel="Title"
+                        name="./title"
+                        xtype="textfield"/>
+                    <link
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Link to redirect to legal notices"
+                        fieldLabel="Link to legal notices:"
+                        name="./link"
+                        xtype="pathfield"/>
+                    <onclick
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="JS code to add as the onclick attribute"
+                        fieldLabel="OnClick"
+                        name="./onclick"
+                        xtype="textfield"/>
+                    <text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to include as legal notices"
+                        fieldLabel="Text for legal notices"
+                        hideLabel="{Boolean}true"
+                        name="./text"
+                        xtype="textarea"/>
+                </items>
+            </legalNotices>
+        </items>
+    </items>
+</jcr:root>

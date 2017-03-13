@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Column Layout"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <layout
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="false"
+                        fieldDescription="Layout type to use"
+                        fieldLabel="Layout"
+                        name="./layout"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <twoColumn
+                                jcr:primaryType="nt:unstructured"
+                                text="2 Column"
+                                value="2"/>
+                            <threeColumn
+                                jcr:primaryType="nt:unstructured"
+                                text="3 Column"
+                                value="3"/>
+                            <fourColumn
+                                jcr:primaryType="nt:unstructured"
+                                text="4 Column"
+                                value="4"/>
+                            <fiveColumn
+                                jcr:primaryType="nt:unstructured"
+                                text="5 Column"
+                                value="5"/>
+                        </options>
+                    </layout>
+                    <useGutter
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Check it if you want to use the gutter between columns"
+                        fieldLabel="Use gutter"
+                        name="./useGutter"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <useColumnDivision
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Check it if you want to use the a division line between columns"
+                        fieldLabel="Use column division"
+                        name="./useColumnDivision"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <imgIgnoreColumnDivision
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Adds a negative margin to the image"
+                        fieldLabel="Add negative margin to image to counter column division"
+                        name="./imgIgnoreColumnDivision"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <includePadding
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Check it if you want to include a padding at the top and bottom of the component"
+                        fieldLabel="Include padding"
+                        name="./includePadding"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <backgroundColor
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="false"
+                        default="whitebg"
+                        fieldDescription="Background color to use in the column content"
+                        fieldLabel="Background color"
+                        name="./backgroundColor"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <white
+                                jcr:primaryType="nt:unstructured"
+                                text="White"
+                                value="whitebg"/>
+                            <transparentwhite
+                                jcr:primaryType="nt:unstructured"
+                                text="Transparent White"
+                                value="transparent-whitebg"/>
+                            <gray
+                                jcr:primaryType="nt:unstructured"
+                                text="Gray"
+                                value="graybg"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                text="Green"
+                                value="greenbg"/>
+                            <no-background
+                                jcr:primaryType="nt:unstructured"
+                                text="No background"
+                                value="no-bg"/>
+                        </options>
+                    </backgroundColor>
+                </items>
+            </configuration>
+            <text
+                jcr:primaryType="cq:Panel"
+                title="Text">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Text to use as the header of the column layout component"
+                        fieldLabel="Module Header"
+                        name="./title"
+                        xtype="textfield"/>
+                    <subtitle
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Text to use as the subhead of the column layout component"
+                        fieldLabel="Subhead"
+                        name="./subtitle"
+                        xtype="textfield"/>
+                </items>
+            </text>
+        </items>
+    </items>
+</jcr:root>

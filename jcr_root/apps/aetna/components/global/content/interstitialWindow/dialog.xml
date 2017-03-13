@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    layout="form"
+    title="Interstitial Window Configuration"
+    width="700"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <id
+            jcr:primaryType="cq:Widget"
+            fieldDescription="HTML id to include to the actual interstitial. This is required when you have more than one interstitial window."
+            fieldLabel="HTML id"
+            name="./id"
+            xtype="textfield"/>
+        <inheritInterstitial
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Check it if this interstitial will be inherited to children pages. Applies only for non-default interstitials."
+            fieldLabel="Inherit Interstitial"
+            name="./inheritInterstitial"
+            type="checkbox"
+            xtype="selection"/>
+        <title
+            jcr:primaryType="cq:Widget"
+            allowBlank="false"
+            fieldDescription="Title for pop up window"
+            fieldLabel="Title"
+            name="./title"
+            xtype="textfield"/>
+        <subtitle
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Subtitle for pop up window"
+            fieldLabel="Subtitle"
+            name="./subtitle"
+            xtype="textfield"/>
+        <backLink
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Label for link to get back"
+            fieldLabel="Label to get back"
+            name="./backLink"
+            xtype="textfield"/>
+        <continueLink
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Label for link to continue to next page"
+            fieldLabel="Label to continue"
+            name="./continueLink"
+            xtype="textfield"/>
+        <continueLinkSameWindow
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Check it if you want to open the Continue link in the same window"
+            fieldLabel="Continue link in same window"
+            name="./continueLinkSameWindow"
+            type="checkbox"
+            xtype="selection"/>
+        <detailMessage
+            jcr:primaryType="cq:Widget"
+            allowBlank="false"
+            externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+            fieldDescription="Message to shown under the title"
+            fieldLabel="Message"
+            height="200"
+            name="./detailMessage"
+            width="200"
+            xtype="richtext">
+            <rtePlugins
+                jcr:primaryType="cq:Widget"
+                path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                xtype="cqinclude"/>
+        </detailMessage>
+        <detailLargeMessage
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Check it if the detail message is large"
+            fieldLabel="Large detail message"
+            name="./detailLargeMessage"
+            type="checkbox"
+            xtype="selection"/>
+        <exitIcon
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Check it if you want to include the exit icon"
+            fieldLabel="Exit Icon"
+            name="./exiticon"
+            type="checkbox"
+            xtype="selection"/>
+        <layout
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Select the style that you want to use"
+            fieldLabel="Layout"
+            name="./layout"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <title-subtitle-links-message
+                    jcr:primaryType="nt:unstructured"
+                    text="Title - Subtitle - Links - Message"
+                    value="title-subtitle-links-message"/>
+                <title-subtitle-message-links
+                    jcr:primaryType="nt:unstructured"
+                    text="Title - Subtitle - Message - Links"
+                    value="title-subtitle-message-links"/>
+            </options>
+        </layout>
+    </items>
+</jcr:root>

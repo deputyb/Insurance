@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="US Map Popup"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <state
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Select the state that will represent the actual US Map Link."
+                        fieldLabel="State"
+                        name="./state"
+                        options="$PATH.options.json"
+                        type="select"
+                        xtype="selection"/>
+                    <statename
+                        jcr:primaryType="cq:Widget"
+                        name="./statename"
+                        xtype="hidden"/>
+                    <popupcontent
+                        jcr:primaryType="cq:Widget"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        fieldDescription="Copy to use as the popup content."
+                        fieldLabel="Popup Content"
+                        height="200"
+                        name="./popupcontent"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                            xtype="cqinclude"/>
+                    </popupcontent>
+                </items>
+            </configuration>
+        </items>
+    </items>
+    <listeners
+        jcr:primaryType="nt:unstructured"
+        beforesubmit="function(dialog){ var stateName = dialog.getField('./state').comboBox.el.dom.value; dialog.getField('./statename').setValue(stateName); }"/>
+</jcr:root>

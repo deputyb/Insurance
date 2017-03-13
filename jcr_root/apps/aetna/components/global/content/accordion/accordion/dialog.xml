@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Accordion"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <itemsqty
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Number of items to include in the accordion"
+                        fieldLabel="Items quantity"
+                        name="./itemsqty"
+                        xtype="numberfield"/>
+                    <nopaddingclass
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to include noPadding class to the accordion"
+                        fieldLabel="No Padding Class"
+                        name="./nopaddingclass"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <noborderclass
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to include noBorder class to the accordion"
+                        fieldLabel="No Border Class"
+                        name="./noborderclass"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <usedeeplinking
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to use deeplinking to access the accordion items"
+                        fieldLabel="Use deeplinking"
+                        name="./usedeeplinking"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <includeexpansionanalytics
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="true"
+                        fieldDescription="Check it if you want to include the expansion analytics tracking"
+                        fieldLabel="Expansion analytics"
+                        name="./includeexpansionanalytics"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

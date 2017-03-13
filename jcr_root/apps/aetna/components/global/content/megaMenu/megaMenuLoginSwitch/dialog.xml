@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Mega Menu Login Switch"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <loginavailable
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to display the login form."
+                        fieldLabel="Is Login available?"
+                        name="./loginavailable"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <text
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text.infinity.json"
+                        xtype="cqinclude"/>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

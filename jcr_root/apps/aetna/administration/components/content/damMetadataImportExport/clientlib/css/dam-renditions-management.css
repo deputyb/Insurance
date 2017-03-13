@@ -1,0 +1,42 @@
+body {
+	background-color: #F0F0F0;
+	margin-bottom: 20px;
+}
+
+h1 {
+	border-top: none;
+}
+
+label {
+	font-weight: bold;	
+}
+
+#results-wrapper {
+	height: 350px;
+	overflow: auto;
+	margin-bottom: 5px;
+	margin-top: 20px;	
+}
+
+#results thead:first-child tr:first-child th:first-child {
+	width: 15px;
+}
+
+.align-right {
+	text-align: right;
+}
+
+#actions-wrapper {
+	width: 100%;
+	float: left;
+	margin: 10px;
+}
+
+#tool-results {
+	float: left;
+	line-height: 30px;
+}
+
+#path-wrapper input {
+	width: 100%;
+}

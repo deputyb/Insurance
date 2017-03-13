@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Form"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Name to use for the form. If you leave it blank, 'MailServlet' will be used."
+                        fieldLabel="Name"
+                        name="./name"
+                        xtype="textfield"/>
+                    <action
+                        jcr:primaryType="cq:Widget"
+                        allowblank="false"
+                        fieldDescription="Path of the form endpoint submission."
+                        fieldLabel="Action"
+                        name="./action"
+                        xtype="textfield"/>
+                    <method
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="false"
+                        defaultValue="POST"
+                        fieldDescription="HTTP method to submit the form."
+                        fieldLabel="Method"
+                        name="./method"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <get
+                                jcr:primaryType="nt:unstructured"
+                                text="GET"
+                                value="GET"/>
+                            <post
+                                jcr:primaryType="nt:unstructured"
+                                text="POST"
+                                value="POST"/>
+                        </options>
+                    </method>
+                    <multipartformdata
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to include multipart/form-data attribute in the form."
+                        fieldLabel="multipart/form-data"
+                        name="./multipartformdata"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <newtab
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to submit the form in a new tab/window."
+                        fieldLabel="New tab/window"
+                        name="./newtab"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <mobilesectiontitles
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Include the titles of the mobile sections to work as a wizard."
+                        fieldLabel="Mobile Sections"
+                        name="./mobilesectiontitles"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield"/>
+                    </mobilesectiontitles>
+                </items>
+            </configuration>
+            <buttons
+                jcr:primaryType="cq:Panel"
+                title="Buttons">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <previousbuttontext
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        defaultValue="Previous"
+                        fieldDescription="Copy to use for the Previous button in the mobile layout wizard."
+                        fieldLabel="Previous Button Text"
+                        name="./previousbuttontext"
+                        xtype="textfield"/>
+                    <nextbuttontext
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        defaultValue="Next"
+                        fieldDescription="Copy to use for the Next button in the mobile layout wizard."
+                        fieldLabel="Next Button Text"
+                        name="./nextbuttontext"
+                        xtype="textfield"/>
+                    <submittext
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Copy to use as the Submit button value. Leave it blank to hide the button."
+                        fieldLabel="Submit Button Text"
+                        name="./submittext"
+                        xtype="textfield"/>
+                    <submitwhitebutton
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if the Submit button should has a white background."
+                        fieldLabel="White Submit Button"
+                        name="./submitwhitebutton"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <clearformbtntext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to use as the Clear Form button value."
+                        fieldLabel="Clear Form Button Text"
+                        name="./clearformbtntext"
+                        xtype="textfield"/>
+                </items>
+            </buttons>
+            <javascript
+                jcr:primaryType="cq:Panel"
+                title="JavaScript">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <jscode
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Code to execute for the different elements of the form. Will only be executed in Preview mode."
+                        fieldLabel="JavaScript code"
+                        height="200"
+                        name="./jscode"
+                        xtype="textarea"/>
+                </items>
+            </javascript>
+            <previewform
+                jcr:primaryType="cq:Panel"
+                title="Preview-Form">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <previewform
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Include a preview form before submit process."
+                        fieldLabel="Preview Form"
+                        name="./previewform"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Preview Form Title"
+                        name="./previewformtitle"
+                        xtype="textfield"/>
+                </items>
+            </previewform>
+        </items>
+    </items>
+</jcr:root>

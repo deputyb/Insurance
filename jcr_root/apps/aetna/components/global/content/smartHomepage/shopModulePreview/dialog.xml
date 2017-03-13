@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Shop Module Preview"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <text
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text that will be displayed in the module."
+                        fieldLabel="Text"
+                        name="./text"
+                        xtype="textfield"/>
+                    <linktext
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Link text that will be displayed in the module."
+                        fieldLabel="Closed layout link text"
+                        name="./linktext"
+                        xtype="textfield"/>
+                    <linkinterstitial
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="false"
+                        fieldDescription="Select the interstitial window to display when the link is clicked."
+                        fieldLabel="Interstitial to Display"
+                        name="./linkinterstitial"
+                        options="/services/article-module-interstitial?page=/content/aetna/en_us/index"
+                        type="select"
+                        xtype="selection"/>
+                    <linkonclick
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="JS that will be executed when the link is clicked."
+                        fieldLabel="Link OnClick method"
+                        name="./linkonclick"
+                        xtype="textarea"/>
+                </items>
+            </configuration>
+            <mobileconfiguration
+                jcr:primaryType="cq:Panel"
+                title="Mobile Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <mobilelinks1
+                        jcr:primaryType="cq:Widget"
+                        title="Mobile link 1"
+                        xtype="fieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <text
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Text"
+                                name="./mobilelink1text"
+                                width="250"
+                                xtype="textfield"/>
+                            <url
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Address that the link will redirect for desktop"
+                                fieldLabel="Desktop URL"
+                                name="./desktoplink1url"
+                                width="250"
+                                xtype="pathfield"/>
+                            <mobileurl
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Address that the link will redirect for mobile"
+                                fieldLabel="Mobile URL"
+                                name="./mobilelink1url"
+                                width="250"
+                                xtype="pathfield"/>
+                            <target
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Open in a new window/tab"
+                                name="./mobilelink1targetblank"
+                                type="checkbox"
+                                xtype="selection"/>
+                            <interstitial
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Select the interstitial window to display when the link is clicked."
+                                fieldLabel="Interstitial to Display"
+                                name="./mobilelink1interstitial"
+                                options="/services/article-module-interstitial?page=/content/aetna/en_us/index"
+                                type="select"
+                                width="80%"
+                                xtype="selection"/>
+                            <interstitialdeeplink
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="ID of the interstitial deep link configured in the market"
+                                fieldLabel="Interstitial Deep Link"
+                                name="./mobilelink1interstitialdeeplink"
+                                width="250"
+                                xtype="textfield"/>
+                            <onclick
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="OnClick"
+                                name="./mobilelink1onclick"
+                                width="250"
+                                xtype="textarea"/>
+                        </items>
+                    </mobilelinks1>
+                    <mobilelinks2
+                        jcr:primaryType="cq:Widget"
+                        title="Mobile link 2"
+                        xtype="fieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <text
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Text"
+                                name="./mobilelink2text"
+                                width="250"
+                                xtype="textfield"/>
+                            <url
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Address that the link will redirect for desktop"
+                                fieldLabel="Desktop URL"
+                                name="./desktoplink2url"
+                                width="250"
+                                xtype="pathfield"/>
+                            <mobileurl
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Address that the link will redirect for mobile"
+                                fieldLabel="Mobile URL"
+                                name="./mobilelink2url"
+                                width="250"
+                                xtype="pathfield"/>
+                            <target
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Open in a new window/tab"
+                                name="./mobilelink2targetblank"
+                                type="checkbox"
+                                xtype="selection"/>
+                            <interstitial
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Select the interstitial window to display when the link is clicked."
+                                fieldLabel="Interstitial to Display"
+                                name="./mobilelink2interstitial"
+                                options="/services/article-module-interstitial?page=/content/aetna/en_us/index"
+                                type="select"
+                                width="80%"
+                                xtype="selection"/>
+                            <interstitialdeeplink
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="ID of the interstitial deep link configured in the market"
+                                fieldLabel="Interstitial Deep Link"
+                                name="./mobilelink2interstitialdeeplink"
+                                width="250"
+                                xtype="textfield"/>
+                            <onclick
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="OnClick"
+                                name="./mobilelink2onclick"
+                                width="250"
+                                xtype="textarea"/>
+                        </items>
+                    </mobilelinks2>
+                </items>
+            </mobileconfiguration>
+        </items>
+    </items>
+</jcr:root>

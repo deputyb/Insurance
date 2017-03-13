@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="dam:Asset">
+    <jcr:content
+        cq:lastReplicated="{Date}2015-02-05T15:14:51.985-05:00"
+        cq:lastReplicatedBy="N629546"
+        cq:lastReplicationAction="Activate"
+        jcr:data="{Binary}"
+        jcr:lastModified="{Date}2014-12-05T11:53:51.719-05:00"
+        jcr:lastModifiedBy="A814098"
+        jcr:mimeType="image/jpeg"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Bitsperpixel="{Long}24"
+            dam:extracted="{Date}2014-10-31T10:32:42.204-04:00"
+            dam:Fileformat="JPEG"
+            dam:MIMEtype="image/jpeg"
+            dam:Numberofimages="{Long}1"
+            dam:Numberoftextualcomments="{Long}0"
+            dam:Physicalheightindpi="{Long}-1"
+            dam:Physicalheightininches="{Double}-1.0"
+            dam:Physicalwidthindpi="{Long}-1"
+            dam:Physicalwidthininches="{Double}-1.0"
+            dam:Progressive="no"
+            dam:sha1="9a9cdf8892d4b572c1c79d164f7cea96d1242095"
+            dam:size="{Long}6786"
+            dc:format="image/jpeg"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            tiff:ImageLength="{Long}63"
+            tiff:ImageWidth="{Long}970"
+            xmp:CreatorTool="Adobe Photoshop CS6 (Windows)"
+            xmpMM:DocumentID="xmp.did:A2301AEE4FCB11E49D55D98C6BC5CD0A"
+            xmpMM:InstanceID="xmp.iid:A2301AED4FCB11E49D55D98C6BC5CD0A"
+            xmpMM:OriginalDocumentID="xmp.did:37CABFF0A219E411A97BF699BDCFD4FB">
+            <xmpMM:DerivedFrom
+                jcr:primaryType="nt:unstructured"
+                stRef:documentID="xmp.did:14001C7E4FCB11E4A7AE801E0499B98A"
+                stRef:instanceID="xmp.iid:14001C7D4FCB11E4A7AE801E0499B98A"
+                newRendition="{Boolean}true"/>
+        </metadata>
+        <related jcr:primaryType="nt:unstructured"/>
+        <renditions/>
+    </jcr:content>
+</jcr:root>

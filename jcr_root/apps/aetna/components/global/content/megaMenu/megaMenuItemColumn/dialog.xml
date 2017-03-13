@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Mega Menu Item Title"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <isDoubleColumn
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to use a double width column"
+                        fieldLabel="Double Column"
+                        name="./isDoubleColumn"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <isQuickLinks
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want show a quicklinks visual area for the column"
+                        fieldLabel="Quick Links Visual Area Style"
+                        name="./isQuickLinks"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

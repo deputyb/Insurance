@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    helpPath="en/cq/current/wcm/default_components.html#Text"
+    title="Biography Item"
+    width="650"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Text Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <heading
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to be rendered as the name of the biography item"
+                        fieldLabel="Name"
+                        name="./heading"
+                        xtype="textfield"/>
+                    <subheading1
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to be rendered as the title of the biography item"
+                        fieldLabel="Bio Title"
+                        name="./subheading1"
+                        xtype="textfield"/>
+                    <subheading2
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to be rendered as the Organization / Committee of the biography item"
+                        fieldLabel="Organization / Committee"
+                        name="./subheading2"
+                        xtype="textfield"/>
+                    <teasertext
+                        jcr:primaryType="cq:Widget"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        fieldDescription="Text to include as the teaser of the biography item"
+                        fieldLabel="Teaser text"
+                        height="200"
+                        name="./teasertext"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                            xtype="cqinclude"/>
+                    </teasertext>
+                    <hiddentext
+                        jcr:primaryType="cq:Widget"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        fieldDescription="Text to include as the hidden of the biography item"
+                        fieldLabel="Hidden text"
+                        height="200"
+                        name="./hiddentext"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                            xtype="cqinclude"/>
+                    </hiddentext>
+                </items>
+            </tab1>
+            <image
+                jcr:primaryType="cq:Widget"
+                allowBlank="false"
+                cropParameter="./image/imageCrop"
+                ddGroups="[media]"
+                fieldLabel="Image"
+                fileNameParameter="./image/fileName"
+                fileReferenceParameter="./image/fileReference"
+                mapParameter="./image/imageMap"
+                name="./image/file"
+                requestSuffix="/image.img.png"
+                rotateParameter="./image/imageRotate"
+                sizeLimit="100"
+                title="Image"
+                uploadUrl="/tmp/upload/*"
+                xtype="smartimage"/>
+            <imageconfigs
+                jcr:primaryType="cq:Widget"
+                title="Image Config"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <resTypeImage
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="true"
+                        name="./image/sling:resourceType"
+                        value="foundation/components/image"
+                        xtype="hidden"/>
+                    <imageConfigs
+                        jcr:primaryType="cq:Widget"
+                        title="Image configuration"
+                        xtype="fieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <alt
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image Alt Text"
+                                name="./imageAlt"
+                                width="250"
+                                xtype="textfield"/>
+                            <imageTitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image Title"
+                                name="./imageTitle"
+                                width="250"
+                                xtype="textfield"/>
+                            <imageURL
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image URL"
+                                name="./imageURL"
+                                width="250"
+                                xtype="pathfield"/>
+                        </items>
+                    </imageConfigs>
+                </items>
+            </imageconfigs>
+        </items>
+    </items>
+</jcr:root>

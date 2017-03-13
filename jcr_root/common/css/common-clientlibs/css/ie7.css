@@ -1,0 +1,122 @@
+/*BEGIN: ROUTER TEMPLATE STYLES*/
+html{
+	overflow:auto;
+}
+body {
+    overflow: auto;
+}
+.router{
+	background: #ffffff url(../../../images/designs/routerbg.jpg) no-repeat center top;
+	position: relative;
+	top: 0px;
+/*	position: relative;
+	width: 1280px;
+	margin: 0 auto*/
+}
+.router .span5.offset6 {
+	padding-left: 4.2%;
+}
+.router .visible-tablet{
+	display:block !important;
+}
+.router .visible-desktop{
+	display:block !important;
+}
+.router .visible-phone{
+	display: none !important;
+}
+.router .routerContent .row-fluid .span2{
+	width: 15%;
+}
+.router .routerHeadingLinks .span6{
+	width: 50%;
+}
+.router .routerHeadingLinks .span5.offset1{
+	margin-left: 0%;
+	width: 40%;
+	text-indent: -17px
+}
+.router .icn{
+	top: -1px;
+}
+.router .left-align {
+	margin-left: 27px;
+}
+.router-content footer .fivecolumn .span3{
+	width: 15%;
+}
+.router-content footer{
+	top: -24px;
+}
+.ie7Show{
+	display:block !important;
+}
+.ie7Hide.visible-tablet.visible-desktop{
+	display:none !important;
+}
+.router .marBot30{
+	margin-bottom: 30px;
+}
+.router .superscript{
+	margin-right: 15px;
+}
+/*.routerTopLinks .arrowBlueSmall, .routerTopLinks a:hover.arrowBlueSmall{
+	background: none;
+}*/
+
+.alertBar {
+	position: relative;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	background: #e9711f;
+}
+
+.alertBar .inner {
+	max-width: 1200px;
+	position: relative;
+	margin: 0 auto;
+	background: url(../../../images/designs/router/alert.png) no-repeat 0px 10px;
+	padding-left: 40px;
+}
+
+.alertBar .inner p {
+	line-height: 50px;
+	color: #ffffff;
+}
+
+.alertBar .inner a {
+	line-height: 50px;
+	color: #ffffff;
+}
+
+.animContainer {
+	position: relative;
+	margin: 0 auto;
+	background: url(../../../images/designs/router/animated_stretch.gif) no-repeat center 0px;
+	top: 248px;
+}
+.container-fluid.routerHeadingLinks{
+	padding-top: 50px;
+}
+.routerContent {
+	margin-top: 30px;
+}
+.router .routerContent .parsys .columnLayout {
+	border-bottom:#dadad9 26px solid;
+}
+a[href]:after {
+	background: none;
+}
+.routerTopLinks .icn {
+	display:block;
+	float: left;
+	margin: 3px 10px 0 0;
+}
+.biographyItem {
+	display: block !important;
+}
+
+
+
+/*END ROUTER TEMPLATE STYLES*/

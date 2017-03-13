@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Table"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <rowsqty
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Number of rows to render"
+                        fieldLabel="Rows"
+                        name="./rowsqty"
+                        xtype="numberfield"/>
+                    <colsqty
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Number of columns to render"
+                        fieldLabel="Columns"
+                        name="./colsqty"
+                        xtype="numberfield"/>
+                    <colssamewidth
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to make use the same widht for all the columns"
+                        fieldLabel="Columns of same width"
+                        name="./colssamewidth"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <firstrowheader
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to render the first row of the table as a header row"
+                        fieldLabel="First row as header"
+                        name="./firstrowheader"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <firstrowcolspan
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Makes the first row one column"
+                        fieldLabel="Colspan first row?"
+                        name="./firstrowcolspan"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <removetextspacing
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check if you want to remove the Text spacing in each of the cells"
+                        fieldLabel="Remove Text Spacing"
+                        name="./removetextspacing"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <classes
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Classes to include to the table"
+                        fieldLabel="Classes"
+                        name="./classes"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            type="select"
+                            width="155"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <onerow
+                                    jcr:primaryType="nt:unstructured"
+                                    text="One Row"
+                                    value="oneRow"/>
+                                <bgrows
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Alternate Shades"
+                                    value="bgrows"/>
+                                <mobileOverflow
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Mobile Overflow"
+                                    value="mobileOverflow"/>
+                                <mobileStack
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Mobile Stack Table"
+                                    value="stacktable"/>
+                            </options>
+                        </fieldConfig>
+                    </classes>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

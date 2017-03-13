@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Aetna page template containing only a Right Hand Channel content"
+    jcr:primaryType="cq:Template"
+    jcr:title="Aetna Right Hand Channel"
+    allowedPaths="[/content(/.*)?]"
+    ranking="{Long}3"
+    shortTitle="Right Hand Channel Page">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="aetna/components/global/page/RHC-page"/>
+</jcr:root>

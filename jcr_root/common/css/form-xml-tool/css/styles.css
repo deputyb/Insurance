@@ -1,0 +1,108 @@
+.tool .drop-down-show-hide {
+	padding-bottom: 0;
+}
+
+.tool.business-states {
+	min-height: 100px;
+}
+
+.tool.business-states .state-name {
+	display: none;
+}
+
+#forms-wrapper .row-fluid [class*="span"],
+.article-template .module.smallText .row-fluid .span12 {
+	padding: 0 2.5%;
+	min-height: 0;
+}
+
+#forms-wrapper .form-section {
+	padding: 25px 0;
+}
+
+.tool.business-states #forms-wrapper .form-section.frame {
+	border: 2px solid #dbdbdb;
+	padding: 20px 25px;
+	margin-top: 30px;
+}
+
+#forms-wrapper .state-name {
+	color: #69747a;
+	font-size: 1.25em;	
+}
+
+#forms-wrapper .accordion-container {
+	border-bottom: 2px solid #dddddd;
+}
+
+#forms-wrapper .accordion-container h3.ui-accordion-header,
+#forms-wrapper .ui-corner-all, 
+#forms-wrapper .ui-corner-bottom, 
+#forms-wrapper .ui-corner-right, 
+#forms-wrapper .ui-corner-br {
+	margin: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+#forms-wrapper .accordion-container .ui-accordion-content,
+#forms-wrapper .accordion-container h3.ui-accordion-header {
+	border-top: 2px solid #dddddd;
+	border-bottom: none;
+}
+
+#forms-wrapper .accordion-container .ui-accordion-content.ui-accordion-content-active {
+	border-top: none;
+}
+
+#forms-wrapper .accordion-container h3.ui-accordion-header {
+	font-size: 1.35em;
+}
+
+#forms-wrapper .accordion-container h3.ui-accordion-header.ui-state-active {
+	background-position: 100.5%;
+}
+
+#forms-wrapper .accordion-container a {
+	color: #0ba2c3;
+}
+
+.secondary-nav {
+	margin: 10px 0 25px;
+}
+
+.secondary-nav ul, 
+#cpt-codes {
+	list-style: none;	
+}
+
+.secondary-nav li,
+#cpt-codes li { 
+	float: left;
+}
+
+.secondary-nav li.noLink {
+	border-right: 2px solid #d0d1d3;
+	padding-right: 12px;
+	margin-right: 12px;
+}
+
+#cpt-codes li {
+	margin-right: 8px;
+	list-style: none;
+	margin-left: 0;
+}
+
+#cpt-codes li a {
+	text-decoration: underline;
+	font-weight: normal;	
+}
+
+.search-subtitle {
+	float: left;
+	margin-right: 10px;
+}
+
+.results-static .tableHeaderBold {
+    background-color: #D1E1E1;
+}

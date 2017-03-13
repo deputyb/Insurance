@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Aetna Topic with Sidebar page template"
+    jcr:primaryType="cq:Template"
+    jcr:title="Aetna Topic Page with Sidebar"
+    allowedPaths="[/content(/.*)?]"
+    ranking="{Long}4"
+    shortTitle="Member Topic page">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="aetna/components/global/page/2-column-image-header-page"/>
+</jcr:root>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    service.special_link_patterns="healthinsurance.aetna.com/"
+    service.special_link_prefix="[javascript:,data:,mailto:,#,&lt;!--,${,health-insurance-exchange/,../,tel:,http://healthinsurance.aetna.com/media/virtual-benefits-advisor.html,http://www.ct.gov/cid/site/default.asp?ctportalPNavCtr=|27192|#45066,http://www.aetna.com/assets_aetnaCom,http://www.aetnaresourceconnection.com,http://www.fda.gov,http://www,http://fm.formularynavigator.com,https://fm.formularynavigator.com]"/>

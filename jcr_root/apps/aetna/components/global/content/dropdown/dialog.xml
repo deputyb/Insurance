@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="footer-dialog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Links
+                jcr:primaryType="cq:Panel"
+                title="Links">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <default
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Default Option:"
+                        name="./default"
+                        xtype="textfield"/>
+                    <itemsList
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="List of URLs"
+                        fieldLabel="URLs"
+                        name="./links"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="false"
+                            width="155"
+                            xtype="aetna.dditem"/>
+                    </itemsList>
+                </items>
+            </Links>
+        </items>
+    </items>
+</jcr:root>

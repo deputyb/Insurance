@@ -1,0 +1,2 @@
+#base=js
+controller/bulk-update-controller.js

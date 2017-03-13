@@ -1,0 +1,1023 @@
+.modIntMap {
+    background: none repeat scroll 0 0 white;
+    padding: 48px 0;
+    position: relative;
+}
+.usIntMap {
+    position: relative;
+}
+.intMap {
+    background: url("../../../images/designs/global/map/aetnamap-gray-off.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 394px;
+    margin: 0 auto;
+    position: relative;
+    width: 1032px;
+}
+.intMap .state a {
+    cursor: default;
+    position: absolute;
+    z-index: 5;
+}
+.intMap .state.on a {
+    background-image: url("../../../images/designs/global/map/aetnamap-on.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    z-index: 2;
+}
+.modIntMap .infoBox {
+    background: none repeat scroll 0 0 white;
+    box-shadow: 3px 3px 2px 0 rgba(0, 0, 0, 0.3);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    display: none;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+.modIntMap .infoBox h4 {
+    color: #5E9732;
+    font-family: Calibri,arial,sans-serif;
+    font-size: 1.875em;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+.modIntMap .infoBox p {
+    margin-bottom: 0;
+    padding-right: 30px;
+}
+.modIntMap .infoBox .close {
+    background: url("../../../images/designs/global/map/close.jpg") no-repeat scroll 0 0 transparent;
+    height: 14px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 14px;
+}
+.mapSubText {
+    margin-top: 24px;
+}
+.modIntMap .selectWrap {
+    float: right;
+}
+.aetnamap-ak {
+    height: 174px;
+    left: 28px;
+    top: 31px;
+    width: 175px;
+}
+.aetnamap-ak:hover, .ak.on a {
+    background-position: -5px -5px;
+    height: 174px;
+    width: 175px;
+}
+.aetnamap-al {
+    height: 62px;
+    left: 746px;
+    position: absolute;
+    top: 249px;
+    width: 38px;
+}
+.aetnamap-al:hover, .al.on a {
+    background-position: -190px -5px;
+    height: 72px;
+    width: 42px;
+}
+.aetnamap-ar {
+    height: 22px;
+    left: 670px;
+    top: 226px;
+    width: 50px;
+}
+.aetnamap-ar.two {
+    height: 30px;
+    left: 672px;
+    top: 249px;
+    width: 35px;
+}
+.aetnamap-ar:hover, .aetnamap-ar.two:hover, .ar.on a {
+    background-position: -242px -5px;
+    height: 52px;
+    left: 668px;
+    top: 226px;
+    width: 59px;
+}
+.aetnamap-az {
+    height: 88px;
+    left: 411px;
+    top: 218px;
+    width: 73px;
+}
+.aetnamap-az:hover, .az.on a {
+    background-position: -311px -5px;
+    height: 88px;
+    width: 73px;
+}
+.aetnamap-ca {
+    height: 21px;
+    left: 364px;
+    top: 217px;
+    width: 33px;
+}
+.aetnamap-ca.two {
+    height: 42px;
+    left: 343px;
+    top: 195px;
+    width: 20px;
+}
+.aetnamap-ca.three {
+    height: 56px;
+    left: 345px;
+    top: 238px;
+    width: 69px;
+}
+.aetnamap-ca.four {
+    height: 150px;
+    left: 284px;
+    top: 138px;
+    width: 61px;
+}
+.aetnamap-ca:hover, .aetnamap-ca.two:hover, .aetnamap-ca.three:hover, .aetnamap-ca.four:hover, .ca.on a {
+    background-position: -394px -5px;
+    height: 152px;
+    left: 290px;
+    top: 137px;
+    width: 132px;
+}
+.aetnamap-co {
+    height: 64px;
+    left: 485px;
+    top: 153px;
+    width: 87px;
+}
+.aetnamap-co:hover, .co.on a {
+    background-position: -536px -5px;
+    height: 64px;
+    width: 87px;
+}
+.aetnamap-ct {
+    height: 15px;
+    left: 936px;
+    top: 136px;
+    width: 25px;
+}
+.aetnamap-ct.two {
+    height: 24px;
+    left: 974px;
+    top: 160px;
+    width: 34px;
+}
+.aetnamap-ct:hover, .aetnamap-ct.two:hover, .ct.on a {
+    background-position: -536px -79px;
+    height: 45px;
+    left: 928px;
+    top: 133px;
+    width: 73px;
+}
+.aetnamap-dc {
+    height: 40px;
+    left: 914px;
+    top: 246px;
+    width: 37px;
+}
+.aetnamap-dc:hover, .dc.on a {
+    background-position: -190px -134px;
+    height: 87px;
+    left: 882px;
+    top: 186px;
+    width: 63px;
+}
+.aetnamap-de {
+    height: 16px;
+    left: 907px;
+    top: 180px;
+    width: 12px;
+    z-index:3 !important;
+}
+.aetnamap-de.two {
+    height: 20px;
+    left: 925px;
+    top: 193px;
+    width: 22px;
+}
+.aetnamap-de:hover, .aetnamap-de.two:hover, .de.on a {
+    background-position: -242px -79px;
+    height: 35px;
+    left: 905px;
+    top: 173px;
+    width: 40px;
+}
+.aetnamap-fl {
+    height: 85px;
+    left: 756px;
+    top: 309px;
+    width: 96px;
+}
+.aetnamap-fl:hover, .fl.on a {
+    background-position: -263px -167px;
+    height: 85px;
+    width: 96px;
+}
+.aetnamap-ga {
+    height: 35px;
+    left: 788px;
+    top: 279px;
+    width: 48px;
+}
+.aetnamap-ga.two {
+    height: 31px;
+    left: 785px;
+    top: 249px;
+    width: 18px;
+}
+.aetnamap-ga:hover, .aetnamap-ga.two:hover, .ga.on a {
+    background-position: -536px -134px;
+    height: 66px;
+    left: 782px;
+    top: 249px;
+    width: 59px;
+}
+.aetnamap-gu {
+    height: 59px;
+    top: 313px;
+    width: 26px;
+}
+.aetnamap-gu:hover, .gu.on a {
+    background-position: -5px -210px;
+    height: 59px;
+    width: 26px;
+}
+.aetnamap-hi {
+    height: 78px;
+    left: 75px;
+    top: 292px;
+    width: 71px;
+}
+.aetnamap-hi:hover, .hi.on a {
+    background-position: -41px -210px;
+    height: 78px;
+    width: 71px;
+}
+.aetnamap-ia {
+    height: 47px;
+    left: 647px;
+    top: 112px;
+    width: 62px;
+}
+.aetnamap-ia:hover, .ia.on a {
+    background-position: -369px -210px;
+    height: 50px;
+    left: 642px;
+    top: 110px;
+    width: 80px;
+}
+.aetnamap-id {
+    height: 40px;
+    left: 382px;
+    top: 5px;
+    width: 15px;
+}
+.aetnamap-id.two {
+    height: 39px;
+    left: 386px;
+    top: 47px;
+    width: 34px;
+}
+.aetnamap-id.three {
+    height: 48px;
+    left: 384px;
+    top: 84px;
+    width: 72px;
+}
+.aetnamap-id:hover, .aetnamap-id.two:hover, .aetnamap-id.three:hover, .id.on a {
+    background-position: -459px -210px;
+    height: 126px;
+    left: 381px;
+    top: 9px;
+    width: 77px;
+}
+.aetnamap-il {
+    height: 36px;
+    left: 712px;
+    top: 144px;
+    width: 13px;
+}
+.aetnamap-il.two {
+    height: 80px;
+    left: 725px;
+    top: 129px;
+    width: 29px;
+}
+.aetnamap-il:hover, .aetnamap-il.two:hover, .il.on a {
+    background-position: -122px -210px;
+    height: 88px;
+    left: 706px;
+    top: 127px;
+    width: 50px;
+}
+.aetnamap-in {
+    height: 64px;
+    left: 752px;
+    top: 139px;
+    width: 38px;
+}
+.aetnamap-in:hover, .in.on a {
+    background-position: -546px -210px;
+    height: 64px;
+    width: 38px;
+}
+.aetnamap-ks {
+    height: 48px;
+    left: 573px;
+    top: 169px;
+    width: 93px;
+}
+.aetnamap-ks:hover, .ks.on a {
+    background-position: -5px -346px;
+    height: 48px;
+    width: 93px;
+}
+
+.ky.on .aetnamap-ky {
+    background-position: -154px -346px;
+    height: 41px;
+    left: 780px;
+    top: 184px;
+    width: 45px;
+}
+
+.ky.on .aetnamap-ky.two {
+    background-position: -108px -361px;
+    height: 28px;
+    left: 734px;
+    top: 199px;
+    width: 46px;
+}
+
+.aetnamap-ky:hover, .aetnamap-ky.two:hover {
+    background-position: -108px -346px;
+    height: 41px;
+    left: 734px;
+    top: 184px;
+    width: 90px;
+}
+.aetnamap-la {
+    height: 56px;
+    left: 676px;
+    top: 279px;
+    width: 30px;
+}
+.aetnamap-la.two {
+    height: 24px;
+    left: 703px;
+    top: 311px;
+    width: 22px;
+}
+.aetnamap-la:hover, .aetnamap-la.two:hover, .la.on a {
+    background-position: -182px -284px;
+    height: 51px;
+    left: 674px;
+    top: 280px;
+    width: 57px;
+}
+.aetnamap-ma {
+    height: 12px;
+    left: 938px;
+    top: 122px;
+    width: 52px;
+}
+.aetnamap-ma.two {
+    height: 25px;
+    left: 988px;
+    top: 114px;
+    width: 44px;
+}
+.aetnamap-ma:hover, .aetnamap-ma.two:hover, .ma.on a {
+    background-position: -369px -167px;
+    height: 22px;
+    left: 935px;
+    top: 118px;
+    width: 96px;
+}
+.aetnamap-md {
+    height: 15px;
+    left: 869px;
+    top: 175px;
+    width: 37px;
+}
+.aetnamap-md.two {
+    height: 25px;
+    left: 926px;
+    top: 216px;
+    width: 48px;
+}
+.aetnamap-md:hover, .aetnamap-md.two:hover, .md.on a {
+    background-position: -249px -284px;
+    height: 59px;
+    left: 858px;
+    top: 174px;
+    width: 104px;
+}
+.aetnamap-me {
+    height: 79px;
+    left: 965px;
+    top: 36px;
+    width: 53px;
+}
+.aetnamap-me:hover, .me.on a {
+    background-position: -363px -284px;
+    height: 79px;
+    width: 53px;
+}
+.aetnamap-mi {
+    height: 63px;
+    left: 771px;
+    top: 74px;
+    width: 50px;
+}
+.aetnamap-mi:hover, .mi.on a {
+    background-position: -546px -284px;
+    height: 71px;
+    left: 766px;
+    top: 69px;
+    width: 55px;
+}
+.aetnamap-mn {
+    height: 33px;
+    width: 40px;
+}
+.aetnamap-mn.two {
+    height: 106px;
+    left: 640px;
+    top: 0;
+    width: 52px;
+}
+.aetnamap-mn:hover, .aetnamap-mn.two:hover, .mn.on a {
+    background-position: -208px -365px;
+    height: 108px;
+    left: 635px;
+    top: 1px;
+    width: 97px;
+}
+
+.mo.on .aetnamap-mo{
+    background-position: -437px -385px;
+    height: 46px;
+    left: 665px;
+    top: 180px;
+    width: 61px;
+}
+
+.mo.on .aetnamap-mo.two{
+    background-position: -426px -365px;
+    height: 20px;
+    left: 654px;
+    top: 160px;
+    width: 60px;	
+}
+
+.mo.on .aetnamap-mo.three{
+    background-position: -495px -407px;
+    height: 32px;
+    left: 723px;
+    top: 203px;
+    width: 12px;
+}
+
+.aetnamap-mo:hover, .aetnamap-mo.two:hover, .aetnamap-mo.three:hover {
+    background-position: -426px -365px;
+    height: 72px;
+    left: 654px;
+    top: 160px;
+    width: 81px;
+}
+.aetnamap-ms {
+    height: 61px;
+    left: 714px;
+    top: 251px;
+    width: 32px;
+}
+.aetnamap-ms:hover, .ms.on a {
+    background-position: -517px -365px;
+    height: 72px;
+    left: 706px;
+    top: 249px;
+    width: 42px;
+}
+.aetnamap-mt {
+    height: 71px;
+    left: 429px;
+    top: 13px;
+    width: 116px;
+}
+.aetnamap-mt.two {
+    height: 37px;
+    left: 397px;
+    top: 9px;
+    width: 31px;
+}
+.aetnamap-mt:hover, .aetnamap-mt.two:hover, .mt.on a {
+    background-position: -5px -447px;
+    height: 85px;
+    left: 396px;
+    top: 9px;
+    width: 150px;
+}
+.aetnamap-nc {
+    height: 18px;
+    left: 867px;
+    top: 249px;
+    width: 35px;
+}
+.aetnamap-nc.two {
+    height: 22px;
+    left: 825px;
+    top: 226px;
+    width: 86px;
+}
+.aetnamap-nc:hover, .aetnamap-nc.two:hover, .nc.on a {
+    background-position: -315px -447px;
+    height: 42px;
+    left: 794px;
+    top: 225px;
+    width: 112px;
+}
+.aetnamap-nd {
+    height: 57px;
+    left: 548px;
+    top: 9px;
+    width: 96px;
+}
+.aetnamap-nd:hover, .nd.on a {
+    background-position: -437px -447px;
+    height: 57px;
+    width: 96px;
+}
+.aetnamap-ne {
+    height: 32px;
+    left: 549px;
+    top: 119px;
+    width: 23px;
+}
+.aetnamap-ne.two {
+    height: 47px;
+    left: 573px;
+    top: 122px;
+    width: 74px;
+}
+.aetnamap-ne:hover, .aetnamap-ne.two:hover, .ne.on a {
+    background-position: -165px -514px;
+    height: 49px;
+    left: 548px;
+    top: 119px;
+    width: 107px;
+}
+.aetnamap-nh {
+    height: 39px;
+    left: 951px;
+    top: 81px;
+    width: 15px;
+}
+.aetnamap-nh.two {
+    height: 48px;
+    left: 940px;
+    top: 33px;
+    width: 25px;
+}
+.aetnamap-nh:hover, .aetnamap-nh.two:hover, .nh.on a {
+    background-position: -569px -365px;
+    height: 76px;
+    left: 940px;
+    top: 47px;
+    width: 29px;
+}
+.aetnamap-nj {
+    height: 28px;
+    left: 931px;
+    top: 165px;
+    width: 25px;
+}
+.aetnamap-nj.two {
+    height: 25px;
+    left: 954px;
+    top: 187px;
+    width: 31px;
+}
+.aetnamap-nj.three {
+    height: 24px;
+    left: 911px;
+    top: 155px;
+    width: 20px;
+}
+.aetnamap-nj:hover, .aetnamap-nj.two:hover, .aetnamap-nj.three:hover, .nj.on a {
+    background-position: -543px -451px;
+    height: 51px;
+    left: 905px;
+    top: 153px;
+    width: 73px;
+}
+.aetnamap-nm {
+    height: 88px;
+    left: 484px;
+    top: 218px;
+    width: 76px;
+}
+.aetnamap-nm:hover, .nm.on a {
+    background-position: -282px -512px;
+    height: 88px;
+    width: 76px;
+}
+.aetnamap-nv {
+    height: 17px;
+    left: 401px;
+    top: 219px;
+    width: 18px;
+}
+.aetnamap-nv.two {
+    height: 26px;
+    left: 370px;
+    top: 191px;
+    width: 49px;
+}
+.aetnamap-nv.three {
+    height: 53px;
+    left: 348px;
+    top: 137px;
+    width: 70px;
+}
+.aetnamap-nv:hover, .aetnamap-nv.two:hover, .aetnamap-nv.three:hover, .nv.on a {
+    background-position: -543px -512px;
+    height: 110px;
+    left: 346px;
+    top: 136px;
+    width: 74px;
+}
+
+.on .aetnamap-ny {
+    background-position: -689px -55px;
+    height: 18px;
+    left: 910px;
+    top: 133px;
+    width: 24px;
+}
+.on .aetnamap-ny.two {
+    background-position: -633px -5px;
+    height: 52px;
+    left: 854px;
+    top: 83px;
+    width: 83px;
+}
+
+.aetnamap-ny:hover, .aetnamap-ny.two:hover {
+    background-position: -633px -5px;
+    height: 69px;
+    left: 854px;
+    top: 83px;
+    width: 83px;
+}
+.oh.on .aetnamap-oh {
+    background-position: -619px -84px;
+    height: 45px;
+    left: 791px;
+    top: 136px;
+    width: 53px;	
+}
+.oh.on .aetnamap-oh.two {
+    background-position: -619px -129px;
+    height: 13px;
+    left: 791px;
+    top: 181px;
+    width: 39px;	
+}
+.aetnamap-oh:hover{
+    background-position: -619px -84px;
+    height: 58px;
+    left: 791px;
+    top: 136px;
+    width: 53px;
+}
+.aetnamap-ok {
+    height: 14px;
+    left: 563px;
+    top: 214px;
+    width: 39px;
+}
+.aetnamap-ok.two {
+    height: 48px;
+    left: 602px;
+    top: 215px;
+    width: 64px;
+}
+
+.ok.on .aetnamap-ok, .aetnamap-ok:hover{
+	background-position: -605px -152px;
+    height: 6px;
+    left: 561px;
+    top: 218px;
+    width: 38px;
+}
+
+.ok.on .aetnamap-ok.two, .aetnamap-ok.two:hover{
+    background-position: -643px -152px;
+    height: 51px;
+    left: 599px;
+    top: 218px;
+    width: 69px;	
+}
+
+.aetnamap-or {
+    height: 75px;
+    left: 287px;
+    top: 61px;
+    width: 102px;
+}
+.aetnamap-or:hover, .or.on a {
+    background-position: -611px -213px;
+    height: 75px;
+    width: 102px;
+}
+.aetnamap-pa {
+    height: 37px;
+    left: 847px;
+    top: 136px;
+    width: 64px;
+}
+.aetnamap-pa:hover, .pa.on a {
+    background-position: -611px -298px;
+    height: 42px;
+    left: 844px;
+    top: 131px;
+    width: 80px;
+}
+.aetnamap-pr {
+    height: 40px;
+    left: 181px;
+    top: 330px;
+    width: 54px;
+}
+.aetnamap-pr:hover, .pr.on a {
+    background-position: -611px -350px;
+    height: 40px;
+    width: 54px;
+}
+.aetnamap-ri {
+    height: 20px;
+    left: 964px;
+    top: 132px;
+    width: 48px;
+}
+.aetnamap-ri:hover, .ri.on a {
+    background-position: -5px -298px;
+    height: 20px;
+    width: 48px;
+}
+.aetnamap-sc {
+    height: 20px;
+    left: 839px;
+    top: 272px;
+    width: 33px;
+}
+.aetnamap-sc.two {
+    height: 27px;
+    left: 811px;
+    top: 246px;
+    width: 51px;
+}
+.aetnamap-sc:hover, .aetnamap-sc.two:hover, .sc.on a {
+    background-position: -626px -400px;
+    height: 45px;
+    left: 800px;
+    top: 247px;
+    width: 70px;
+}
+.aetnamap-sd {
+    height: 57px;
+    left: 548px;
+    top: 66px;
+    width: 95px;
+}
+.aetnamap-sd:hover, .sd.on a {
+    background-position: -627px -455px;
+    height: 57px;
+    width: 95px;
+}
+.aetnamap-tn {
+    height: 23px;
+    left: 726px;
+    top: 224px;
+    width: 95px;
+}
+.aetnamap-tn:hover, .tn.on a {
+    background-position: -315px -400px;
+    height: 23px;
+    width: 95px;
+}
+.aetnamap-tx{
+    height: 90px;
+    left: 516px;
+    top: 295px;
+    width: 160px;
+}
+.aetnamap-tx.two{
+    height: 69px;
+    left: 563px;
+    top: 225px;
+    width: 38px;
+}
+.aetnamap-tx.three{
+    height: 31px;
+    left: 601px;
+    top: 262px;
+    width: 68px;
+}
+
+.tx.on .aetnamap-tx{
+    background-position: -726px -71px;
+    height: 48px;
+    left: 515px;
+    top: 293px;
+    width: 46px;
+}
+
+.tx.on  .aetnamap-tx.two{
+    background-position: -772px -5px;
+    height: 129px;
+    left: 561px;
+    top: 226px;
+    width: 39px;	
+}
+
+.tx.on .aetnamap-tx.three {
+    background-position: -810px -35px;
+    height: 128px;
+    left: 599px;
+    top: 255px;
+    width: 80px;
+}
+.aetnamap-ut {
+    height: 81px;
+    left: 422px;
+    top: 136px;
+    width: 62px;
+}
+.aetnamap-ut:hover, .ut.on a {
+    background-position: -723px -173px;
+    height: 81px;
+    width: 62px;
+}
+.aetnamap-va{
+    height: 12px;
+    left: 819px;
+    top: 212px;
+    width: 38px;
+}
+.aetnamap-va.two{
+    height: 29px;
+    left: 855px;
+    top: 193px;
+    width: 43px;
+}
+
+.va.on .aetnamap-va,.aetnamap-va:hover{
+    background-position: -795px -199px;
+    height: 19px;
+    left: 812px;
+    top: 206px;
+    width: 40px;
+    z-index:0 !important;
+}
+
+.va.on .aetnamap-va.two,.aetnamap-va.two:hover {
+    background-position: -833px -188px;
+    height: 31px;
+    left: 850px;
+    top: 195px;
+    width: 52px;
+}
+
+.va.on .aetnamap-va.three,.aetnamap-va.three:hover {
+    background-position: -844px -173px;
+    height: 17px;
+    left: 862px;
+    top: 180px;
+    width: 26px;
+}
+
+.aetnamap-vt {
+    height: 40px;
+    left: 935px;
+    top: 82px;
+    width: 17px;
+}
+.aetnamap-vt.two {
+    height: 40px;
+    left: 906px;
+    top: 43px;
+    width: 31px;
+}
+.aetnamap-vt:hover, .aetnamap-vt.two:hover, .vt.on a {
+    background-position: -795px -227px;
+    height: 71px;
+    left: 906px;
+    top: 52px;
+    width: 52px;
+}
+.aetnamap-wa {
+    height: 65px;
+    left: 285px;
+    top: 8px;
+    width: 99px;
+}
+.aetnamap-wa:hover, .wa.on a {
+    background-position: -701px -308px;
+    height: 65px;
+    width: 99px;
+}
+.aetnamap-wi {
+    height: 24px;
+    left: 764px;
+    top: 47px;
+    width: 43px;
+}
+.aetnamap-wi.two {
+    height: 44px;
+    left: 693px;
+    top: 52px;
+    width: 18px;
+}
+.aetnamap-wi.three {
+    height: 77px;
+    left: 711px;
+    top: 52px;
+    width: 53px;
+}
+.aetnamap-wi:hover, .aetnamap-wi.two:hover, .aetnamap-wi.three:hover, .wi.on a {
+    background-position: -732px -383px;
+    height: 89px;
+    left: 690px;
+    top: 37px;
+    width: 113px;
+}
+.aetnamap-wv {
+    height: 18px;
+    left: 841px;
+    top: 173px;
+    width: 25px;
+}
+.aetnamap-wv.two {
+    height: 26px;
+    left: 817px;
+    top: 185px;
+    width: 23px;
+}
+.aetnamap-wv:hover, .aetnamap-wv.two:hover, .wv.on a {
+    background-position: -810px -308px;
+    height: 41px;
+    left: 818px;
+    top: 172px;
+    width: 54px;
+    z-index:1px!important;
+}
+.aetnamap-wy {
+    height: 68px;
+    left: 459px;
+    top: 84px;
+    width: 87px;
+}
+.aetnamap-wy:hover, .wy.on a {
+    background-position: -732px -482px;
+    height: 68px;
+    width: 87px;
+}
+
+
+@media only screen and (min-width : 1px) and (max-width:1024px) {
+	
+	.modIntMap .selectWrap{
+		float: none;
+		display:block;
+	}
+	.modIntMap .row-fluid [class*="span"]{
+		width: 100%;
+		float:none;
+	}
+	.modIntMap .infoBox{
+		position:relative;
+		z-index: 10;
+		width: 90%;
+		padding: 0px 5% 24px 5%;
+		-webkit-box-shadow: 0px 0px 0px 0px;
+		box-shadow: 0px 0px 0px 0px;
+	}
+	
+	.modIntMap .infoBox .close{
+		display:none;
+	}
+}
+@media only screen and (min-width : 768px) and (max-width:1024px) {
+	.modIntMap .infoBox{
+		padding: 0 2.5% 24px 2.5%;
+	}
+}

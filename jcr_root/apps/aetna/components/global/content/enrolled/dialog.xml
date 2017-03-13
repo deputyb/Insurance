@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    title="Enrolleded Info"
+    width="650"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to include as the component title"
+                        fieldLabel="Title"
+                        name="./title"
+                        xtype="textfield"/>
+                    <titletext
+                        jcr:primaryType="cq:Widget"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        fieldDescription="Text to include beneath the title"
+                        fieldLabel="Title text"
+                        name="./text"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                            xtype="cqinclude"/>
+                    </titletext>
+                    <subheading
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to include as the component title subheading"
+                        fieldLabel="Subheading"
+                        name="./subheading"
+                        xtype="textfield"/>
+                </items>
+            </configuration>
+            <step1
+                jcr:primaryType="cq:Panel"
+                title="Step 1">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to include as the step 1 title"
+                        fieldLabel="Title"
+                        name="./titlestep1"
+                        xtype="textfield"/>
+                    <richtext1
+                        jcr:primaryType="cq:Widget"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        fieldDescription="Text to include as the step 1 copy"
+                        fieldLabel="Text"
+                        name="./richtext1"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                            xtype="cqinclude"/>
+                    </richtext1>
+                </items>
+            </step1>
+            <step2
+                jcr:primaryType="cq:Panel"
+                title="Step 2">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to include as the step 2 title"
+                        fieldLabel="Title"
+                        name="./titlestep2"
+                        xtype="textfield"/>
+                    <richtext2
+                        jcr:primaryType="cq:Widget"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        fieldDescription="Text to include as the step 2 copy"
+                        fieldLabel="Text"
+                        name="./richtext2"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                            xtype="cqinclude"/>
+                    </richtext2>
+                </items>
+            </step2>
+            <step3
+                jcr:primaryType="cq:Panel"
+                title="Step 3">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to include as the step 3 title"
+                        fieldLabel="Title"
+                        name="./titlestep3"
+                        xtype="textfield"/>
+                    <richtext3
+                        jcr:primaryType="cq:Widget"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        fieldDescription="Text to include as the step 3 copy"
+                        fieldLabel="Text"
+                        name="./richtext3"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                            xtype="cqinclude"/>
+                    </richtext3>
+                </items>
+            </step3>
+            <step4
+                jcr:primaryType="cq:Panel"
+                title="Step 4">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to include as the step 4 title"
+                        fieldLabel="Title"
+                        name="./titlestep4"
+                        xtype="textfield"/>
+                    <richtext4
+                        jcr:primaryType="cq:Widget"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        fieldDescription="Text to include as the step 4 copy"
+                        fieldLabel="Text"
+                        name="./richtext4"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                            xtype="cqinclude"/>
+                    </richtext4>
+                </items>
+            </step4>
+        </items>
+    </items>
+</jcr:root>

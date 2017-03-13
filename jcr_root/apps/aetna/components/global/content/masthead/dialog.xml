@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="450"
+    title="Masthead"
+    width="600"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <primaryLogo
+                jcr:primaryType="cq:Widget"
+                cropParameter="./primaryLogo/imageCrop"
+                ddGroups="[media]"
+                fieldLabel="Logo Image"
+                fileNameParameter="./primaryLogo/fileName"
+                fileReferenceParameter="./primaryLogo/fileReference"
+                mapParameter="./primaryLogo/imageMap"
+                name="./primaryLogo/file"
+                requestSuffix="/primaryLogo.img.png"
+                rotateParameter="./primaryLogo/imageRotate"
+                sizeLimit="100"
+                title="Primary Logo"
+                uploadUrl="/tmp/upload/*"
+                xtype="smartimage"/>
+            <logoconfigs
+                jcr:primaryType="cq:Widget"
+                title="Logo Config"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <resTypePrimaryLogo
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="true"
+                        name="./primaryLogo/sling:resourceType"
+                        value="foundation/components/image"
+                        xtype="hidden"/>
+                    <primaryLogoConfigs
+                        jcr:primaryType="cq:Widget"
+                        title="Primary Logo configuration"
+                        xtype="fieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <logoUrl
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Logo URL"
+                                name="./logoUrl"
+                                width="250"
+                                xtype="pathfield"/>
+                            <logoAlt
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Logo Alt Attribute"
+                                name="./logoAlt"
+                                width="250"
+                                xtype="textfield"/>
+                            <logoTitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Logo Title Attribute"
+                                name="./logoTitle"
+                                width="250"
+                                xtype="textfield"/>
+                        </items>
+                    </primaryLogoConfigs>
+                </items>
+            </logoconfigs>
+        </items>
+    </items>
+</jcr:root>

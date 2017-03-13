@@ -1,0 +1,114 @@
+select{
+	font-family:Calibri, Candara, Segoe, "Segoe UI", Arial, sans-serif;
+}
+.circle{
+	border-radius: 0;
+	width: 48px;
+	height: 48px;
+	background: url('../../../images/designs/global/icn-step1.png');
+	font-family: 'Foco W01 Light', Arial, sans-serif;
+}
+header.headerShadow{
+	box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, .14);
+	/*background-image: ; need to add background image for shadow on ie8*/
+}
+/*.content-wrapper{
+	position:relative;
+	top: 70px;
+}*/
+.roundCorner {
+	position: absolute;
+	width: 10px;
+	height: 33px;
+	display: inline-block;
+	z-index: 1;
+	background: url('../../../images/designs/global/roundcorner.png') no-repeat left top;
+}
+.roundLeft {
+	left: 10px;
+}
+.roundRight {
+	right: -10px;
+	background-position: -10px;
+}
+input.globalSearch {
+	z-index: 2;
+	padding-left: 0;
+	padding-right: 10px;
+	border-right: 30px solid transparent;
+}
+.searchformdesktop input.search{
+	background-color: #eee;
+}
+.mainMenu a.megaMenu {
+	padding-top: 0 !important;
+}
+.router{
+	top: -26px;
+}
+/*.slideshow-wrapper .heroSlideshowItem .slide {
+	margin-top:25px;
+}*/
+.template .col1bgMod .row-fluid ul.span6.underlined.last {
+	padding-right: 2%;
+	
+}
+.article-template .searchAgainForm input[type=submit].search {
+	width: 24px;
+	height: 24px;
+	margin-top: 0;
+	background: url(../../../images/designs/global/global-desktop-sprite.png) no-repeat #eee;
+	background-position: 0 -44px;
+	padding-right: 0;
+	border: 0;
+	position: absolute;
+	right: -35px;
+	top: 0px;
+	z-index: 2;
+	padding: 24px 36px 24px 0;
+}
+.menu-container .actual.hidden {
+	visibility: visible;
+	display: block;
+	opacity: 1;
+	height: auto;
+	width: auto;
+	position: static;
+}
+.span4 ul.underlined li.last {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+.universalMenu.togglePanel {
+	display: none;
+}
+.biographyItem {
+	display: block !important;
+}
+.interstitial .message {
+	overflow-y: auto;
+}
+
+.article-template .checkBox .checked span {
+background: url(../../../images/designs/global/icn-box-checked.png) left bottom no-repeat !important;
+}
+
+.article-template .checkBox .checked-r span {
+background: url(../../../images/designs/global/icn-checkbox-spr.png) left top no-repeat !important;
+}
+
+
+.right-content-panel {
+    max-height: 370px;
+}
+.right-content-panel h4 {
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+.right-content-panel h5 {
+	font-size: 16px;
+}
+.right-content-panel hr {
+	margin-top: 30px;
+	margin-bottom: 18px;
+} 

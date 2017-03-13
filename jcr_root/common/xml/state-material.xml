@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document>
+    <business name="Sheet1">
+        <state name="Select your state"/>
+        <state name="Arizona">
+            <form>
+                <name>Health Care Provider Timely Payment and Grievance Law</name>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/AZ_TimelyPayGrevBrochure.pdf</url>
+                <notes> - Regulatory Bulletin 2006-021</notes>
+            </form>
+        </state>
+        <state name="California">
+            <form>
+                <name>HMO - Dispute Resolution Policy</name>
+                <url>http://www.aetna.com/provider/data/ca_hmo_appeals_policy.pdf</url>
+            </form>
+            <form>
+                <name>New Timely Access Resolutions</name>
+                <url>http://www.aetna.com/provider/data/CA_Access_Stds_for_aetna.com.pdf</url>
+            </form>
+            <form>
+                <name>Provider Disclosure Form</name>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/WE-CA-ProvDisclosureForm.pdf</url>
+            </form>
+        </state>
+        <state name="Colorado">
+            <form>
+                <name>Amendment to provider contracts</name>
+                <url>http://www.aetna.com/provider/data/Colorado_Regulatory_Amendment.pdf</url>
+            </form>
+        </state>
+        <state name="Massachusetts">
+            <form>
+                <name>HMO based plans</name>
+                <url>http://www.aetna.com/healthcare-professionals/assets/documents/HMO-based-Aetna-Health-Network-MA-plans.pdf</url>
+            </form>
+        </state>
+        <state name="New Jersey">
+            <form>
+                <name>Radiology and Imaging</name>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/nj-radiology-imaging.pdf</url>
+            </form>
+            <form>
+                <name>Physical and Occupational Therapy</name>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/nj-physical-therapy-occupational-therapy.pdf</url>
+            </form>
+            <form>
+                <name>Chiropractic Services</name>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/nj-chiropractic-services.pdf</url>
+            </form>
+            <form>
+                <name>Chiropractic Services prior to April 1, 2013</name>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/nj-chiropractic-services-before4-1-2013.pdf</url>
+            </form>
+            <form>
+                <name>Present on Admission Indicator Code</name>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/nj-present-on-admission.pdf</url>
+            </form>
+            <form>
+                <name>Extension of Benefits</name>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/new-jersey-extension-of-benefits.pdf</url>
+            </form>
+            <form>
+                <name>Continuation of benefits due to total disability form</name>
+                <url>http://www.aetna.com/provider/data/gc-1599w.pdf</url>
+            </form>
+            <form>
+                <name>Handicapped Child Attending Physician's Statement</name>
+                <url>http://www.aetna.com/provider/data/gc-464w.pdf</url>
+                <notes>(for behavioral health conditions of all ages and medical conditions for dependents age 18 and younger).</notes>
+            </form>
+            <form>
+                <name>Adult Medical Attending Physician Statement</name>
+                <url>http://www.aetna.com/provider/data/gc-1596w.pdf</url>
+                <notes>(for medical conditions for subscribers and dependents over the age of 18).</notes>
+            </form>
+            <form>
+                <name>Provider Appeal Procedure</name>
+                <url>http://www.aetna.com/provider/data/NJ_prov_appeal_proc.pdf</url>
+            </form>
+            <form>
+                <name>Application to Appeal a Claim Determination</name>
+                <url>http://www.aetna.com/provider/data/NJ_provider_claim_submission_form.pdf</url>
+                <notes>(New Jersey Department of Banking and Insurance)</notes>
+            </form>
+            <form>
+                <name>New Claims Review Process for observation room charges</name>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/hospital-room-charges.pdf</url>
+            </form>
+        </state>
+        <state name="New York">
+            <form>
+                <name>Radiology and Imaging</name>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/ny-radiology-imaging.pdf</url>
+            </form>
+            <form>
+                <name>Company Affiliates List</name>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/newyork-affiliates-list.pdf</url>
+            </form>
+            <form>
+                <name>Regulatory Amendment to Aetna</name>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/New-York-regulatory-amendment.pdf</url>
+            </form>
+        </state>
+        <state name="Ohio">
+            <form>
+                <name>Refusal to Enroll in Electronic Funds Transfer (EFT) form</name>
+                <url>http://www.aetna.com/provider/data/OH_EFT_Refusal_Form.pdf</url>
+            </form>
+        </state>
+        <state name="Texas">
+            <form>
+                <name>Submission of Clean Claim Elements</name>
+                <url>http://www.aetna.com/provider/TXCleanClaimElementsunderSB418.pdf</url>
+            </form>
+        </state>
+    </business>
+</document>

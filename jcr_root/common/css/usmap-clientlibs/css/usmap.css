@@ -1,0 +1,1648 @@
+.usmap{
+    background: none repeat scroll 0 0 white;
+    padding: 48px 0;
+    position: relative; 
+}
+
+.usmap .selectWrap{
+    width:100%;
+}
+
+.usmap .infoBox {
+    background: none repeat scroll 0 0 white;
+    box-shadow: 3px 3px 2px 0 rgba(0, 0, 0, 0.3);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    display: none;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+.usmap .infoBox h4 {
+    color: #5E9732;
+    font-family: Calibri,arial,sans-serif;
+    font-size: 1.875em;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.usmap .infoBox p {
+    margin-bottom: 0;
+    padding-right: 30px;
+}
+
+.usmap .infoBox .close {
+    background: url("../../../images/designs/global/map/close.jpg") no-repeat scroll 0 0 transparent;
+    height: 14px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 14px;
+}
+
+.statemap {
+    background: url("../../../images/designs/global/map/aetnamap-gray-off.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 394px;
+    margin: 0 auto;
+    position: relative;
+    width: 1032px;
+}
+
+.statemap .state.on{
+    background-image: url("../../../images/designs/global/map/aetnamap-on.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+}
+
+.statemap .state {
+    position: absolute;
+    display:block;
+}
+
+.statemap .state a{
+    background: url("../../../images/designs/global/map/aetnamap-t-pixel.png")  0 0 repeat;
+    position: absolute;
+    display: block;
+    z-index: 5;
+}
+
+.statemap .state-ak{
+    width: 175px;
+    height: 174px;
+    left:28px;
+    top: 31px;
+    background-position: -5px -5px; 
+}
+
+.statemap .state-ak .s1{
+    width: 177px;
+    height: 176px;
+}
+
+.statemap .state-al{
+    height: 71px;
+    left: 746px;
+    top: 249px;
+    width: 43px;
+    background-position: -190px -5px;       
+}
+
+.statemap .state-al .s1{
+    height: 59px;
+    width: 36px;
+}
+
+.statemap .state-al .s2{
+    height: 12px;
+    top: 58px;
+    width: 11px;
+}
+
+.statemap .state-al .s3{
+    height: 33px;
+    left: 35px;
+    top: 26px;
+    width: 6px;
+}
+
+.statemap .state-ar{
+    background-position: -242px -5px;
+    height: 52px;
+    left: 668px;
+    top: 226px;
+    width: 59px;    
+}
+
+.statemap .state-ar .s1{
+    height: 44px;
+    width: 43px;
+}
+
+.statemap .state-ar .s2{
+    height: 24px;
+    left: 42px;
+    width: 12px;
+}
+
+.statemap .state-ar .s3{
+    height: 10px;
+    left: 6px;
+    top: 43px;
+    width: 36px;
+}
+
+.statemap .state-ar .s4{
+    height: 12px;
+    left: 42px;
+    top: 23px;
+    width: 6px;
+}
+
+.statemap .state-az{
+    background-position: -311px -5px;
+    height: 88px;
+    left: 411px;
+    top: 218px;
+    width: 73px;    
+}
+
+.statemap .state-az .s1{
+    height: 90px;
+    left: 12px;
+    width: 62px;
+}
+
+.statemap .state-az .s2{
+    height: 26px;
+    left: 3px;
+    top: 13px;
+    width: 10px;
+}
+
+.statemap .state-az .s3{
+    height: 27px;
+    left: 3px;
+    top: 46px;
+    width: 10px;
+}
+
+.statemap .state-az .s4{
+    height: 9px;
+    left: 6px;
+    top: 38px;
+    width: 7px;
+}
+
+.statemap .state-ca{
+    background-position: -394px -5px;
+    height: 152px;
+    left: 290px;
+    top: 137px;
+    width: 132px;   
+}
+
+.statemap .state-ca .s1{
+    height: 121px;
+    width: 55px
+}
+
+.statemap .state-ca .s2{
+    height: 35px;
+    left: 53px;
+    top: 117px;
+    width: 72px;
+}
+
+.statemap .state-ca .s3{
+    height: 36px;
+    left: 54px;
+    top: 82px;
+    width: 39px;
+}
+
+.statemap .state-ca .s4{
+    height: 18px;
+    left: 54px;
+    top: 64px;
+    width: 20px;
+}
+
+.statemap .state-ca .s5{
+    height: 20px;
+    left: 92px;
+    top: 98px;
+    width: 21px;
+}
+
+
+.statemap .state-ca .s6{
+    height: 9px;
+    left: 54px;
+    top: 56px;
+    width: 14px;
+}
+
+.statemap .state-ca .s7{
+    height: 13px;
+    left: 73px;
+    top: 69px;
+    width: 13px;
+}
+
+.statemap .state-ca .s8{
+    height: 11px;
+    left: 92px;
+    top: 88px;
+    width: 13px;
+}
+
+.statemap .state-ca .s9{
+    height: 8px;
+    left: 112px;
+    top: 107px;
+    width: 11px;
+}
+
+.statemap .state-co{
+    background-position: -536px -5px;
+    height: 64px;
+    width: 87px;
+    top: 153px;
+    left: 485px;    
+}
+
+.statemap .state-co .s1{
+    height: 64px;
+    width: 87px;
+}
+
+.statemap .state-ct{
+    background-position: -536px -79px;
+    height: 45px;
+    left: 928px;
+    top: 133px;
+    width: 73px;    
+}
+
+.statemap .state-ct .s1{
+    height: 17px;
+    left: 7px;
+    width: 29px;
+}
+
+.statemap .state-ct .s2{
+    height: 7px;
+    top: 15px;
+    width: 11px;
+}
+
+.statemap .state-ct .s3{
+    height: 17px;
+    left: 52px;
+    top: 30px;
+    width: 26px;
+}
+
+.statemap .state-dc{
+    background-position: -190px -134px;
+    height: 87px;
+    left: 882px;
+    top: 186px;
+    width: 63px;
+}
+
+.statemap .state-dc .s1{
+    height: 6px;
+    width: 9px; 
+}
+
+.statemap .state-dc .s2{
+    height: 30px;
+    left: 42px;
+    top: 60px;
+    width: 24px;
+}
+
+.statemap .state-de{
+    background-position: -242px -79px;
+    height: 35px;
+    left: 905px;
+    top: 173px;
+    width: 40px;    
+}
+
+.statemap .state-de .s1{
+    height: 16px;
+    left: 22px;
+    top: 21px;
+    width: 20px;        
+}
+
+
+.statemap .state-de .s2{
+    height: 22px;
+    width: 9px;     
+}
+
+.statemap .state-fl{
+    left: 756px;
+    top: 309px;
+    background-position: -263px -167px;
+    height: 85px;
+    width: 96px;    
+}
+
+.statemap .state-fl .s1{
+    height: 82px;
+    left: 32px;
+    top: 5px;
+    width: 66px;
+}
+
+.statemap .state-fl .s2{
+    height: 21px;
+    width: 33px;    
+}
+
+.statemap .state-ga{
+    background-position: -536px -134px;
+    height: 66px;
+    left: 782px;
+    top: 249px;
+    width: 59px;    
+}
+
+.statemap .state-ga .s1{
+    height: 27px;
+    width: 18px;
+}
+
+.statemap .state-ga .s2{
+    height: 39px;
+    left: 4px;
+    top: 27px;
+    width: 42px;
+}
+
+.statemap .state-ga .s3{
+    height: 13px;
+    left: 18px;
+    top: 14px;
+    width: 14px;
+}
+
+.statemap .state-ga .s4{
+    height: 24px;
+    left: 45px;
+    top: 42px;
+    width: 15px;
+}
+
+.statemap .state-ga .s5{
+    height: 12px;
+    left: 18px;
+    top: 3px;
+    width: 8px;
+}
+
+.statemap .state-ga .s6{
+    height: 7px;
+    left: 31px;
+    top: 20px;
+    width: 9px;
+}
+
+.statemap .state-ga .s7{
+    height: 10px;
+    left: 45px;
+    top: 33px;
+    width: 11px;
+}
+
+.statemap .state-gu{
+    background-position: -5px -210px;
+    height: 59px;
+    width: 26px;
+    top: 313px;
+}
+
+.statemap .state-gu .s1{
+    height: 59px;
+    width: 26px;    
+}
+
+.statemap .state-hi{
+    background-position: -41px -210px;
+    height: 78px;
+    width: 71px;
+    left: 75px;
+    top: 292px;     
+}
+
+.statemap .state-hi .s1{
+    height: 78px;
+    width: 71px;    
+}
+
+.statemap .state-ia{
+    background-position: -369px -210px;
+    height: 50px;
+    left: 642px;
+    top: 110px;
+    width: 80px;    
+}
+
+.statemap .state-ia .s1{
+    height: 52px;
+    left: 9px;
+    width: 61px;
+}
+
+.statemap .state-ia .s2{
+    height: 23px;
+    width: 10px;  
+}
+
+.statemap .state-ia .s3{
+    height: 17px;
+    left: 69px;
+    top: 17px;
+    width: 12px;  
+}
+
+.statemap .state-ia .s4{
+    height: 12px;
+    left: 4px;
+    top: 22px;
+    width: 6px; 
+}
+
+.statemap .state-id{
+    background-position: -459px -210px;
+    height: 126px;
+    left: 381px;
+    top: 9px;
+    width: 77px;    
+}
+
+.statemap .state-id .s1{
+    height: 48px;
+    top: 80px;
+    width: 79px;    
+}
+
+.statemap .state-id .s2{
+    height: 16px;
+    left: 6px;
+    top: 65px;
+    width: 40px;
+}
+
+.statemap .state-id .s3{
+    height: 22px;
+    left: 5px;
+    top: 44px;
+    width: 30px;
+}
+
+.statemap .state-id .s4{
+    height: 54px;
+    width: 16px;  
+}
+
+.statemap .state-id .s5{
+    height: 12px;
+    left: 15px;
+    top: 33px;
+    width: 12px;  
+}
+
+.statemap .state-il{
+    background-position: -122px -210px;
+    height: 88px;
+    left: 706px;
+    top: 127px;
+    width: 50px;    
+}
+
+.statemap .state-il .s1{
+    height: 73px;
+    left: 16px;
+    width: 33px;
+}
+
+.statemap .state-il .s2{
+    height: 44px;
+    left: 8px;
+    top: 16px;
+    width: 9px;
+}
+
+.statemap .state-il .s3{
+    height: 16px;
+    left: 23px;
+    top: 72px;
+    width: 21px;}
+
+.statemap .state-il .s4{
+    height: 21px;
+    top: 28px;
+    width: 9px;
+}
+
+.statemap .state-in{
+    background-position: -546px -210px;
+    height: 64px;
+    width: 38px;
+    left: 752px;
+    top: 139px; 
+}
+
+.statemap .state-in .s1{
+    height: 51px;
+    left: 2px;
+    width: 38px;
+}
+
+.statemap .state-in .s2{
+    height: 13px;
+    left: 1px;
+    top: 50px;
+    width: 28px;  
+}
+
+
+.statemap .state-ks{
+    background-position: -5px -346px;
+    height: 48px;
+    width: 93px;
+    left: 573px;
+    top: 169px; 
+}
+
+.statemap .state-ks .s1{
+    height: 50px;
+    width: 89px;
+}
+
+.statemap .state-ks .s2{
+    height: 37px;
+    left: 88px;
+    top: 13px;
+    width: 7px;  
+}
+
+.statemap .state-ky{
+    background-position: -108px -346px;
+    height: 41px;
+    left: 734px;
+    top: 184px;
+    width: 90px;
+}
+
+.statemap .state-ky .s1{
+    height: 24px;
+    left: 15px;
+    top: 17px;
+    width: 61px;
+}
+
+.statemap .state-ky .s2{
+    height: 13px;
+    left: 46px;
+    top: 5px;
+    width: 30px;
+}
+
+.statemap .state-ky .s3{
+    height: 27px;
+    left: 75px;
+    top: 8px;
+    width: 10px;
+}
+
+.statemap .state-ky .s4{
+    height: 12px;
+    top: 30px;
+    width: 16px;
+}
+
+
+.statemap .state-ky .s5{
+    height: 9px;
+    left: 84px;
+    top: 21px;
+    width: 6px;
+}
+
+.statemap .state-la{
+    background-position: -182px -284px;
+    height: 51px;
+    left: 674px;
+    top: 280px;
+    width: 57px;    
+}
+
+.statemap .state-la .s1{
+    height: 22px;
+    left: 2px;
+    top: 30px;
+    width: 53px;    
+}
+
+.statemap .state-la .s2{
+    height: 12px;
+    width: 38px;
+}
+
+.statemap .state-la .s3{
+    height: 10px;
+    left: 2px;
+    top: 11px;
+    width: 32px;
+}
+
+.statemap .state-la .s4{
+    height: 11px;
+    left: 5px;
+    top: 20px;
+    width: 26px;
+}
+
+.statemap .state-ma{
+    background-position: -369px -167px;
+    height: 22px;
+    left: 935px;
+    top: 118px;
+    width: 96px;    
+}
+
+.statemap .state-ma .s1{
+    height: 16px;
+    left: 69px;
+    width: 29px;
+}
+
+.statemap .state-ma .s2{
+    height: 9px;
+    top: 6px;
+    width: 52px;
+}
+
+.statemap .state-ma .s3{
+    height: 7px;
+    left: 29px;
+    width: 13px; 
+}
+
+.statemap .state-ma .s4{
+    height: 8px;
+    left: 39px;
+    top: 14px;
+    width: 13px; 
+}
+
+.statemap .state-md{
+    background-position: -249px -284px;
+    height: 59px;
+    left: 858px;
+    top: 174px;
+    width: 104px;   
+}
+
+.statemap .state-md .s1{
+    height: 21px;
+    left: 75px;
+    top: 43px;
+    width: 32px;
+}
+
+.statemap .state-md .s2{
+    height: 4px;
+    width: 48px;
+}
+
+.statemap .state-md .s3{
+    height: 21px;
+    left: 32px;
+    top: 3px;
+    width: 16px; 
+}
+
+.statemap .state-md .s4{
+    height: 20px;
+    left: 42px;
+    top: 20px;
+    width: 14px;
+}
+
+.statemap .state-md .s5{
+    height: 10px;
+    left: 23px;
+    top: 3px;
+    width: 10px;
+}
+
+.statemap .state-me{
+    background-position: -363px -284px;
+    height: 79px;
+    width: 53px;
+    left: 965px;
+    top: 36px;  
+}
+
+.statemap .state-me .s1{
+    height: 77px;
+    width: 53px;
+}
+
+.statemap .state-mi{
+    background-position: -546px -284px;
+    height: 71px;
+    left: 766px;
+    top: 69px;
+    width: 55px;    
+}
+
+.statemap .state-mi .s1{
+    height: 71px;
+    width: 55px;    
+}
+
+.statemap .state-mn{
+    background-position: -208px -365px;
+    height: 108px;
+    left: 635px;
+    top: 1px;
+    width: 97px;    
+}
+
+.statemap .state-mn .s1{
+    height: 108px;
+    left: 9px;
+    width: 46px;
+}
+
+.statemap .state-mn .s2{
+    height: 57px;
+    width: 12px;
+}
+
+.statemap .state-mn .s3{
+    height: 33px;
+    left: 54px;
+    top: 15px;
+    width: 43px;
+}
+
+.statemap .state-mn .s4{
+    height: 18px;
+    left: 54px;
+    top: 47px;
+    width: 9px;
+}
+
+.statemap .state-mn .s5{
+    height: 12px;
+    left: 54px;
+    top: 96px;
+    width: 20px;
+}
+
+.statemap .state-mo{
+    background-position: -426px -365px;
+    height: 72px;
+    left: 654px;
+    top: 160px;
+    width: 81px;    
+}
+
+.statemap .state-mo .s1{
+    height: 67px;
+    left: 11px;
+    width: 42px;    
+}
+
+.statemap .state-mo .s2{
+    top:10px;
+    left:10px;
+    height: 10px;
+    width:10px;     
+}
+
+
+.statemap .state-mo .s3{
+    height: 37px;
+    left: 61px;
+    top: 30px;
+    width: 9px;
+}
+
+
+.statemap .state-mo .s4{
+    height: 30px;
+    left: 69px;
+    top: 43px;
+    width: 10px;  
+}
+
+
+.statemap .state-mo .s5{
+    height: 12px;
+    width: 12px; 
+}
+
+.statemap .state-ms{
+    background-position: -517px -365px;
+    height: 72px;
+    left: 706px;
+    top: 249px;
+    width: 42px;    
+}
+
+.statemap .state-ms .s1{
+    height: 72px;
+    left: 21px;
+    width: 20px;    
+}
+
+.statemap .state-ms .s2{
+    height: 58px;
+    left: 11px;
+    width: 9px;
+}
+
+.statemap .state-ms .s3{
+    height: 14px;
+    left: 1px;
+    top: 44px;
+    width: 9px;
+}
+
+.statemap .state-ms .s4{
+    height: 31px;
+    left: 4px;
+    top: 12px;
+    width: 6px;
+}
+
+.statemap .state-mt{
+    background-position: -5px -447px;
+    height: 85px;
+    left: 396px;
+    top: 9px;
+    width: 150px;   
+}
+
+.statemap .state-mt .s1{
+    height: 74px;
+    left: 30px;
+    width: 120px;   
+}
+
+.statemap .state-mt .s2{
+    height: 34px;
+    width: 30px;
+}
+
+.statemap .state-mt .s3{
+    height: 12px;
+    left: 13px;
+    top: 33px;
+    width: 17px;
+}
+
+.statemap .state-mt .s4{
+    height: 22px;
+    left: 21px;
+    top: 44px;
+    width: 9px;
+}
+
+.statemap .state-mt .s5{
+    height: 8px;
+    left: 32px;
+    top: 73px;
+    width: 30px;
+}
+
+.statemap .state-nc{
+    background-position: -315px -447px;
+    height: 42px;
+    left: 794px;
+    top: 225px;
+    width: 112px;   
+}
+
+.statemap .state-nc .s1{
+    height: 20px;
+    left: 27px;
+    width: 86px;
+}
+
+.statemap .state-nc .s2{
+    height: 24px;
+    left: 74px;
+    top: 19px;
+    width: 31px; 
+}
+
+.statemap .state-nc .s3{
+    height: 8px;
+    left: 49px;
+    top: 19px;
+    width: 26px;
+}
+
+.statemap .state-nc .s4{
+    height: 16px;
+    left: 16px;
+    top: 6px;
+    width: 12px;
+}
+
+.statemap .state-nc .s5{
+    height: 9px;
+    top: 13px;
+    width: 17px;
+}
+
+.statemap .state-nd{
+    background-position: -437px -447px;
+    height: 57px;
+    width: 96px;
+    left: 548px;
+    top: 9px;   
+}
+
+.statemap .state-nd .s1{
+    height: 56px;
+    width: 88px;
+}
+
+.statemap .state-nd .s2{
+    height: 33px;
+    left: 87px;
+    top: 23px;
+    width: 5px;
+}
+
+
+.statemap .state-ne{
+    background-position: -165px -514px;
+    height: 49px;
+    left: 548px;
+    top: 119px;
+    width: 107px;   
+}
+
+.statemap .state-ne .s1{
+    height: 34px;
+    width: 74px;    
+}
+
+.statemap .state-ne .s2{
+    height: 15px;
+    left: 25px;
+    top: 34px;
+    width: 80px;
+}
+
+.statemap .state-ne .s3{
+    height: 27px;
+    left: 73px;
+    top: 7px;
+    width: 25px;
+}
+
+.statemap .state-nh{
+    background-position: -569px -365px;
+    height: 76px;
+    left: 940px;
+    top: 47px;
+    width: 29px;    
+}
+
+.statemap .state-nh .s1{
+    height: 15px;
+    width: 23px;    
+}
+
+.statemap .state-nh .s2{
+    height: 48px;
+    left: 17px;
+    top: 28px;
+    width: 7px;
+}
+
+.statemap .state-nh .s3{
+   height: 16px;
+    left: 9px;
+    top: 60px;
+    width: 9px;
+}
+
+.statemap .state-nh .s4{
+    height: 12px;
+    left: 12px;
+    top: 48px;
+    width: 6px;
+}
+
+.statemap .state-nj{
+    background-position: -543px -451px;
+    height: 51px;
+    left: 905px;
+    top: 153px;
+    width: 73px;    
+}
+
+.statemap .state-nj .s1{
+    height: 25px;
+    left: 51px;
+    top: 32px;
+    width: 29px;
+}
+
+.statemap .state-nj .s2{
+    height: 33px;
+    left: 10px;
+    width: 18px;
+}
+
+.statemap .state-nj .s3{
+    height: 8px;
+    top: 20px;
+    width: 11px;
+}
+
+.statemap .state-nm{
+    background-position: -282px -512px;
+    height: 88px;
+    width: 76px;
+    left: 484px;
+    top: 218px;     
+}
+
+.statemap .state-nm .s1{
+    height: 76px;
+    width: 78px;
+}
+
+.statemap .state-nm .s2{
+    height: 14px;
+    top: 75px;
+    width: 31px;
+}
+
+.statemap .state-nv{
+    background-position: -543px -512px;
+    height: 110px;
+    left: 346px;
+    top: 136px;
+    width: 74px;    
+}
+
+.statemap .state-nv .s1{
+    height: 58px;
+    width: 75px;    
+}
+
+.statemap .state-nv .s2{
+    height: 39px;
+    left: 46px;
+    top: 57px;
+    width: 29px;
+}
+
+.statemap .state-nv .s3{
+    height: 21px;
+    left: 29px;
+    top: 57px;
+    width: 18px;
+}
+
+.statemap .state-nv .s4{
+    height: 12px;
+    left: 18px;
+    top: 57px;
+    width: 12px;
+}
+
+.statemap .state-nv .s5{
+    height: 12px;
+    left: 38px;
+    top: 77px;
+    width: 9px;
+}
+
+.statemap .state-ny{
+    background-position: -633px -5px;
+    height: 69px;
+    left: 854px;
+    top: 83px;
+    width: 83px;    
+}
+
+.statemap .state-ny .s1{
+    height: 51px;
+    width: 80px;    
+}
+
+.statemap .state-ny .s2{
+    height: 16px;
+    left: 68px;
+    top: 51px;
+    width: 12px;
+}
+
+.statemap .state-ny .s3{
+    height: 10px;
+    left: 60px;
+    top: 53px;
+    width: 9px;
+}
+
+.statemap .state-oh{
+    background-position: -619px -84px;
+    height: 58px;
+    left: 791px;
+    top: 136px;
+    width: 53px;    
+}
+
+.statemap .state-oh .s1{
+    height: 45px;
+    top: 3px;
+    width: 39px;        
+}
+
+.statemap .state-oh .s2{
+    height: 42px;
+    left: 38px;
+    width: 10px;      
+}
+
+.statemap .state-oh .s3{
+    height: 33px;
+    left: 47px;
+    width: 6px;      
+}
+
+.statemap .state-oh .s4{
+    height: 7px;
+    left: 7px;
+    top: 47px;
+    width: 25px;    
+}
+
+.statemap .state-ok{
+    background-position: -605px -152px;
+    height: 51px;
+    left: 561px;
+    top: 218px;
+    width: 107px;   
+}
+
+.statemap .state-ok .s1{
+    height: 37px;
+    left: 38px;
+    width: 69px;    
+}
+
+.statemap .state-ok .s2{  
+    height: 6px;
+    width: 39px;
+}
+
+.statemap .state-ok .s3{ 
+    height: 8px;
+    left: 49px;
+    top: 36px;
+    width: 58px;   
+}
+
+.statemap .state-ok .s4{
+    height: 5px;
+    left: 65px;
+    top: 43px;
+    width: 42px;
+}
+
+.statemap .state-or{
+    background-position: -611px -213px;
+    height: 75px;
+    width: 102px;   
+    left: 287px;
+    top: 61px;
+}
+
+.statemap .state-or .s1{
+    height: 63px;
+    top: 10px;
+    width: 96px;
+}
+
+.statemap .state-or .s2{
+    height: 12px;
+    left: 6px;
+    width: 16px;
+}
+
+.statemap .state-or .s3{
+    height: 7px;
+    left: 59px;
+    top: 3px;
+    width: 40px;
+}
+
+.statemap .state-or .s4{
+    height: 11px;
+    left: 96px;
+    top: 7px;
+    width: 5px;
+}
+
+.statemap .state-pa{
+    background-position: -611px -298px;
+    height: 42px;
+    left: 844px;
+    top: 131px;
+    width: 80px;    
+}
+
+.statemap .state-pa .s1{
+    height: 34px;
+    top: 5px;
+    width: 69px;    
+}
+
+.statemap .state-pa .s2{
+    height: 6px;
+    left: 70px;
+    top: 15px;
+    width: 7px;
+}
+
+.statemap .state-pr{
+    background-position: -611px -350px;
+    height: 40px;
+    width: 54px;
+    left: 181px;
+    top: 330px;    
+}
+
+.statemap .state-pr .s1{
+    height: 40px;
+    width: 54px;    
+}
+
+.statemap .state-ri{
+    background-position: -5px -298px;
+    height: 20px;
+    width: 48px;
+    left: 964px;
+    top: 132px;     
+}
+
+.statemap .state-ri .s1{
+    height: 22px;
+    left: 29px;
+    top: 5px;
+    width: 28px;
+}
+
+
+.statemap .state-ri .s2{
+    height: 12px;
+    width: 9px;
+}
+
+.statemap .state-sc{
+    background-position: -626px -400px;
+    height: 45px;
+    left: 800px;
+    top: 247px;
+    width: 70px;    
+}
+
+.statemap .state-sc .s1{
+    height: 25px;
+    left: 23px;
+    top: 5px;
+    width: 34px;
+}
+
+.statemap .state-sc .s2{
+    height: 13px;
+    left: 37px;
+    top: 30px;
+    width: 20px;
+}
+
+.statemap .state-sc .s3{
+    height: 26px;
+    left: 56px;
+    top: 11px;
+    width: 11px;
+}
+
+.statemap .state-sc .s4{
+    height: 4px;
+    top: 2px;
+    width: 44px;
+}
+
+.statemap .state-sc .s5{
+    height: 12px;
+    left: 7px;
+    top: 5px;
+    width: 16px;
+}
+
+.statemap .state-sc .s6{
+    height: 9px;
+    left: 16px;
+    top: 16px;
+    width: 7px;
+}
+
+.statemap .state-sd{
+    background-position: -627px -455px;
+    height: 57px;
+    width: 95px;
+    left: 548px;
+    top: 66px;      
+}
+
+.statemap .state-sd .s1{
+    height: 51px;
+    width: 97px;
+}
+
+.statemap .state-sd .s2{
+    height: 7px;
+    left: 71px;
+    top: 50px;
+    width: 23px;
+}
+
+.statemap .state-tn{
+    background-position: -315px -400px;
+    height: 23px;
+    width: 95px;
+    left: 726px;
+    top: 224px;     
+}
+
+.statemap .state-tn .s1{
+    height: 23px;
+    left: 6px;
+    width: 57px;
+}
+
+.statemap .state-tn .s2{
+    height: 9px;
+    left: 62px;
+    width: 31px;
+}
+
+.statemap .state-tn .s3{
+    height: 12px;
+    left: 62px;
+    top: 8px;
+    width: 11px;
+}
+
+.statemap .state-tn .s4{
+    height: 13px;
+    top: 10px;
+    width: 7px;
+}
+
+
+.statemap .state-tx{
+    background-position: -726px -5px;
+    height: 158px;
+    left: 515px;
+    top: 226px;
+    width: 167px;   
+}
+
+.statemap .state-tx .s1{
+    height: 116px;
+    left: 112px;
+    top: 42px;
+    width: 48px;    
+}
+
+.statemap .state-tx .s2{
+    height: 90px;
+    left: 3px;
+    top: 68px;
+    width: 110px;
+}
+
+
+.statemap .state-tx .s3 {
+    height: 69px;
+    left: 46px;
+    width: 39px;
+}
+
+.statemap .state-tx .s4{
+    height: 33px;
+    left: 85px;
+    top: 36px;
+    width: 28px;
+}
+
+.statemap .state-ut{
+    background-position: -723px -173px;
+    height: 81px;
+    width: 62px;
+    left: 422px;
+    top: 136px; 
+}
+
+.statemap .state-ut .s1{
+    height: 62px;
+    top: 18px;
+    width: 61px;
+}
+
+.statemap .state-ut .s2{
+    height: 19px;
+    width: 35px;
+}
+
+.statemap .state-va{
+    background-position: -795px -173px;
+    height: 44px;
+    left: 812px;
+    top: 180px;
+    width: 92px;    
+}
+
+.statemap .state-va .s1{
+    height: 23px;
+    left: 37px;
+    top: 21px;
+    width: 52px;    
+}
+
+.statemap .state-va .s2{
+    height: 12px;
+    left: 7px;
+    top: 32px;
+    width: 31px;
+}
+
+.statemap .state-va .s3{
+    height: 16px;
+    left: 59px;
+    top: 5px;
+    width: 17px;
+}
+
+.statemap .state-va .s4{
+    height: 11px;
+    left: 43px;
+    top: 11px;
+    width: 16px;
+}
+
+.statemap .state-vt{
+    background-position: -795px -227px;
+    height: 71px;
+    left: 906px;
+    top: 52px;
+    width: 52px;    
+}
+
+.statemap .state-vt .s1{
+    height: 19px;
+    left: -4px;
+    top: -4px;
+    width: 25px;
+}
+
+.statemap .state-vt .s2{
+    height: 40px;
+    left: 29px;
+    top: 31px;
+    width: 12px;
+}
+
+.statemap .state-vt .s3{
+    height: 12px;
+    left: 40px;
+    top: 31px;
+    width: 10px;
+}
+
+
+.statemap .state-wa{
+    background-position: -701px -308px;
+    height: 65px;
+    width: 99px;
+    left: 285px;
+    top: 8px;
+}
+
+.statemap .state-wa .s1{
+    height: 56px;
+    width: 99px;
+}
+
+.statemap .state-wa .s2{
+    height: 9px;
+    left: 25px;
+    top: 55px;
+    width: 41px;
+}
+
+.statemap .state-wi{
+    background-position: -732px -383px;
+    height: 89px;
+    left: 690px;
+    top: 37px;
+    width: 113px;   
+}
+
+.statemap .state-wi .s1{
+    height: 60px;
+    left: 21px;
+    top: 31px;
+    width: 54px;
+}
+
+.statemap .state-wi .s2{
+    height: 31px;
+    top: 30px;
+    width: 22px;
+}
+
+.statemap .state-wi .s3{
+    height: 20px;
+    left: 6px;
+    top: 12px;
+    width: 108px;
+}
+
+.statemap .state-wi .s4{
+    height: 13px;
+    left: 43px;
+    width: 22px;
+}
+
+.statemap .state-wv{
+    background-position: -810px -308px;
+    height: 41px;
+    left: 818px;
+    top: 172px;
+    width: 54px;    
+}
+
+.statemap .state-wv .s1{
+    height: 31px;
+    left: 10px;
+    top: 9px;
+    width: 19px;        
+}
+
+
+.statemap .state-wv .s2{
+    height: 13px;
+    top: 20px;
+    width: 12px;
+}
+
+.statemap .state-wv .s3{
+    height: 21px;
+    left: 20px;
+    width: 21px;
+}
+
+.statemap .state-wv .s4{
+    height: 10px;
+    left: 40px;
+    top: 10px;
+    width: 10px;
+}
+
+.statemap .state-wv .s5{
+    height: 11px;
+    left: 28px;
+    top: 20px;
+    width: 8px;
+}
+
+.statemap .state-wy{
+    background-position: -732px -482px;
+    height: 68px;
+    width: 87px;
+    left: 459px;
+    top: 84px;  
+}
+
+.statemap .state-wy .s1{
+    height: 68px;
+    width: 87px;    
+} 
+
+.usmap .otherPlans {
+	margin-top: 48px;
+}
+
+.usmap .otherPlans p {
+	margin: 0;
+}
+
+.infoBox.state-popup-dc {
+    width: 200px;
+}

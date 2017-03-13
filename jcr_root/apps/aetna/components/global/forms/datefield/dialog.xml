@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Date Field"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <label
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/forms/basicformcomponent/dialog/items/items/configuration/items/label.infinity.json"
+                        xtype="cqinclude"/>
+                    <descriptiontext
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/forms/basicformcomponent/dialog/items/items/configuration/items/descriptiontext.infinity.json"
+                        xtype="cqinclude"/>
+                </items>
+            </configuration>
+            <month
+                jcr:primaryType="cq:Panel"
+                title="Month">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <placeholder
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to render inside the month field as a placeholder."
+                        fieldLabel="Placeholder text"
+                        name="./monthplaceholder"
+                        xtype="textfield"/>
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="HTML name attribute to be submitted for the month field."
+                        fieldLabel="Input name"
+                        name="./monthname"
+                        xtype="textfield"/>
+                    <fieldlabelaccessibility
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        defaultValue="Month"
+                        fieldDescription="Label of the field for accessibility standards. It will be concatenated with the main Date Field label."
+                        fieldLabel="Field Label (Accessibility)"
+                        name="./monthfieldlabelaccessibility"
+                        xtype="textfield"/>
+                    <validations
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Include each validation for the month field."
+                        fieldLabel="Validations"
+                        name="./monthvalidations"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="aetna.formvalidation"/>
+                    </validations>
+                </items>
+            </month>
+            <day
+                jcr:primaryType="cq:Panel"
+                title="Day">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <placeholder
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to render inside the day field as a placeholder."
+                        fieldLabel="Placeholder text"
+                        name="./dayplaceholder"
+                        width="95%"
+                        xtype="textfield"/>
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="HTML name attribute to be submitted for the day field."
+                        fieldLabel="Input name"
+                        name="./dayname"
+                        width="95%"
+                        xtype="textfield"/>
+                    <fieldlabelaccessibility
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        defaultValue="Day"
+                        fieldDescription="Label of the field for accessibility standards. It will be concatenated with the main Date Field label."
+                        fieldLabel="Field Label (Accessibility)"
+                        name="./dayfieldlabelaccessibility"
+                        xtype="textfield"/>
+                    <validations
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Include each validation for the day field."
+                        fieldLabel="Validations"
+                        name="./dayvalidations"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="aetna.formvalidation"/>
+                    </validations>
+                </items>
+            </day>
+            <year
+                jcr:primaryType="cq:Panel"
+                title="Year">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <placeholder
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to render inside the year field as a placeholder."
+                        fieldLabel="Placeholder text"
+                        name="./yearplaceholder"
+                        width="95%"
+                        xtype="textfield"/>
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="HTML name attribute to be submitted for the year field."
+                        fieldLabel="Input name"
+                        name="./yearname"
+                        width="95%"
+                        xtype="textfield"/>
+                    <fieldlabelaccessibility
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        defaultValue="Year"
+                        fieldDescription="Label of the field for accessibility standards. It will be concatenated with the main Date Field label."
+                        fieldLabel="Field Label (Accessibility)"
+                        name="./yearfieldlabelaccessibility"
+                        xtype="textfield"/>
+                    <validations
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Include each validation for the year field."
+                        fieldLabel="Validations"
+                        name="./yearvalidations"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="aetna.formvalidation"/>
+                    </validations>
+                </items>
+            </year>
+        </items>
+    </items>
+</jcr:root>

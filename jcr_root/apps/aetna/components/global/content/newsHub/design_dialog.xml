@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="News Hub"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to use as the main title of the News section."
+                        fieldLabel="Title"
+                        name="./title"
+                        xtype="textfield"/>
+                    <firstlink
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="true"
+                        title="First News Hub Link"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <firstnewstext
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Text to use as the first news. If you leave it blank, the first news won't be displayed."
+                                fieldLabel="First News Text"
+                                name="./firstnewstext"
+                                xtype="textfield"/>
+                            <firstnewslink
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Link to redirect when the first news is clicked."
+                                fieldLabel="First News Link"
+                                name="./firstnewslink"
+                                xtype="pathfield"/>
+                            <firstnewsalerttext
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Text to use as the 'Alert' text for the first news. Leave it blank if you don't want to render it."
+                                fieldLabel="First News Alert Text"
+                                name="./firstnewsalerttext"
+                                xtype="textfield"/>
+                            <onclick
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="true"
+                                fieldDescription="Text to use in the onclick event for tracking."
+                                fieldLabel="onclick event"
+                                name="./onclick"
+                                xtype="textfield"/>
+                            <firstinterstitial
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Select the interstitial window to display"
+                                fieldLabel="Interstitial"
+                                name="./firstinterstitial"
+                                type="select"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <none
+                                        jcr:primaryType="nt:unstructured"
+                                        text="None"
+                                        value=""/>
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Default"
+                                        value="external"/>
+                                </options>
+                            </firstinterstitial>
+                        </items>
+                    </firstlink>
+                    <secondlink
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="true"
+                        title="Second News Hub Link"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <secondstaticnewstext
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Text to use as the second news. If you leave it blank, the second news won't be displayed."
+                                fieldLabel="Second News Text"
+                                name="./secondstaticnewstext"
+                                xtype="textfield"/>
+                            <secondstaticnewslink
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Link to redirect when the second news is clicked."
+                                fieldLabel="Second News Link"
+                                name="./secondstaticnewslink"
+                                xtype="pathfield"/>
+                            <secondstaticnewsalerttext
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Text to use as the 'Alert' text for the second news. Leave it blank if you don't want to render it."
+                                fieldLabel="Second News Alert Text"
+                                name="./secondstaticnewsalerttext"
+                                xtype="textfield"/>
+                            <secondstaticonclick
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="true"
+                                fieldDescription="Text to use in the onclick event for tracking."
+                                fieldLabel="onclick event"
+                                name="./secondstaticonclick"
+                                xtype="textfield"/>
+                            <secondinterstitial
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Select the interstitial window to display"
+                                fieldLabel="Interstitial"
+                                name="./secondtinterstitial"
+                                type="select"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <none
+                                        jcr:primaryType="nt:unstructured"
+                                        text="None"
+                                        value=""/>
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Default"
+                                        value="external"/>
+                                </options>
+                            </secondinterstitial>
+                        </items>
+                    </secondlink>
+                    <thirdlink
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="true"
+                        title="Third News Hub Link"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <secondnewssource
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="URL of the source to get the latest News Hub Link. If there's an error getting the link from this source, the next fields will be used as a fallback."
+                                fieldLabel="Third News Link Source"
+                                name="./secondnewssource"
+                                xtype="textfield"/>
+                            <secondnewstext
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Text to use as the third news."
+                                fieldLabel="Third News Text"
+                                name="./secondnewstext"
+                                xtype="textfield"/>
+                            <secondnewslink
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Link to redirect when the third news is clicked."
+                                fieldLabel="Third News Link"
+                                name="./secondnewslink"
+                                xtype="pathfield"/>
+                            <secondnewsalerttext
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Text to use as the 'Alert' text for the third news. Leave it blank if you don't want to render it."
+                                fieldLabel="Third News Alert Text"
+                                name="./secondnewsalerttext"
+                                xtype="textfield"/>
+                            <onclick
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="true"
+                                fieldDescription="Text to use in the onclick event for tracking."
+                                fieldLabel="onclick event"
+                                name="./secondonclick"
+                                xtype="textfield"/>
+                            <thirdinterstitial
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Select the interstitial window to display"
+                                fieldLabel="Interstitial"
+                                name="./thirdinterstitial"
+                                type="select"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <none
+                                        jcr:primaryType="nt:unstructured"
+                                        text="None"
+                                        value=""/>
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Default"
+                                        value="external"/>
+                                </options>
+                            </thirdinterstitial>
+                        </items>
+                    </thirdlink>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

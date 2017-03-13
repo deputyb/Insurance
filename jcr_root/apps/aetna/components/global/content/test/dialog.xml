@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Topic Slideshow"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <links
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check for a list of lists. Uncheck for a bullet list"
+                        fieldLabel="Display as a list of links?"
+                        name="./linksx"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <colqty
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Number of columns to include in the list"
+                        fieldLabel="Column quantity"
+                        name="./colqty"
+                        xtype="numberfield"/>
+                    <itemqty
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Number of items to include per column"
+                        fieldLabel="Item quantity"
+                        name="./itemqty"
+                        xtype="numberfield"/>
+                    <urls
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new page. If are not links: add the text to show, otherwise use: link;TextToShow"
+                        fieldLabel="Pages"
+                        name="./urls"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            width="155"
+                            xtype="pathfield"/>
+                    </urls>
+                    <underlined
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Adds underlined CSS class"
+                        fieldLabel="Add underlined CSS class?"
+                        name="./underlined"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </configuration>
+            <menuconfig
+                jcr:primaryType="cq:Widget"
+                title="Menu Config"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <menuLinks
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="List of links to include in the main menu"
+                        fieldLabel="Menu Links"
+                        name="./links"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            width="155"
+                            xtype="aetna.listitem"/>
+                    </menuLinks>
+                    <test
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="List of links to include in the main menu"
+                        fieldLabel="Test"
+                        name="./menuLinks"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            labelWidth="100"
+                            width="500"
+                            xtype="compositefield">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <label
+                                    jcr:primaryType="cq:Widget"
+                                    fieldDescription="Path of the page targeted by the link"
+                                    fieldLabel="URL"
+                                    name="./label"
+                                    xtype="textfield"/>
+                                <underlined
+                                    jcr:primaryType="cq:Widget"
+                                    fieldDescription="Adds underlined CSS class"
+                                    fieldLabel="Add underlined CSS class?"
+                                    name="./underlined"
+                                    type="checkbox"
+                                    width="100"
+                                    xtype="selection"/>
+                            </items>
+                        </fieldConfig>
+                    </test>
+                </items>
+            </menuconfig>
+        </items>
+    </items>
+</jcr:root>

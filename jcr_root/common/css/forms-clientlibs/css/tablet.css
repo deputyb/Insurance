@@ -1,0 +1,51 @@
+@media only screen and (max-width : 914px) {
+	.form .survey-question {
+		display: none;
+	}
+	
+	.form .survey-scale-parent {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width:968px){
+	.form .addressfield .float-left {
+		float: left !important;
+	}
+		
+	.form .addressfield .col {
+		float: none;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.form .addressfield .col2 {
+		min-width: 297px;
+	}
+	
+	.form .addressfield .col3 {
+		margin-right: 0%;
+	}
+	
+	.form .addressfield .shortercol3{
+		width: 70%;
+		margin-right: 3%;
+	}
+	
+	.form .addressfield .col4 {
+		width:20%;
+		margin-left:0% !important;
+	}
+	
+	.form .addressfield .zip-divider{
+		width: 4%;
+		margin-left:3%;
+	}
+}
+
+@media only screen and (max-width : 1024px) {
+	.form .selectWrap select {
+		padding: 11px 52px 10px 10px;
+		width: 120%;
+	}
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    helpPath="en/cq/current/wcm/default_components.html#Text"
+    title="Biography Item"
+    width="650"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Text Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <opentogglecopy
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to be rendered as the open toggle CTA"
+                        fieldLabel="Open Toggle Copy"
+                        name="./opentogglecopy"
+                        xtype="textfield"/>
+                    <closetogglecopy
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to be rendered as the close toggle CTA"
+                        fieldLabel="Close Toggle Copy"
+                        name="./closetogglecopy"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

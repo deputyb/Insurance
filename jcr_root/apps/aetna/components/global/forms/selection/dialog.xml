@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Selection"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <type
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="false"
+                        defaultValue="radio"
+                        fieldDescription="Select the type of user selection to render."
+                        fieldLabel="Type"
+                        name="./type"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <radio
+                                jcr:primaryType="nt:unstructured"
+                                text="Radio button"
+                                value="radio"/>
+                            <checkbox
+                                jcr:primaryType="nt:unstructured"
+                                text="Checkbox"
+                                value="checkbox"/>
+                            <dropdown
+                                jcr:primaryType="nt:unstructured"
+                                text="Dropdown"
+                                value="dropdown"/>
+                            <multiple
+                                jcr:primaryType="nt:unstructured"
+                                text="Multiple selection"
+                                value="multiple"/>
+                        </options>
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            loadcontent="function(field,record,path){var container=field.findParentByType('panel');var configurationTab=container.ownerCt.getComponent(0);var checkboxsamelineField = configurationTab.getComponent(6); var firstoptionblankField = configurationTab.getComponent(4); if (field.getValue() == 'radio') {checkboxsamelineField.setVisible(true);} else {checkboxsamelineField.setVisible(false);if (field.getValue() == 'dropdown') {firstoptionblankField.setVisible(true);} else {firstoptionblankField.setVisible(false);}}}"
+                            selectionchanged="function(field,value,isChecked){var container=field.findParentByType('panel');var configurationTab=container.ownerCt.getComponent(0);var checkboxsamelineField = configurationTab.getComponent(6); var firstoptionblankField = configurationTab.getComponent(4); if (value == 'radio') {checkboxsamelineField.setVisible(true);} else {checkboxsamelineField.setVisible(false);} if (value == 'dropdown') {firstoptionblankField.setVisible(true);} else {firstoptionblankField.setVisible(false);}}"/>
+                    </type>
+                    <label
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/forms/basicformcomponent/dialog/items/items/configuration/items/label.infinity.json"
+                        xtype="cqinclude"/>
+                    <descriptiontext
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/forms/basicformcomponent/dialog/items/items/configuration/items/descriptiontext.infinity.json"
+                        xtype="cqinclude"/>
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="HTML name attribute to be submitted."
+                        fieldLabel="Input name"
+                        name="./name"
+                        xtype="textfield"/>
+                    <firstoptionblank
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to use the first option as a description message, not a value."
+                        fieldLabel="First option is blank"
+                        hidden="true"
+                        name="./firstoptionblank"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <options
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Include each option to render in the component. You can use the format {value}={title} to include for each option, otherwise it will use the title as the value."
+                        fieldLabel="Options"
+                        name="./options"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield"/>
+                    </options>
+                    <checkboxsameline
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to render the options in the same line."
+                        fieldLabel="Options in same line"
+                        hidden="true"
+                        name="./checkboxsameline"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </configuration>
+            <validations
+                jcr:primaryType="cq:Panel"
+                title="Validations">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <validations
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/forms/basicformcomponent/dialog/items/items/configuration/items/validations.infinity.json"
+                        xtype="cqinclude"/>
+                </items>
+            </validations>
+        </items>
+    </items>
+</jcr:root>

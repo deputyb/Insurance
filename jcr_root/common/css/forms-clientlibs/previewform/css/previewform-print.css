@@ -1,0 +1,21 @@
+@media print{
+	div.breadcrumb{
+		display:none;
+	}
+	
+	div.parbase div.articleModule{
+		display:none;
+	}
+	
+	.blueBtn{
+		display:none;
+	}	
+	
+	footer{
+		display:none;
+	}
+	
+	div.newsTop{
+		display:none;
+	}
+}

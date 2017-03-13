@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    title="Body Text with Image on Side"
+    width="650"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <text
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text.infinity.json"
+                        xtype="cqinclude"/>
+                    <isRichTextFlag
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="{Boolean}true"
+                        name="./textIsRich"
+                        value="true"
+                        xtype="hidden"/>
+                    <layout
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select the way you want to order the elements."
+                        fieldLabel="Layout"
+                        name="./layout"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <imagetext
+                                jcr:primaryType="nt:unstructured"
+                                text="Image - Text"
+                                value="imagetext"/>
+                            <textimage
+                                jcr:primaryType="nt:unstructured"
+                                text="Text - Image"
+                                value="textimage"/>
+                        </options>
+                    </layout>
+                </items>
+            </configuration>
+            <image
+                jcr:primaryType="cq:Widget"
+                allowBlank="false"
+                cropParameter="./image/imageCrop"
+                ddGroups="[media]"
+                fieldLabel="Image"
+                fileNameParameter="./image/fileName"
+                fileReferenceParameter="./image/fileReference"
+                mapParameter="./image/imageMap"
+                name="./image/file"
+                requestSuffix="/image.img.png"
+                rotateParameter="./image/imageRotate"
+                sizeLimit="100"
+                title="Image"
+                uploadUrl="/tmp/upload/*"
+                xtype="html5smartimage"/>
+            <imageconfigs
+                jcr:primaryType="cq:Widget"
+                title="Image Config"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <resTypeImage
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="true"
+                        name="./image/sling:resourceType"
+                        value="foundation/components/image"
+                        xtype="hidden"/>
+                    <imageConfigs
+                        jcr:primaryType="cq:Widget"
+                        title="Image configuration"
+                        xtype="fieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <alt
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image Alt Text"
+                                name="./imageAlt"
+                                width="250"
+                                xtype="textfield"/>
+                            <imageTitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image Title"
+                                name="./imageTitle"
+                                width="250"
+                                xtype="textfield"/>
+                            <imageURL
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image URL"
+                                name="./imageURL"
+                                width="250"
+                                xtype="pathfield"/>
+                        </items>
+                    </imageConfigs>
+                </items>
+            </imageconfigs>
+        </items>
+    </items>
+</jcr:root>

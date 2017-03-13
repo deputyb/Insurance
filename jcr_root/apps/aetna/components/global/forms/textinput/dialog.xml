@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Text Input"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <type
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="false"
+                        defaultValue="textfield"
+                        fieldDescription="Select the type of user input to render."
+                        fieldLabel="Type"
+                        name="./type"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <textfield
+                                jcr:primaryType="nt:unstructured"
+                                text="Text field"
+                                value="textfield"/>
+                            <password
+                                jcr:primaryType="nt:unstructured"
+                                text="Password"
+                                value="password"/>
+                            <textarea
+                                jcr:primaryType="nt:unstructured"
+                                text="Text area"
+                                value="textarea"/>
+                        </options>
+                    </type>
+                    <label
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/forms/basicformcomponent/dialog/items/items/configuration/items/label.infinity.json"
+                        xtype="cqinclude"/>
+                    <placeholder
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to render inside the field as a placeholder."
+                        fieldLabel="Placeholder text"
+                        name="./placeholder"
+                        xtype="textfield"/>
+                    <descriptiontext
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/forms/basicformcomponent/dialog/items/items/configuration/items/descriptiontext.infinity.json"
+                        xtype="cqinclude"/>
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="HTML name attribute to be submitted."
+                        fieldLabel="Input name"
+                        name="./name"
+                        xtype="textfield"/>
+                    <width
+                        jcr:primaryType="nt:unstructured"
+                        defaultValue="full-width"
+                        fieldDescription="Select the width of the input field."
+                        fieldLabel="Width"
+                        name="./width"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <fullwidth
+                                jcr:primaryType="nt:unstructured"
+                                text="100%"
+                                value="full-width"/>
+                            <mediumwidth
+                                jcr:primaryType="nt:unstructured"
+                                text="50%"
+                                value="medium-width"/>
+                            <width
+                                jcr:primaryType="nt:unstructured"
+                                text="25%"
+                                value="low-width"/>
+                        </options>
+                    </width>
+                </items>
+            </configuration>
+            <validations
+                jcr:primaryType="cq:Panel"
+                title="Validations">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <validations
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/forms/basicformcomponent/dialog/items/items/configuration/items/validations.infinity.json"
+                        xtype="cqinclude"/>
+                </items>
+            </validations>
+        </items>
+    </items>
+</jcr:root>

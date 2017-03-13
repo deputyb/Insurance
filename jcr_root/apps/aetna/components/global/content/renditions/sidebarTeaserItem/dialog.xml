@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Sidebar Teaser Item"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <textConfiguration
+                jcr:primaryType="cq:Widget"
+                path="/apps/aetna/components/global/content/sidebarTeaser/sidebarTeaserItem/dialog/items/items/textConfiguration.infinity.json"
+                xtype="cqinclude"/>
+            <linkConfiguration
+                jcr:primaryType="cq:Panel"
+                title="Link Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <href
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/content/sidebarTeaser/sidebarTeaserItem/dialog/items/items/linkConfiguration/items/href.infinity.json"
+                        xtype="cqinclude"/>
+                    <target
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Check it if you want to open the link in a new window/tab"
+                        fieldLabel="New tab/window"
+                        name="./target"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <onclick
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/aetna/components/global/content/sidebarTeaser/sidebarTeaserItem/dialog/items/items/linkConfiguration/items/onclick.infinity.json"
+                        xtype="cqinclude"/>
+                    <interstitial
+                        jcr:primaryType="nt:unstructured"
+                        path="/apps/aetna/components/global/content/sidebarTeaser/sidebarTeaserItem/dialog/items/items/linkConfiguration/items/interstitial.infinity.json"
+                        xtype="cqinclude"/>
+                    <resTypeImage
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="true"
+                        name="./image/sling:resourceType"
+                        value="foundation/components/image"
+                        xtype="hidden"/>
+                </items>
+            </linkConfiguration>
+            <image
+                jcr:primaryType="cq:Widget"
+                path="/apps/aetna/components/global/content/sidebarTeaser/sidebarTeaserItem/dialog/items/items/image.infinity.json"
+                xtype="cqinclude"/>
+        </items>
+    </items>
+</jcr:root>

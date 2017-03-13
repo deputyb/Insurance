@@ -1,0 +1,2 @@
+#base=css
+users-notifications-admin.css

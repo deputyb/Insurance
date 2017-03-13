@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Shop Module Container"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <size
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select the size of the component. If 'tall; is used, the 'Collapse' icon will be displayed."
+                        fieldLabel="Size"
+                        name="./size"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <short
+                                jcr:primaryType="nt:unstructured"
+                                text="Short"
+                                value="short"/>
+                            <tall
+                                jcr:primaryType="nt:unstructured"
+                                text="Tall"
+                                value="tall"/>
+                        </options>
+                    </size>
+                    <languagetext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to use for the language toggle."
+                        fieldLabel="Language Text"
+                        name="./languagetext"
+                        xtype="textfield"/>
+                    <languageonclick
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="JavaScript event to be executed when the language link is clicked. Place any ClientContext calls as required.."
+                        fieldLabel="Language OnClick"
+                        name="./languageonclick"
+                        xtype="textarea"/>
+                </items>
+            </configuration>
+            <mobileconfiguration
+                jcr:primaryType="cq:Panel"
+                title="Mobile Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <moretext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Copy to use for the 'More' Text in the mobile layout"
+                        fieldLabel="'More' Text"
+                        name="./moretext"
+                        xtype="textfield"/>
+                </items>
+            </mobileconfiguration>
+        </items>
+    </items>
+</jcr:root>

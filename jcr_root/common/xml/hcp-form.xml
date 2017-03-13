@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document>
+    <business name="PDF Forms Page">
+        <state name="Category"/>
+        <state name="Coordination of Benefits">
+            <form>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/online-cob-form.pdf</url>
+                <name>Coordination of Benefits</name>
+            </form>
+        </state>
+        <state name="Dispute and Appeals">
+            <form>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/Authorized-Representative-Request-Form.pdf</url>
+                <name>Authorized Representative Request</name>
+            </form>
+        </state>
+        <state name="ERA/EFT">
+            <form>
+                <url>http://www.aetna.com/healthcare-professionals/assets/documents/electronic-funds-transfer-enrollment-form.pdf</url>
+                <name>EFT Only Enrollment</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/healthcare-professionals/assets/documents/electronic-remittance-advice-funds-transfer-enrollment-form.pdf</url>
+                <name>ERA and EFT Enrollment</name>
+            </form>
+        </state>
+        <state name="Medicare">
+            <form>
+                <url>http://www.cms.gov/Medicare/Medicare-General-Information/BNI/downloads/RevisedImportantMessageFromMedicare05_2007.pdf</url>
+                <name>Medicare Message About your Rights</name>
+                <class>external</class>
+            </form>
+        </state>
+        <state name="National Provider Identifier (NPI)">
+            <form>
+                <url>https://www.aetna.com/info/letstalk/contact_us/npi/npi.html</url>
+                <name>NPI Submission &gt;</name>
+                <target>blank</target>
+            </form>
+            <form>
+                <url>https://www.aetna.com/about-aetna-insurance/contact-us/forms/doctors_hospitals/exemption_form.html</url>
+                <name>NPI Exemption Notification &gt;</name>
+            </form>
+        </state>
+        <state name="Network Applications">
+            <form>
+                <url>http://www.aetna.com/about-aetna-insurance/contact-us/forms/doctors_hospitals/medical_role.html</url>
+                <name>Medical Application Request &gt;</name>
+            </form>
+            <form>
+                <url>https://www.aetna.com/about-aetna-insurance/contact-us/forms/doctors_hospitals/dental_plan.html</url>
+                <name>Dental Application Request &gt;</name>
+            </form>
+            <form>
+                <url>https://www.aetna.com/about-aetna-insurance/contact-us/forms/doctors_hospitals/bh_form.html</url>
+                <name>Behavioral Health Application Request &gt;</name>
+            </form>
+            <form>
+                <url>https://www.aetna.com/about-aetna-insurance/contact-us/forms/doctors_hospitals/rx_contract_app.html</url>
+                <name>Pharmacy Application Request &gt;</name>
+            </form>
+        </state>
+        <state name="Physician Communications">
+            <form>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/BH-Medical-Provider-Communication-Form.pdf</url>
+                <name>Behavioral Health/Medical Provider Communication</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/BH-TRR-Sample-Treatment-Forms.pdf</url>
+                <name>Behavioral Health Sample Initial Evaluation</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/Eye-Exam-Report.pdf</url>
+                <name>Eye Examination Report</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/physician-communication-form.pdf</url>
+                <name>Physician Communication</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/physician-communication-post-fragility-fracture-care-form.pdf</url>
+                <name>Post-Fragility Fracture Care</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/specialist-consultation-report.pdf</url>
+                <name>Specialist Consultation Report</name>
+            </form>
+        </state>
+        <state name="Pharmacy">
+            <form>
+                <url>http://www.aetna.com/healthcare-professionals/documents-forms/precertification-request-for-prescription-drugs.pdf</url>
+                <name>Prescription Medication Precertification</name>
+            </form>
+        </state>
+        <state name="Provider Demographic Updates">
+            <form>
+                <url>http://www.aetna.com/docfind/custom/provider/data_correction.html</url>
+                <name>Provider Demographic Updates &gt;</name>
+                <target>blank</target>
+            </form>
+        </state>
+        <state name="Specialty Pharmacy Precertification">
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/orencia-precert-form.pdf</url>
+                <name>Abatacept (Orencia&#60;sup&#62;®&#60;&#47;sup&#62;) Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/humira-precert-form.pdf</url>
+                <name>Adalimumab (Humira&#60;sup&#62;®&#60;&#47;sup&#62;) Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Amevive-Precert-Form.pdf</url>
+                <name>Alefacept (Amevive&#60;sup&#62;®&#60;&#47;sup&#62;) Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/alpha-1-antitrypsin-inhibitor-therapy-precertification-request-form.pdf</url>
+                <name>Alpha 1 Antitrypsin Inhibitor Therapy Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/kineret-precert-form.pdf</url>
+                <name>Anakinra (Kineret&#60;sup&#62;®&#60;&#47;sup&#62;) Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/68736-Antiemetic-Inject-Form.pdf</url>
+                <name>Antiemetic Injectable Medication Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/belimumab-injectable-medication-precertification-request.pdf</url>
+                <name>Belimumab (Benlysta&#60;sup&#62;®&#60;&#47;sup&#62;) Injectable Medication Precertification Request </name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/botulinum-toxins-medication-precertification-request.pdf</url>
+                <name>Botulinum Toxins Medication Precertification Request </name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/adcetris-precert-form.pdf</url>
+                <name>Brentuximab vedotin (Adcetris&#60;sup&#62;®&#60;&#47;sup&#62;) Injectable Medication Precertification Request </name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/jevtana-precert-form.pdf</url>
+                <name>Cabazitaxel (Jevtana&#60;sup&#62;®&#60;&#47;sup&#62;) Injectable Medication Precertification Request </name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/cimzia-precert-form.pdf</url>
+                <name>Certolizumab (Cimzia&#60;sup&#62;®&#60;&#47;sup&#62;) Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/erbitux-precert-form.pdf</url>
+                <name>Cetuximab (Erbitux) Injectable medication precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Denosumab-Precert-Form.pdf</url>
+                <name>Denosumab (Prolia, Xgeva) Medication Precertification Request </name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/68742-Soliris-request-form.pdf</url>
+                <name>Eculizumab (Soliris&#60;sup&#62;®&#60;&#47;sup&#62;) Medication Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/enzyme-replacement-precert-form.pdf</url>
+                <name>Enzyme Replacement Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/epo-dialysis-medication-precerification-request-form.pdf</url>
+                <name>EPO/Dialysis medication precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/enbrel-precert-form.pdf</url>
+                <name>Etanercept (Enbrel&#60;sup&#62;®&#60;&#47;sup&#62;) Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/simponi-precert-form.pdf</url>
+                <name>Golimumab (Simponi&#60;sup&#62;®&#60;&#47;sup&#62;) Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/adult-growth-hormone-medication-request-form.pdf</url>
+                <name>Growth Hormone Medication Request (Adult)</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/pediatric-growth-hormone-medication-request-form.pdf</url>
+                <name>Growth Hormone Medication Request (Pediatric)</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/HepC-MedicationPrecertificationRequest.pdf</url>
+                <name>Hep C Medication Precertification Request </name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/hereditary-angioedema-medication-precertification-request-form.pdf</url>
+                <name>Hereditary Angioedema Medication Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/hydroxyprogesterone-caproate-medication-precertification-form.pdf</url>
+                <name>Hydroxyprogesterone Caproate (Makena&#60;sup&#62;®&#60;&#47;sup&#62;) Medication Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Immune-Globulin-Therapy-Medication-Precertification-Request-Form.pdf</url>
+                <name>Immune Globulin (IG) Therapy Medication Precertification Request </name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Female-Infertility-Medication-Precertification-Request.pdf</url>
+                <name>Infertility Medication Precertification Request (Female)</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Male-Infertility-Medication-Precertification-Request.pdf</url>
+                <name>Infertility Medication Precertification Request  (Male) </name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/remicade-precert-form.pdf</url>
+                <name>Infliximab (Remicade&#60;sup&#62;®&#60;&#47;sup&#62;) Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/insulin-like-growth-factor-1-injectable-medication-precert-form.pdf</url>
+                <name>Insulin-Like Growth Factor-1 Injectable Medication Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Actimmune-Precertification-form.pdf</url>
+                <name>Interferon gamma (Actimmune&#60;sup&#62;®&#60;&#47;sup&#62;) Injectable Medication Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Ipilimumab-injectable-medication-request-form.pdf</url>
+                <name>Ipilimumab (Yervoy&#60;sup&#62;®&#60;&#47;sup&#62;) Injectable Medication Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/multiple-sclerosis-medication-request-form.pdf</url>
+                <name>Multiple Sclerosis Medication Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/gazyva-precert-request-form.pdf</url>
+                <name>Obinutuzumab (Gazyva™) Injectable Medication Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/xolair-precert-form.pdf</url>
+                <name>Omalizumab (Xolair&#60;sup&#62;®&#60;&#47;sup&#62;) Medication Precertification</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Osteoporosis_Precert_Form.pdf</url>
+                <name>Osteoporosis Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/synagis-precert-request-form.pdf</url>
+                <name>Palivizumab (Synagis&#60;sup&#62;®&#60;&#47;sup&#62;) Injectable Medication Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/vectibix-precert-form.pdf</url>
+                <name>Panitumumab (Vectibix) Injectable medication precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/pegloticase-injectable-medication-precertification-request-form.pdf</url>
+                <name>Pegloticase (Krystexxa&#60;sup&#62;®&#60;&#47;sup&#62;) Injectable Medication Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/provenge-precert-request-form.pdf</url>
+                <name>Provenge Medication Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/pulmonary-arterial-hypertension-precertification-request-form.pdf</url>
+                <name>Pulmonary Arterial Hypertension Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/radium-xofigo-precert-form.pdf</url>
+                <name>Radium-223 dichloride (Xofigo) Injectable Medication Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/RepositoryCorticotropin.pdf</url>
+                <name>Repository Corticotropin (H.P Acthar Gel) Injectable Medication Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/rituximab-precertification-request-form.pdf</url>
+                <name>Rituximab (Rituxan&#60;sup&#62;®&#60;&#47;sup&#62;) Precertification Request </name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Synagis-Medication-Precert-Request-Form.pdf</url>
+                <name>Synagis&#60;sup&#62;®&#60;&#47;sup&#62; Medication Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Gattex-Precertification-form.pdf</url>
+                <name>Teduglutide(Gattex&#60;sup&#62;®&#60;&#47;sup&#62;)Injectable Medication Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/actemra-precert-form.pdf</url>
+                <name>Tocilizumab (Actemra&#60;sup&#62;®&#60;&#47;sup&#62;) Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Xeljanz-Precert-Form.pdf</url>
+                <name>Tofacitinib (Xeljanz&#60;sup&#62;TM&#60;&#47;sup&#62;) Medication Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/herceptin-injectable-medication-precert-form.pdf</url>
+                <name>Trastuzumab (Herceptin), Ado-Trastuzumab (Kadcyla) and Pertuzumab (Perjeta) Injectable Medication Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Stelara-Precert-Form.pdf</url>
+                <name>Ustekinumab (Stelara&#60;sup&#62;®&#60;&#47;sup&#62;) Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/viscosupplementation-injectable-medications-precertification-request-form.pdf</url>
+                <name>Viscosupplementation Injectable Medications Precertification Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/ziv-aflibercept-injectable-medication-precertification-request-form.pdf</url>
+                <name>Ziv-Aflibercept (Zaltrap&#60;sup&#62;®&#60;&#47;sup&#62;) Injectable Medication Precertification Request</name>
+            </form>
+        </state>
+        <state name="Specialty Pharmacy Medications">
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/medication-request-form.pdf</url>
+                <name>General Medication Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Crohn's_medication_request_form.pdf</url>
+                <name>Crohn's/Ulcerative Colitis Medication Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/EnzymeReplacement-MedicationForm.pdf</url>
+                <name>Enzyme Replacement Medication Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/GrowthHormone-MedicationRequestForm.pdf</url>
+                <name>Growth Hormone Medication Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/HEMO.pdf</url>
+                <name>Hemophilia Medication Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/HepatitisC-MedicationRequestForm.pdf</url>
+                <name>Hepatitis C Medication Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/HIV-Drugs-Medication-Request-Form.pdf</url>
+                <name>HIV/AIDS Medication Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Immune_globulin_medication_request_form.pdf</url>
+                <name>Immune Globulin Medication Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Infertility-Medication-Request-Form.pdf</url>
+                <name>Infertility Medication Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/OsteoporosisInjectable-Medication-Request-Form.pdf</url>
+                <name>Osteoporosis Medication Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Psoriasis_medication_request_form.pdf</url>
+                <name>Psoriasis Medication Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Rheumatoid_psoriatic_juvenile_arthritis_and_ankylosing_spondylitis_request_form.pdf</url>
+                <name>Rheumatoid/Psoriatic/Juvenile Arthritis and Ankylosing Spondylitis Medication Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Synagis-Medication-Request-Form.pdf</url>
+                <name>Synagis Medication Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Synagis-Reorder-Form.pdf</url>
+                <name>Synagis&#60;sup&#62;®&#60;&#47;sup&#62; Reorder Form </name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Transplant-Medication-Request.pdf</url>
+                <name>Transplant Medication Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Viscosupplementation-MedicationRequestForm.pdf</url>
+                <name>Viscosupplementation Medication Request</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/pharmacy-insurance/healthcare-professional/documents/Vivitrol-Reorder-Form.pdf</url>
+                <name>Vivitrol Reorder Form</name>
+            </form>
+        </state>
+        <state name="State Specific">
+            <form>
+                <url>http://www.aetna.com/provider/data/NJ_provider_claim_submission_form.pdf</url>
+                <name>New Jersey Appeal a Claim Determination</name>
+            </form>
+            <form>
+                <url>http://www.aetna.com/provider/data/OH_EFT_Refusal_Form.pdf</url>
+                <name>Ohio EFT Refusal</name>
+            </form>
+        </state>
+    </business>
+</document>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    title="Overview Module"
+    width="650"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to include as the header of the item in the slideshow"
+                        fieldLabel="Header"
+                        name="./title"
+                        xtype="textfield"/>
+                    <text
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to display under header"
+                        fieldLabel="Subhead"
+                        name="./text"
+                        xtype="textarea"/>
+                    <height
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select the block height class to render."
+                        fieldLabel="Height"
+                        name="./height"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <short
+                                jcr:primaryType="nt:unstructured"
+                                text="Short"
+                                value="short"/>
+                            <tall
+                                jcr:primaryType="nt:unstructured"
+                                text="Tall"
+                                value="tall"/>
+                        </options>
+                    </height>
+                    <centerimage
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want the image to be centered for a better display."
+                        fieldLabel="Center Image"
+                        name="./centerimage"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </configuration>
+            <image
+                jcr:primaryType="cq:Widget"
+                allowBlank="false"
+                cropParameter="./image/imageCrop"
+                ddGroups="[media]"
+                fieldLabel="Image"
+                fileNameParameter="./image/fileName"
+                fileReferenceParameter="./image/fileReference"
+                mapParameter="./image/imageMap"
+                name="./image/file"
+                requestSuffix="/image.img.png"
+                rotateParameter="./image/imageRotate"
+                title="Image"
+                uploadUrl="/tmp/upload/*"
+                xtype="html5smartimage"/>
+            <mobileImage
+                jcr:primaryType="cq:Widget"
+                cropParameter="./mobileImage/imageCrop"
+                ddGroups="[media]"
+                fieldLabel="Mobile Image"
+                fileNameParameter="./mobileImage/fileName"
+                fileReferenceParameter="./mobileImage/fileReference"
+                id="mobileImageContent"
+                mapParameter="./mobileImage/imageMap"
+                name="./mobileImage/file"
+                requestSuffix="/mobileImage.img.png"
+                rotateParameter="./mobileImage/imageRotate"
+                sizeLimit="100"
+                title="Mobile Image"
+                uploadUrl="/tmp/upload/*"
+                xtype="html5smartimage"/>
+            <imageconfigs
+                jcr:primaryType="cq:Widget"
+                title="Image Config"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <resTypeImage
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="true"
+                        name="./image/sling:resourceType"
+                        value="foundation/components/image"
+                        xtype="hidden"/>
+                    <resTypeMobileImage
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="true"
+                        name="./mobileImage/sling:resourceType"
+                        value="foundation/components/image"
+                        xtype="hidden"/>
+                    <imageConfigs
+                        jcr:primaryType="cq:Widget"
+                        title="Image configuration"
+                        xtype="fieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <alt
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image Alt Text"
+                                name="./imageAlt"
+                                width="250"
+                                xtype="textfield"/>
+                            <imageTitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image Title"
+                                name="./imageTitle"
+                                width="250"
+                                xtype="textfield"/>
+                        </items>
+                    </imageConfigs>
+                </items>
+            </imageconfigs>
+        </items>
+    </items>
+    <listeners
+        jcr:primaryType="nt:unstructured"
+        loadContent="function(dialog){Aetna.Topic.hideImageTab(dialog)}"/>
+</jcr:root>

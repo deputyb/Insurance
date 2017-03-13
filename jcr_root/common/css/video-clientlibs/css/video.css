@@ -1,0 +1,9 @@
+.article-template .video ul li {
+	list-style-position: inside;
+	list-style-type: disc;
+}
+@media only screen and (min-width : 1px) and (max-width:767px) {
+	.democolumnLayout p {
+		text-align: center !important;
+	}
+}

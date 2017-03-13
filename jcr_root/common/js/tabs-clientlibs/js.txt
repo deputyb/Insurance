@@ -1,0 +1,5 @@
+#base=js
+jquery.ui.core.min.js
+jquery.ui.widget.min.js
+jquery.ui.tabs.min.js
+tabs.js

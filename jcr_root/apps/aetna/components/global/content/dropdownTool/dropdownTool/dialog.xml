@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Dropdown Tool"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <dropdownlabel
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to use as the dropdown label. Leave emtpy if no label is required."
+                        fieldLabel="Dropdown Label"
+                        name="./dropdownlabel"
+                        xtype="textfield"/>
+                    <dropdowndefaultoption
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to use as the dropdown default option that will be displayed."
+                        fieldLabel="Dropdown Default Option"
+                        name="./dropdowndefaultoption"
+                        xtype="textfield"/>
+                    <dropdownoptionseparator
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Separator text to use int the dropdown. Leave empty if no separator is required."
+                        fieldLabel="Dropdown Option Separator"
+                        name="./dropdownoptionseparator"
+                        xtype="textfield"/>
+                    <usedeeplinking
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Check it if you want to use deep liking in the current dropdown."
+                        fieldLabel="Use Deep Linking?"
+                        name="./usedeeplinking"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <analyticsjscode
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="JavaScript code that will be triggered when the dropdown changes. Use [selected-option] to include dynamically the selected option. Use simple quotes for the String values."
+                        fieldLabel="Analytics JS Code"
+                        name="./analyticsjscode"
+                        xtype="textarea"/>
+                </items>
+            </configuration>
+        </items>
+    </items>
+</jcr:root>

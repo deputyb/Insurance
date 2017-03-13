@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Text"
+    title="Responsive Layout"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <configuration
+            jcr:primaryType="cq:Widget"
+            title="Configuration"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <type
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Select which responsive layout type you want to render for the inner components."
+                    fieldLabel="Responsive Layout type"
+                    name="./type"
+                    type="radio"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <visibleboth
+                            jcr:primaryType="nt:unstructured"
+                            text="Visible desktop, tablet and phone"
+                            value=""/>
+                        <visibledesktop
+                            jcr:primaryType="nt:unstructured"
+                            text="Visible only on desktop"
+                            value="visible-desktop"/>
+                        <visibledesktopnarrowwidths
+                            jcr:primaryType="nt:unstructured"
+                            text="Visible only on desktop (Include narrow widths)"
+                            value="visible-desktop narrow-widths"/>
+                        <hiddendesktop
+                            jcr:primaryType="nt:unstructured"
+                            text="Hidden on desktop"
+                            value="hidden-desktop"/>
+                        <hiddendesktopnarrowwidths
+                            jcr:primaryType="nt:unstructured"
+                            text="Hidden on desktop (Include narrow widths)"
+                            value="hidden-desktop narrow-widths"/>
+                        <visibletablet
+                            jcr:primaryType="nt:unstructured"
+                            text="Visible only on tablet"
+                            value="visible-tablet"/>
+                        <hiddentablet
+                            jcr:primaryType="nt:unstructured"
+                            text="Hidden on tablet"
+                            value="hidden-tablet"/>
+                        <visiblephone
+                            jcr:primaryType="nt:unstructured"
+                            text="Visible only on phone"
+                            value="visible-phone"/>
+                        <hiddenphone
+                            jcr:primaryType="nt:unstructured"
+                            text="Hidden on phone"
+                            value="hidden-phone"/>
+                        <visibledesktoptablet
+                            jcr:primaryType="nt:unstructured"
+                            text="Visible on desktop and tablet"
+                            value="visible-desktop visible-tablet"/>
+                    </options>
+                </type>
+            </items>
+        </configuration>
+    </items>
+</jcr:root>

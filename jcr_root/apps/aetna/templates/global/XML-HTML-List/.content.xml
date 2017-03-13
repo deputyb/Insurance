@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Aetna very simple html page template to display list of urls based on XML file"
+    jcr:primaryType="cq:Template"
+    jcr:title="Aetna Url XML to Html List Page"
+    allowedPaths="[/content(/.*)?]"
+    ranking="{Long}6"
+    shortTitle="Url XML - HTML List Page">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="aetna/components/global/page/XML-HTML-List"/>
+</jcr:root>

@@ -1,0 +1,95 @@
+.sidebar-linkedin-feed {
+	width: 85%;
+	margin: 25px auto;
+	padding: 25px 15px 15px;
+	display: block;
+	background: white;
+	line-height: 1;
+}
+
+.sidebar-linkedin-feed h4 {
+	margin-bottom: 13px;
+}
+
+.sidebar-linkedin-feed hr {
+	background: #dbdbdb;
+	height: 2px;
+	display:block;
+	border: none;
+}
+
+.sidebar-linkedin-feed .linked-in-buttons-wrapper {
+	width: 100%;
+	display: inline-block;	
+}
+
+.sidebar-linkedin-feed .feed-not-available-msg {
+	padding-top: 10px;
+}
+
+.sidebar-linkedin-feed .login-button {
+	padding-top: 2px;
+	float: left;
+}
+
+.sidebar-linkedin-feed .follow-button {
+	text-align: right;
+	float: right;
+	padding-top: 2px;
+}
+
+.sidebar-linkedin-feed .linked-in-updates-wrapper {
+	line-height: 1.5;	
+}
+
+.sidebar-linkedin-feed p {
+	color: black;
+}
+
+.sidebar-linkedin-feed .header-wrapper {
+	display: inline-block;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.sidebar-linkedin-feed .thumbnail-image {
+	width: 30%;
+	float: left;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.sidebar-linkedin-feed .thumbnail-image img {
+	max-width: 100%;
+}
+
+.sidebar-linkedin-feed .title {
+	width: 65%;
+	padding-left: 5%;
+	float: left;
+}
+
+.sidebar-linkedin-feed .body p {
+	color: #333;
+}
+
+.sidebar-linkedin-feed .update-links {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.sidebar-linkedin-feed .update-links div {
+	float: left;
+}
+
+.sidebar-linkedin-feed .update-links a {
+	color: #8b8b8b;
+	font-weight: normal;
+}
+
+.sidebar-linkedin-feed .update-links .separator {
+	width: 6px;
+	height: 24px;
+	margin: 0 5px;
+	background: url(../images/icon_bullet_grey2_4x4.png) no-repeat 0 10px;
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    layout="form"
+    title="Interstitial window"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <id
+            jcr:primaryType="cq:Widget"
+            fieldDescription="HTML id to include to the actual interstitial video."
+            fieldLabel="HTML id"
+            name="./id"
+            xtype="textfield"/>
+        <width
+            jcr:primaryType="nt:unstructured"
+            allowBlank="true"
+            fieldLabel="Dialog width"
+            name="./width"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <max
+                    jcr:primaryType="nt:unstructured"
+                    text="Full width"
+                    value=""/>
+                <narrow
+                    jcr:primaryType="nt:unstructured"
+                    text="Narrow"
+                    value="narrowW"/>
+                <Medium
+                    jcr:primaryType="nt:unstructured"
+                    text="Medium width"
+                    value="mediumW"/>
+            </options>
+        </width>
+        <inheritInterstitial
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Check it if this interstitial will be inherited to children pages. Applies only for non-default interstitials."
+            fieldLabel="Inherit Interstitial"
+            name="./inheritInterstitial"
+            type="checkbox"
+            xtype="selection"/>
+    </items>
+</jcr:root>

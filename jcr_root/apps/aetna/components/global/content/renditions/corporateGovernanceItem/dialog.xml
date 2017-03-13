@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    helpPath="en/cq/current/wcm/default_components.html#Text"
+    title="Corporate Governance Item"
+    width="650"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <image
+                jcr:primaryType="cq:Widget"
+                allowBlank="false"
+                cropParameter="./image/imageCrop"
+                ddGroups="[media]"
+                fieldLabel="Image"
+                fileNameParameter="./image/fileName"
+                fileReferenceParameter="./image/fileReference"
+                mapParameter="./image/imageMap"
+                name="./image/file"
+                requestSuffix="/image.img.png"
+                rotateParameter="./image/imageRotate"
+                sizeLimit="100"
+                title="Image"
+                uploadUrl="/tmp/upload/*"
+                xtype="smartimage"/>
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Text Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <heading
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to be rendered as the title of the item"
+                        fieldLabel="Heading"
+                        name="./heading"
+                        xtype="textfield"/>
+                    <subheading
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to be rendered as the subheading of the item"
+                        fieldLabel="Subheading"
+                        name="./subheading"
+                        xtype="textfield"/>
+                    <text
+                        jcr:primaryType="cq:Widget"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        fieldDescription="Text to include for the item"
+                        fieldLabel="Text"
+                        height="200"
+                        name="./text"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                            xtype="cqinclude"/>
+                    </text>
+                    <resTypeImage
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="true"
+                        name="./image/sling:resourceType"
+                        value="foundation/components/image"
+                        xtype="hidden"/>
+                    <signatureResTypeImage
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="true"
+                        name="./signatureimage/sling:resourceType"
+                        value="foundation/components/image"
+                        xtype="hidden"/>
+                </items>
+            </tab1>
+            <signatureimage
+                jcr:primaryType="cq:Widget"
+                allowBlank="false"
+                cropParameter="./signatureimage/imageCrop"
+                ddGroups="[media]"
+                fieldLabel="Signature Image"
+                fileNameParameter="./signatureimage/fileName"
+                fileReferenceParameter="./signatureimage/fileReference"
+                mapParameter="./signatureimage/imageMap"
+                name="./signatureimage/file"
+                requestSuffix="/signatureimage.img.png"
+                rotateParameter="./signatureimage/imageRotate"
+                sizeLimit="100"
+                title="Signature Image"
+                uploadUrl="/tmp/upload/*"
+                xtype="smartimage"/>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="ZIP Code Input"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <configuration
+                jcr:primaryType="cq:Panel"
+                title="Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <zipcodetext
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text that will be displayed as the label of the ZIP code field."
+                        fieldLabel="ZIP Code Text"
+                        name="./zipcodetext"
+                        xtype="textfield"/>
+                    <countydropdowndefaultoption
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text to use as the County dropdown default option that will be displayed."
+                        fieldLabel="County Dropdown Default Option"
+                        name="./countydropdowndefaultoption"
+                        xtype="textfield"/>
+                    <countydropdownoptionseparator
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="--------------------------"
+                        fieldDescription="Separator text to use in the County dropdown. Leave empty if no separator is required."
+                        fieldLabel="County Dropdown Option Separator"
+                        name="./countydropdownoptionseparator"
+                        xtype="textfield"/>
+                    <tooltiptext
+                        jcr:primaryType="cq:Widget"
+                        externalStyleSheets="[/common/css/common-clientlibs/css/styles.css]"
+                        fieldDescription="Text to use in the information tooltip."
+                        fieldLabel="Tooltip Text"
+                        height="200"
+                        name="./tooltiptext"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/aetna/components/global/content/articleModule/dialog/items/items/tab1/items/text/rtePlugins.infinity.json"
+                            xtype="cqinclude"/>
+                    </tooltiptext>
+                    <defaultshopbuttonlabel
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text that will be used as the default Shop button label."
+                        fieldLabel="Default Shop Button Label"
+                        name="./defaultshopbuttonlabel"
+                        xtype="textfield"/>
+                    <defaultmobileshopbuttonlabel
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text that will be used as the default Shop button label in the mobile layout."
+                        fieldLabel="Default Mobile Shop Button Label"
+                        name="./defaultmobileshopbuttonlabel"
+                        xtype="textfield"/>
+                    <shopbuttonerrormsg
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text that will be displayed when the Default Shop button label is clicked as an error."
+                        fieldLabel="Shop Button Error Message"
+                        name="./shopbuttonerrormsg"
+                        xtype="textfield"/>
+                    <shopbuttonerrormsginvalidzip
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Text that will be displayed when the Default Shop button label is clicked and the ZIP code typed is not valid."
+                        fieldLabel="Shop Button Error Message Invalid ZIP Code"
+                        name="./shopbuttonerrormsginvalidzip"
+                        xtype="textfield"/>
+                </items>
+            </configuration>
+            <segments
+                jcr:primaryType="cq:Panel"
+                title="Segments">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <defaultsegment
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Default segment to use when there's not matching segment for the typed ZIP code."
+                        fieldLabel="Default Segment"
+                        name="/etc/aetna-common-content/zip-codes-per-market/defaultsegment"
+                        xtype="textfield">
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            loadcontent="function(field, record, path) { Aetna.ZipInputMarketEntry.prototype.renderDefaultZipMarket(field, record, path); }"/>
+                    </defaultsegment>
+                </items>
+            </segments>
+        </items>
+    </items>
+</jcr:root>

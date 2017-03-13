@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2015-07-07T17:03:38.965-04:00"
+        cq:lastModifiedBy="N629546"
+        cq:lastReplicated="{Date}2015-07-07T17:05:06.450-04:00"
+        cq:lastReplicatedBy="N629546"
+        cq:lastReplicationAction="Activate"
+        cq:template="/libs/wcm/core/templates/designpage"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Aetna.com-Search-Results"
+        jcr:uuid="a881f687-58f8-4606-a874-def1e38e792b"
+        sling:resourceType="wcm/core/components/designer">
+        <_x0032_-column-page jcr:primaryType="nt:unstructured">
+            <column1
+                jcr:lastModified="{Date}2013-09-12T15:53:58.462-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:Aetna CQ Functional,/apps/aetna/components/global/content/sidebarImage,/apps/aetna/components/global/content/sidebarLinks,/apps/aetna/components/global/content/sidebarTeaser/sidebarTeaser,/apps/aetna/components/global/content/sidebarTeaser/sidebarTeaserItem,group:Form]">
+                <section jcr:primaryType="nt:unstructured"/>
+                <cpt
+                    jcr:lastModified="{Date}2013-08-06T11:58:10.612-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aetna/components/global/content/cpt"
+                    numInputs="5"
+                    subheading="Enter CPT Codes:"
+                    title="Input Fields"/>
+                <searchAgain
+                    jcr:lastModified="{Date}2013-09-11T17:07:50.309-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aetna/components/global/content/searchAgain"
+                    label="Search Again:"
+                    resultsURL="/content/aetna/en_us/search-results"
+                    searchIn="/content/aetna"
+                    searchLabel="Search"/>
+            </column1>
+            <breadcrumb
+                jcr:lastModified="{Date}2013-08-21T16:29:37.533-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aetna/components/global/content/breadcrumb"
+                absParent="2"
+                relParent="0"/>
+            <column2
+                jcr:lastModified="{Date}2013-09-12T15:54:05.600-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:Aetna CQ Functional,group:Aetna CQ Sidebar Components]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </column2>
+            <extra
+                jcr:lastModified="{Date}2013-09-05T18:11:19.206-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:Aetna CQ Functional">
+                <section jcr:primaryType="nt:unstructured"/>
+                <searchAgain
+                    jcr:lastModified="{Date}2013-09-02T16:50:47.731-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aetna/components/global/content/searchAgain"
+                    label="Search Again:"
+                    resultsURL="/content/aetna/en_us/search-results"
+                    searchIn="/content/aetna/en_us/individuals-families"
+                    searchLabel="Search"/>
+            </extra>
+            <masthead
+                jcr:lastModified="{Date}2013-08-12T14:04:23.419-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aetna/components/global/content/masthead">
+                <primaryLogo
+                    jcr:lastModified="{Date}2013-08-12T14:04:23.419-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    imageRotate="0"/>
+                <secondaryLogo
+                    jcr:lastModified="{Date}2013-08-12T14:04:23.419-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    imageRotate="0"/>
+                <search
+                    jcr:lastModified="{Date}2013-09-02T16:52:01.551-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aetna/components/global/content/search"
+                    resultsURL="/content/aetna/en_us/search-results"
+                    searchIn="/content/aetna/en_us/individuals-families"
+                    searchLabel="Search"/>
+                <global-nav
+                    jcr:lastModified="{Date}2013-11-01T15:46:26.646-04:00"
+                    jcr:lastModifiedBy="kevinfarley"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aetna/components/global/content/globalNav"
+                    menuLinks="[{&quot;url&quot;:&quot;#&quot;\,&quot;linkTitle&quot;:&quot;Menu&quot;\,&quot;linkType&quot;:&quot;megaMenuOpen&quot;\,&quot;linkTarget&quot;:&quot;_self&quot;\,&quot;tooltips&quot;:[&quot;&lt;h5>Browse content here&lt;/h5>&quot;\,&quot;&lt;h5>Click Menu to close&lt;/h5>&quot;\,&quot;&lt;h5>Click to open Menu&lt;/h5>&quot;]},{&quot;url&quot;:&quot;/content/aetna/en_us/about-us/contact-aetna-od.html&quot;\,&quot;linkTitle&quot;:&quot;Contact&quot;\,&quot;linkType&quot;:&quot;regular&quot;\,&quot;linkTarget&quot;:&quot;_parent&quot;\,&quot;onClick&quot;:&quot;Aetna.analytics.omniture.linkCode('aeCustLnk'\,'Contact Us'\,this);s.tl(this\,'o'\,linkText\,null\,'navigate');return false;&quot;}]"/>
+                <menu jcr:primaryType="nt:unstructured">
+                    <mega-menu-panel-1 jcr:primaryType="nt:unstructured">
+                        <mega-menu-item-1 jcr:primaryType="nt:unstructured">
+                            <search
+                                jcr:lastModified="{Date}2013-12-11T15:36:23.239-05:00"
+                                jcr:lastModifiedBy="oscararrieta"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="aetna/components/global/content/search"
+                                isMobileSearch="true"
+                                searchLabel="Search"/>
+                        </mega-menu-item-1>
+                    </mega-menu-panel-1>
+                </menu>
+            </masthead>
+            <newsHub
+                jcr:lastModified="{Date}2013-09-09T14:36:11.400-04:00"
+                jcr:lastModifiedBy="amandakassay"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aetna/components/global/content/newsHub"
+                title="News"/>
+            <print-share
+                jcr:lastModified="{Date}2013-09-09T14:13:20.433-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aetna/components/global/content/printShare"
+                printlinktext="Print"
+                sharelinktext="Share"/>
+        </_x0032_-column-page>
+        <_x0031_-column-page jcr:primaryType="nt:unstructured">
+            <parsys
+                jcr:lastModified="{Date}2013-08-28T17:27:18.850-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:Aetna CQ Functional,group:Aetna CQ Sidebar Components]">
+                <section jcr:primaryType="nt:unstructured"/>
+                <columnLayout jcr:primaryType="nt:unstructured">
+                    <column-1
+                        jcr:lastModified="{Date}2013-08-28T17:27:03.752-04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[group:Aetna CQ Functional,group:Aetna CQ Sidebar Components]">
+                        <articleModule
+                            jcr:lastModified="{Date}2013-08-14T16:40:35.636-04:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aetna/components/global/content/articleModule"
+                            topic="true"/>
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </column-1>
+                    <column-2 jcr:primaryType="nt:unstructured">
+                        <articleModule
+                            jcr:lastModified="{Date}2013-08-14T16:55:38.631-04:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aetna/components/global/content/articleModule"
+                            topic="true"/>
+                    </column-2>
+                    <column-3 jcr:primaryType="nt:unstructured">
+                        <articleModule
+                            jcr:lastModified="{Date}2013-08-14T19:03:29.670-04:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aetna/components/global/content/articleModule"
+                            topic="true"/>
+                    </column-3>
+                    <column-4 jcr:primaryType="nt:unstructured">
+                        <articleModule
+                            jcr:lastModified="{Date}2013-08-27T10:30:24.897-04:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aetna/components/global/content/articleModule"
+                            topic="true"/>
+                    </column-4>
+                </columnLayout>
+            </parsys>
+            <breadcrumb
+                jcr:lastModified="{Date}2013-08-14T19:28:59.703-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aetna/components/global/content/breadcrumb"
+                absParent="2"
+                relParent="0"/>
+            <masthead
+                jcr:lastModified="{Date}2013-08-22T12:50:40.236-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aetna/components/global/content/masthead"
+                logoURL="/content/aetna/en_us/individuals-families">
+                <search
+                    jcr:lastModified="{Date}2013-09-02T16:50:59.780-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aetna/components/global/content/search"
+                    resultsURL="/content/aetna/en_us/search-results"
+                    searchLabel="Search"/>
+                <primaryLogo
+                    jcr:lastModified="{Date}2013-08-22T12:50:40.236-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    imageRotate="0"/>
+                <secondaryLogo
+                    jcr:lastModified="{Date}2013-08-22T12:50:40.236-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    imageRotate="0"/>
+                <global-nav
+                    jcr:lastModified="{Date}2013-11-01T11:23:43.898-04:00"
+                    jcr:lastModifiedBy="kevinfarley"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aetna/components/global/content/globalNav"
+                    menuLinks="[{&quot;url&quot;:&quot;#&quot;\,&quot;linkTitle&quot;:&quot;Menu&quot;\,&quot;linkType&quot;:&quot;megaMenuOpen&quot;\,&quot;linkTarget&quot;:&quot;_self&quot;\,&quot;tooltips&quot;:[&quot;&lt;h5>Browse content here&lt;/h5>&quot;\,&quot;&lt;h5>Click Menu to close&lt;/h5>&quot;\,&quot;&lt;h5>Click to open Menu&lt;/h5>&quot;]},{&quot;url&quot;:&quot;#&quot;\,&quot;linkTitle&quot;:&quot;Get a Quote&quot;\,&quot;linkType&quot;:&quot;megaMenuOpenRegular&quot;\,&quot;linkTarget&quot;:&quot;_blank&quot;\,&quot;onClick&quot;:&quot;&quot;},{&quot;url&quot;:&quot;https://member.aetna.com/appConfig/login/login.fcc?TYPE=33554433&amp;REALMOID=06-36d8cb4d-4ac1-44c7-b12d-a80fba4b718e&amp;GUID=&amp;SMAUTHREASON=0&amp;METHOD=GET&amp;SMAGENTNAME=-SM-xU5km2Pz5%2f9A%2f2FCwUlXE48HlDkyH9ruz3da8Iqw6pwcy09mgHFN5RmlkMNqguY5&amp;TARGET=-SM-HTTPS%3a%2f%2fmember%2eaetna%2ecom%2fMbrLanding%2fRoutingServlet%3fcreateSession%3dtrue&amp;WT.svl=Login_nav&quot;\,&quot;linkTitle&quot;:&quot;Log In/Register&quot;\,&quot;linkType&quot;:&quot;regular&quot;\,&quot;linkTarget&quot;:&quot;_blank&quot;\,&quot;onClick&quot;:&quot;Aetna.analytics.omniture.click(this\, 62)&quot;},{&quot;url&quot;:&quot;/content/aetna/en_us/about-us/contact-aetna-od.html&quot;\,&quot;linkTitle&quot;:&quot;Contact&quot;\,&quot;linkType&quot;:&quot;regular&quot;\,&quot;linkTarget&quot;:&quot;_blank&quot;\,&quot;onClick&quot;:&quot;Aetna.analytics.omniture.click(this\, 53)&quot;}]"/>
+            </masthead>
+            <newsHub
+                jcr:lastModified="{Date}2013-10-08T15:42:11.328-04:00"
+                jcr:lastModifiedBy="amandakassay"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aetna/components/global/content/newsHub"
+                title="News"/>
+        </_x0031_-column-page>
+        <contentpage jcr:primaryType="nt:unstructured">
+            <masthead
+                jcr:lastModified="{Date}2013-11-06T14:25:28.277-05:00"
+                jcr:lastModifiedBy="maurocastro"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aetna/components/global/content/masthead">
+                <menu jcr:primaryType="nt:unstructured">
+                    <mega-menu-item-1 jcr:primaryType="nt:unstructured">
+                        <panel1
+                            jcr:lastModified="{Date}2013-08-21T12:43:17.941-04:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys"
+                            components="group:Aetna CQ MegaMenu components">
+                            <section jcr:primaryType="nt:unstructured"/>
+                            <megaMenuLinkList jcr:primaryType="nt:unstructured">
+                                <list-links
+                                    jcr:lastModified="{Date}2013-08-25T12:12:12.348-04:00"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="foundation/components/parsys"
+                                    components="group:Aetna CQ MegaMenu components">
+                                    <section jcr:primaryType="nt:unstructured"/>
+                                </list-links>
+                            </megaMenuLinkList>
+                        </panel1>
+                        <panel2
+                            jcr:lastModified="{Date}2013-08-21T12:43:28.389-04:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys"
+                            components="group:Aetna CQ MegaMenu components">
+                            <section jcr:primaryType="nt:unstructured"/>
+                        </panel2>
+                        <panel3
+                            jcr:lastModified="{Date}2013-08-21T12:20:34.051-04:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys"
+                            components="group:Aetna CQ MegaMenu components">
+                            <section jcr:primaryType="nt:unstructured"/>
+                        </panel3>
+                        <panel4
+                            jcr:lastModified="{Date}2013-08-21T12:20:40.872-04:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys"
+                            components="group:Aetna CQ MegaMenu components">
+                            <section jcr:primaryType="nt:unstructured"/>
+                        </panel4>
+                        <panel5
+                            jcr:lastModified="{Date}2013-08-21T12:20:49.561-04:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys"
+                            components="group:Aetna CQ MegaMenu components">
+                            <section jcr:primaryType="nt:unstructured"/>
+                        </panel5>
+                        <mobile-links
+                            jcr:lastModified="{Date}2013-08-21T12:21:01.289-04:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/parsys"
+                            components="group:Aetna CQ MegaMenu components">
+                            <section jcr:primaryType="nt:unstructured"/>
+                        </mobile-links>
+                        <search
+                            jcr:lastModified="{Date}2013-08-22T20:46:48.574-04:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aetna/components/global/content/search"
+                            isMobileSearch="true"
+                            searchLabel="Search"/>
+                    </mega-menu-item-1>
+                    <mega-menu-panel-2 jcr:primaryType="nt:unstructured">
+                        <mega-menu-item-1 jcr:primaryType="nt:unstructured">
+                            <panel1
+                                jcr:lastModified="{Date}2013-08-30T15:46:09.233-04:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="foundation/components/parsys"
+                                components="group:Aetna CQ MegaMenu components">
+                                <section jcr:primaryType="nt:unstructured"/>
+                                <megaMenuLinkList jcr:primaryType="nt:unstructured">
+                                    <list-links
+                                        jcr:lastModified="{Date}2013-08-30T15:48:49.003-04:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="foundation/components/parsys"
+                                        components="group:Aetna CQ MegaMenu components">
+                                        <section jcr:primaryType="nt:unstructured"/>
+                                    </list-links>
+                                </megaMenuLinkList>
+                            </panel1>
+                            <panel2
+                                jcr:lastModified="{Date}2013-08-30T15:46:18.221-04:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="foundation/components/parsys"
+                                components="group:Aetna CQ MegaMenu components">
+                                <section jcr:primaryType="nt:unstructured"/>
+                            </panel2>
+                            <panel3
+                                jcr:lastModified="{Date}2013-08-30T15:46:26.195-04:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="foundation/components/parsys"
+                                components="group:Aetna CQ MegaMenu components">
+                                <section jcr:primaryType="nt:unstructured"/>
+                            </panel3>
+                        </mega-menu-item-1>
+                    </mega-menu-panel-2>
+                    <mega-menu-panel-1 jcr:primaryType="nt:unstructured">
+                        <mega-menu-item-1 jcr:primaryType="nt:unstructured">
+                            <search
+                                jcr:lastModified="{Date}2013-09-02T16:53:26.999-04:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="aetna/components/global/content/search"
+                                isMobileSearch="true"
+                                resultsURL="/content/aetna/en_us/search-results"
+                                searchLabel="Search"/>
+                            <panel-col-4 jcr:primaryType="nt:unstructured">
+                                <col-title-panel
+                                    jcr:lastModified="{Date}2013-09-03T15:25:53.613-04:00"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="foundation/components/parsys"
+                                    components="group:Aetna CQ MegaMenu components">
+                                    <section jcr:primaryType="nt:unstructured"/>
+                                </col-title-panel>
+                                <col-panel-2
+                                    jcr:lastModified="{Date}2013-09-03T15:26:05.899-04:00"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="foundation/components/parsys"
+                                    components="group:Aetna CQ MegaMenu components">
+                                    <section jcr:primaryType="nt:unstructured"/>
+                                    <megaMenuLinkList jcr:primaryType="nt:unstructured">
+                                        <list-links
+                                            jcr:lastModified="{Date}2013-09-03T15:41:42.363-04:00"
+                                            jcr:lastModifiedBy="admin"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="foundation/components/parsys"
+                                            components="group:Aetna CQ MegaMenu components">
+                                            <section jcr:primaryType="nt:unstructured"/>
+                                        </list-links>
+                                    </megaMenuLinkList>
+                                </col-panel-2>
+                                <col-panel-1 jcr:primaryType="nt:unstructured">
+                                    <megaMenuLinkList jcr:primaryType="nt:unstructured">
+                                        <list-links
+                                            jcr:lastModified="{Date}2013-09-03T15:41:34.044-04:00"
+                                            jcr:lastModifiedBy="admin"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="foundation/components/parsys"
+                                            components="group:Aetna CQ MegaMenu components">
+                                            <section jcr:primaryType="nt:unstructured"/>
+                                        </list-links>
+                                    </megaMenuLinkList>
+                                </col-panel-1>
+                            </panel-col-4>
+                            <panel-col-1 jcr:primaryType="nt:unstructured">
+                                <col-panel-1 jcr:primaryType="nt:unstructured">
+                                    <megaMenuLinkList jcr:primaryType="nt:unstructured">
+                                        <list-links
+                                            jcr:lastModified="{Date}2013-09-03T15:35:19.732-04:00"
+                                            jcr:lastModifiedBy="admin"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="foundation/components/parsys"
+                                            components="group:Aetna CQ MegaMenu components">
+                                            <section jcr:primaryType="nt:unstructured"/>
+                                        </list-links>
+                                    </megaMenuLinkList>
+                                </col-panel-1>
+                            </panel-col-1>
+                        </mega-menu-item-1>
+                    </mega-menu-panel-1>
+                </menu>
+                <search
+                    jcr:lastModified="{Date}2013-09-02T17:25:24.854-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aetna/components/global/content/search"
+                    resultsURL="/content/aetna/en_us/search-results"
+                    searchLabel="Search"/>
+                <global-nav
+                    jcr:lastModified="{Date}2013-11-06T15:11:49.044-05:00"
+                    jcr:lastModifiedBy="kevinfarley"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aetna/components/global/content/globalNav"
+                    menuLinks="[{&quot;url&quot;:&quot;#&quot;\,&quot;linkTitle&quot;:&quot;Menu&quot;\,&quot;linkType&quot;:&quot;megaMenuOpen&quot;\,&quot;linkTarget&quot;:&quot;_self&quot;\,&quot;tooltips&quot;:[&quot;&lt;h5>Browse content here&lt;/h5>&quot;\,&quot;&lt;h5>Click Menu to close&lt;/h5>&quot;\,&quot;&lt;h5>Click to open Menu&lt;/h5>&quot;]},{&quot;url&quot;:&quot;/content/aetna/en_us/about-us/contact-aetna-od.html&quot;\,&quot;linkTitle&quot;:&quot;Contact&quot;\,&quot;linkType&quot;:&quot;regular&quot;\,&quot;linkTarget&quot;:&quot;_parent&quot;\,&quot;onClick&quot;:&quot;&quot;}]"/>
+                <primaryLogo
+                    jcr:lastModified="{Date}2013-11-06T14:25:28.277-05:00"
+                    jcr:lastModifiedBy="maurocastro"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    imageRotate="0"/>
+                <secondaryLogo
+                    jcr:lastModified="{Date}2013-11-06T14:25:28.277-05:00"
+                    jcr:lastModifiedBy="maurocastro"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    imageRotate="0"/>
+            </masthead>
+            <breadcrumb
+                jcr:lastModified="{Date}2013-08-25T12:11:42.503-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aetna/components/global/content/breadcrumb"
+                absParent="2"
+                relParent="0"/>
+            <content
+                jcr:lastModified="{Date}2013-08-22T11:01:31.672-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:General,group:Aetna CQ Functional,group:Aetna CQ Sidebar Components]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </content>
+            <footer jcr:primaryType="nt:unstructured">
+                <list-links-1
+                    jcr:lastModified="{Date}2013-09-06T11:01:03.061-04:00"
+                    jcr:lastModifiedBy="tylerforster"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys"
+                    components="group:Aetna CQ Footer components">
+                    <section jcr:primaryType="nt:unstructured"/>
+                </list-links-1>
+                <list-links-2
+                    jcr:lastModified="{Date}2013-09-05T17:03:14.197-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys"
+                    components="group:Aetna CQ Footer components">
+                    <section jcr:primaryType="nt:unstructured"/>
+                </list-links-2>
+                <list-links-3
+                    jcr:lastModified="{Date}2013-09-05T17:03:22.574-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys"
+                    components="group:Aetna CQ Footer components">
+                    <section jcr:primaryType="nt:unstructured"/>
+                </list-links-3>
+                <list-links-4
+                    jcr:lastModified="{Date}2013-09-05T17:03:31.057-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys"
+                    components="group:Aetna CQ Footer components">
+                    <section jcr:primaryType="nt:unstructured"/>
+                </list-links-4>
+                <list-links-5
+                    jcr:lastModified="{Date}2013-09-06T11:02:22.558-04:00"
+                    jcr:lastModifiedBy="tylerforster"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys"
+                    components="group:Aetna CQ Footer components">
+                    <section jcr:primaryType="nt:unstructured"/>
+                </list-links-5>
+            </footer>
+        </contentpage>
+        <_x0032_-column-image-header-page jcr:primaryType="nt:unstructured">
+            <column2
+                jcr:lastModified="{Date}2013-08-28T17:22:15.966-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:Aetna CQ Functional,group:Aetna CQ Sidebar Components]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </column2>
+            <column1
+                jcr:lastModified="{Date}2013-08-28T17:22:04.118-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:Aetna CQ Functional">
+                <section jcr:primaryType="nt:unstructured"/>
+            </column1>
+            <masthead jcr:primaryType="nt:unstructured">
+                <global-nav
+                    jcr:lastModified="{Date}2013-09-23T15:53:55.177-04:00"
+                    jcr:lastModifiedBy="amandakassay"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aetna/components/global/content/globalNav"
+                    menuLinks="[{&quot;url&quot;:&quot;#&quot;\,&quot;linkTitle&quot;:&quot;Menu&quot;\,&quot;linkType&quot;:&quot;megaMenuOpen&quot;\,&quot;linkTarget&quot;:&quot;&quot;\,&quot;tooltips&quot;:[&quot;&lt;h5>Browse content here&lt;/h5>&quot;\,&quot;&lt;h5>Click Menu to close&lt;/h5>&quot;\,&quot;&lt;h5>Click to open Menu&lt;/h5>&quot;]},{&quot;url&quot;:&quot;#&quot;\,&quot;linkTitle&quot;:&quot;Shop&quot;\,&quot;linkType&quot;:&quot;megaMenuOpenRegular&quot;\,&quot;linkTarget&quot;:&quot;&quot;},{&quot;url&quot;:&quot;https://member.aetna.com/appConfig/login/login.fcc?TYPE=33554433&amp;REALMOID=06-36d8cb4d-4ac1-44c7-b12d-a80fba4b718e&amp;GUID=&amp;SMAUTHREASON=0&amp;METHOD=GET&amp;SMAGENTNAME=-SM-xU5km2Pz5%2f9A%2f2FCwUlXE48HlDkyH9ruz3da8Iqw6pwcy09mgHFN5RmlkMNqguY5&amp;TARGET=-SM-HTTPS%3a%2f%2fmember%2eaetna%2ecom%2fMbrLanding%2fRoutingServlet%3fcreateSession%3dtrue&amp;WT.svl=Login_nav&quot;\,&quot;linkTitle&quot;:&quot;Log In/Register&quot;\,&quot;linkType&quot;:&quot;regular&quot;\,&quot;linkTarget&quot;:&quot;_blank&quot;\,&quot;onClick&quot;:&quot;Aetna.analytics.omniture.click(this\, 62)&quot;},{&quot;url&quot;:&quot;/content/aetna/en_us/about-us/contact-aetna-od.html&quot;\,&quot;linkTitle&quot;:&quot;Contact&quot;\,&quot;linkType&quot;:&quot;regular&quot;\,&quot;linkTarget&quot;:&quot;_blank&quot;\,&quot;onClick&quot;:&quot;Aetna.analytics.omniture.click(this\, 53)&quot;}]"/>
+                <search
+                    jcr:lastModified="{Date}2013-09-02T16:51:43.197-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aetna/components/global/content/search"
+                    resultsURL="/content/aetna/en_us/search-results"
+                    searchLabel="Search"/>
+            </masthead>
+            <newsHub
+                jcr:lastModified="{Date}2013-09-13T11:53:02.758-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aetna/components/global/content/newsHub"
+                title="News"/>
+        </_x0032_-column-image-header-page>
+        <overview-page jcr:primaryType="nt:unstructured">
+            <masthead jcr:primaryType="nt:unstructured">
+                <global-nav
+                    jcr:lastModified="{Date}2013-11-01T13:55:17.243-04:00"
+                    jcr:lastModifiedBy="kevinfarley"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aetna/components/global/content/globalNav"
+                    menuLinks="[{&quot;url&quot;:&quot;#&quot;\,&quot;linkTitle&quot;:&quot;Menu&quot;\,&quot;linkType&quot;:&quot;megaMenuOpen&quot;\,&quot;linkTarget&quot;:&quot;&quot;\,&quot;tooltips&quot;:[&quot;&lt;h5>Browse content here&lt;/h5>&quot;\,&quot;&lt;h5>Click Menu to close&lt;/h5>&quot;\,&quot;&lt;h5>Click to open Menu&lt;/h5>&quot;]},{&quot;url&quot;:&quot;https://www.aetna.com/producer_public/login.fcc?TYPE=33554433&amp;REALMOID=06-aab84995-cc4b-11d5-8cb8-0008c7df6a81&amp;GUID=&amp;SMAUTHREASON=0&amp;METHOD=GET&amp;SMAGENTNAME=-SM-g96BoeA31Sn1BtbDw57yO6bTsqp6znM8Xzh%2bwJ0sKfnhlD9LVZJRNjMICttXsdG9&amp;TARGET=-SM-https%3a%2f%2fwww%2eaetna%2ecom%2fproducer%2fLogin%2edo&quot;\,&quot;linkTitle&quot;:&quot;Get a Quote&quot;\,&quot;linkType&quot;:&quot;regular&quot;\,&quot;linkTarget&quot;:&quot;_blank&quot;\,&quot;onClick&quot;:&quot;&quot;},{&quot;url&quot;:&quot;https://www.aetna.com/producer_public/login.fcc?TYPE=33554433&amp;REALMOID=06-aab84995-cc4b-11d5-8cb8-0008c7df6a81&amp;GUID=&amp;SMAUTHREASON=0&amp;METHOD=GET&amp;SMAGENTNAME=-SM-g96BoeA31Sn1BtbDw57yO6bTsqp6znM8Xzh%2bwJ0sKfnhlD9LVZJRNjMICttXsdG9&amp;TARGET=-SM-https%3a%2f%2fwww%2eaetna%2ecom%2fproducer%2fLogin%2edo&quot;\,&quot;linkTitle&quot;:&quot;Log In/Register&quot;\,&quot;linkType&quot;:&quot;regular&quot;\,&quot;linkTarget&quot;:&quot;_parent&quot;\,&quot;onClick&quot;:&quot;Aetna.analytics.omniture.click(this\, 62)&quot;},{&quot;url&quot;:&quot;/content/aetna/en_us/about-us/contact-aetna-od.html&quot;\,&quot;linkTitle&quot;:&quot;Contact&quot;\,&quot;linkType&quot;:&quot;regular&quot;\,&quot;linkTarget&quot;:&quot;_parent&quot;\,&quot;onClick&quot;:&quot;Aetna.analytics.omniture.click(this\, 53)&quot;}]"/>
+                <menu jcr:primaryType="nt:unstructured">
+                    <mega-menu-panel-1 jcr:primaryType="nt:unstructured">
+                        <mega-menu-item-4 jcr:primaryType="nt:unstructured">
+                            <search
+                                jcr:lastModified="{Date}2013-10-30T16:01:50.749-04:00"
+                                jcr:lastModifiedBy="rodolfooviedo"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="aetna/components/global/content/search"
+                                isMobileSearch="true"
+                                searchLabel="Search"/>
+                        </mega-menu-item-4>
+                    </mega-menu-panel-1>
+                </menu>
+            </masthead>
+            <heroSlideshow jcr:primaryType="nt:unstructured">
+                <hero-slideshow-items
+                    jcr:lastModified="{Date}2013-09-11T10:08:03.599-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys"
+                    components="group:Aetna CQ Functional">
+                    <section jcr:primaryType="nt:unstructured"/>
+                </hero-slideshow-items>
+            </heroSlideshow>
+            <parsys
+                jcr:lastModified="{Date}2013-09-11T12:33:09.679-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:Aetna CQ Functional,/apps/aetna/components/global/content/sidebarFindBlock]">
+                <section jcr:primaryType="nt:unstructured"/>
+                <columnLayout jcr:primaryType="nt:unstructured">
+                    <column-1 jcr:primaryType="nt:unstructured">
+                        <articleModule
+                            jcr:lastModified="{Date}2013-09-11T11:51:47.851-04:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aetna/components/global/content/articleModule"
+                            topic="true"/>
+                    </column-1>
+                    <column-2 jcr:primaryType="nt:unstructured">
+                        <articleModule
+                            jcr:lastModified="{Date}2013-09-11T11:52:08.241-04:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aetna/components/global/content/articleModule"
+                            topic="true"/>
+                    </column-2>
+                    <column-3 jcr:primaryType="nt:unstructured">
+                        <articleModule
+                            jcr:lastModified="{Date}2013-09-11T11:52:16.841-04:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aetna/components/global/content/articleModule"
+                            topic="true"/>
+                    </column-3>
+                    <column-4 jcr:primaryType="nt:unstructured">
+                        <articleModule
+                            jcr:lastModified="{Date}2013-09-11T11:52:26.923-04:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aetna/components/global/content/articleModule"
+                            topic="true"/>
+                    </column-4>
+                </columnLayout>
+                <responsiveLayout jcr:primaryType="nt:unstructured">
+                    <responsive-content jcr:primaryType="nt:unstructured">
+                        <articleModule
+                            jcr:lastModified="{Date}2013-09-11T16:25:49.872-04:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aetna/components/global/content/articleModule"
+                            topic="true"/>
+                    </responsive-content>
+                </responsiveLayout>
+            </parsys>
+            <newsHub
+                jcr:lastModified="{Date}2013-10-08T18:10:50.505-04:00"
+                jcr:lastModifiedBy="analoaiciga"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aetna/components/global/content/newsHub"
+                firstnewsalerttext="alert"
+                firstnewslink="/content/aetna/en_us/individuals-families/fraud-alert-phishing-scam"
+                firstnewstext="Fraud alert: Cold Calls From Impostors. Avoid scams that use the Aetna name."
+                onclick="Aetna.analytics.omniture.linkCode('aeAetnaExitU','[Link Name] &amp; Analysis',this);s.tl(this,'o',linkText,null,'navigate');return false;"
+                title="News"/>
+        </overview-page>
+        <contentpage-no-header jcr:primaryType="nt:unstructured">
+            <parsys
+                jcr:lastModified="{Date}2013-10-31T16:13:01.454-04:00"
+                jcr:lastModifiedBy="kevinfarley"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:Aetna CQ Functional">
+                <section jcr:primaryType="nt:unstructured"/>
+                <topicRouter jcr:primaryType="nt:unstructured">
+                    <parsys jcr:primaryType="nt:unstructured">
+                        <responsiveLayout jcr:primaryType="nt:unstructured">
+                            <responsive-content jcr:primaryType="nt:unstructured">
+                                <columnLayout jcr:primaryType="nt:unstructured">
+                                    <column-5
+                                        jcr:lastModified="{Date}2013-09-17T17:13:39.967-04:00"
+                                        jcr:lastModifiedBy="amandakassay"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="foundation/components/parsys"
+                                        components="group:Aetna CQ Functional">
+                                        <section jcr:primaryType="nt:unstructured"/>
+                                    </column-5>
+                                </columnLayout>
+                            </responsive-content>
+                        </responsiveLayout>
+                    </parsys>
+                </topicRouter>
+            </parsys>
+        </contentpage-no-header>
+        <_x0031_-column-page-HTML jcr:primaryType="nt:unstructured">
+            <masthead jcr:primaryType="nt:unstructured">
+                <global-nav
+                    jcr:lastModified="{Date}2013-09-23T15:54:33.243-04:00"
+                    jcr:lastModifiedBy="amandakassay"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aetna/components/global/content/globalNav"
+                    menuLinks="[{&quot;url&quot;:&quot;#&quot;\,&quot;linkTitle&quot;:&quot;Menu&quot;\,&quot;linkType&quot;:&quot;megaMenuOpen&quot;\,&quot;linkTarget&quot;:&quot;_self&quot;\,&quot;tooltips&quot;:[&quot;&lt;h5>Browse content here&lt;/h5>&quot;\,&quot;&lt;h5>Click Menu to close&lt;/h5>&quot;\,&quot;&lt;h5>Click to open Menu&lt;/h5>&quot;]},{&quot;url&quot;:&quot;#&quot;\,&quot;linkTitle&quot;:&quot;Shop&quot;\,&quot;linkType&quot;:&quot;megaMenuOpenRegular&quot;\,&quot;linkTarget&quot;:&quot;_self&quot;},{&quot;url&quot;:&quot;https://member.aetna.com/appConfig/login/login.fcc?TYPE=33554433&amp;REALMOID=06-36d8cb4d-4ac1-44c7-b12d-a80fba4b718e&amp;GUID=&amp;SMAUTHREASON=0&amp;METHOD=GET&amp;SMAGENTNAME=-SM-xU5km2Pz5%2f9A%2f2FCwUlXE48HlDkyH9ruz3da8Iqw6pwcy09mgHFN5RmlkMNqguY5&amp;TARGET=-SM-HTTPS%3a%2f%2fmember%2eaetna%2ecom%2fMbrLanding%2fRoutingServlet%3fcreateSession%3dtrue&amp;WT.svl=Login_nav&quot;\,&quot;linkTitle&quot;:&quot;Log In/Register&quot;\,&quot;linkType&quot;:&quot;regular&quot;\,&quot;linkTarget&quot;:&quot;_blank&quot;\,&quot;onClick&quot;:&quot;Aetna.analytics.omniture.click(this\, 62)&quot;},{&quot;url&quot;:&quot;/content/aetna/en_us/about-us/contact-aetna-od.html&quot;\,&quot;linkTitle&quot;:&quot;Contact&quot;\,&quot;linkType&quot;:&quot;regular&quot;\,&quot;linkTarget&quot;:&quot;_blank&quot;\,&quot;onClick&quot;:&quot;Aetna.analytics.omniture.click(this\, 53)&quot;}]"/>
+                <search
+                    jcr:lastModified="{Date}2013-09-12T15:42:26.390-04:00"
+                    jcr:lastModifiedBy="amandakassay"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aetna/components/global/content/search"
+                    resultsURL="/content/aetna/en_us/search-results"
+                    searchLabel="Search"/>
+            </masthead>
+            <parsys
+                jcr:lastModified="{Date}2013-09-12T15:56:49.883-04:00"
+                jcr:lastModifiedBy="amandakassay"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:Aetna CQ Functional">
+                <section jcr:primaryType="nt:unstructured"/>
+                <columnLayout jcr:primaryType="nt:unstructured">
+                    <column-1 jcr:primaryType="nt:unstructured">
+                        <articleModule
+                            jcr:lastModified="{Date}2013-09-12T16:12:26.118-04:00"
+                            jcr:lastModifiedBy="amandakassay"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aetna/components/global/content/articleModule"
+                            topic="true"/>
+                    </column-1>
+                    <column-2 jcr:primaryType="nt:unstructured">
+                        <articleModule
+                            jcr:lastModified="{Date}2013-09-12T16:12:32.393-04:00"
+                            jcr:lastModifiedBy="amandakassay"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aetna/components/global/content/articleModule"
+                            topic="true"/>
+                    </column-2>
+                    <column-3 jcr:primaryType="nt:unstructured">
+                        <articleModule
+                            jcr:lastModified="{Date}2013-09-12T16:12:40.992-04:00"
+                            jcr:lastModifiedBy="amandakassay"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aetna/components/global/content/articleModule"
+                            topic="true"/>
+                    </column-3>
+                </columnLayout>
+                <responsiveLayout jcr:primaryType="nt:unstructured">
+                    <responsive-content
+                        jcr:lastModified="{Date}2013-09-17T15:02:14.354-04:00"
+                        jcr:lastModifiedBy="amandakassay"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="group:Aetna CQ Functional">
+                        <section jcr:primaryType="nt:unstructured"/>
+                        <columnLayout jcr:primaryType="nt:unstructured">
+                            <column-2 jcr:primaryType="nt:unstructured">
+                                <articleModule
+                                    jcr:lastModified="{Date}2013-09-17T15:02:34.931-04:00"
+                                    jcr:lastModifiedBy="amandakassay"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="aetna/components/global/content/articleModule"
+                                    topic="true"/>
+                            </column-2>
+                            <column-1 jcr:primaryType="nt:unstructured">
+                                <articleModule
+                                    jcr:lastModified="{Date}2013-09-17T15:02:45.863-04:00"
+                                    jcr:lastModifiedBy="amandakassay"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="aetna/components/global/content/articleModule"
+                                    topic="true"/>
+                            </column-1>
+                            <column-3 jcr:primaryType="nt:unstructured">
+                                <articleModule
+                                    jcr:lastModified="{Date}2013-09-17T15:02:51.940-04:00"
+                                    jcr:lastModifiedBy="amandakassay"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="aetna/components/global/content/articleModule"
+                                    topic="true"/>
+                            </column-3>
+                        </columnLayout>
+                    </responsive-content>
+                </responsiveLayout>
+            </parsys>
+        </_x0031_-column-page-HTML>
+        <reportpage jcr:primaryType="nt:unstructured">
+            <report jcr:primaryType="nt:unstructured">
+                <columns
+                    jcr:lastModified="{Date}2013-09-17T17:10:08.303-04:00"
+                    jcr:lastModifiedBy="maurocastro"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/reporting/components/repparsys"
+                    components="group:Page Activity Report">
+                    <section jcr:primaryType="nt:unstructured"/>
+                </columns>
+            </report>
+        </reportpage>
+        <plain-html-page jcr:primaryType="nt:unstructured">
+            <parsys
+                jcr:lastModified="{Date}2013-09-30T14:12:47.105-04:00"
+                jcr:lastModifiedBy="amandakassay"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:Aetna CQ Functional">
+                <section jcr:primaryType="nt:unstructured"/>
+            </parsys>
+        </plain-html-page>
+        <pagelinkreportpage jcr:primaryType="nt:unstructured">
+            <report jcr:primaryType="nt:unstructured">
+                <columns
+                    jcr:lastModified="{Date}2013-10-23T17:57:50.368-04:00"
+                    jcr:lastModifiedBy="maurocastro"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/reporting/components/repparsys"
+                    components="group:Page Link Report">
+                    <section jcr:primaryType="nt:unstructured"/>
+                </columns>
+            </report>
+        </pagelinkreportpage>
+        <_x0031_-column-article-page jcr:primaryType="nt:unstructured">
+            <column1
+                jcr:lastModified="{Date}2013-10-30T15:28:18.614-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:Aetna CQ Functional">
+                <section jcr:primaryType="nt:unstructured"/>
+            </column1>
+            <extra
+                jcr:lastModified="{Date}2013-10-30T15:28:37.446-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:Aetna CQ Functional">
+                <section jcr:primaryType="nt:unstructured"/>
+            </extra>
+        </_x0031_-column-article-page>
+        <error-full-width-template jcr:primaryType="nt:unstructured">
+            <masthead jcr:primaryType="nt:unstructured">
+                <global-nav
+                    jcr:lastModified="{Date}2013-11-15T13:23:08.253-05:00"
+                    jcr:lastModifiedBy="kevinfarley"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aetna/components/global/content/globalNav"
+                    menuLinks="[{&quot;url&quot;:&quot;#&quot;\,&quot;linkTitle&quot;:&quot;Menu&quot;\,&quot;linkType&quot;:&quot;megaMenuOpen&quot;\,&quot;linkTarget&quot;:&quot;_self&quot;\,&quot;onClick&quot;:&quot;&quot;\,&quot;tooltips&quot;:[&quot;&lt;h5>Browse content here&lt;/h5>&quot;\,&quot;&lt;h5>Click Menu to close&lt;/h5>&quot;\,&quot;&lt;h5>Click to open Menu&lt;/h5>&quot;]},{&quot;url&quot;:&quot;/content/aetna/en_us/about-us/contact-aetna-od.html&quot;\,&quot;linkTitle&quot;:&quot;Contact&quot;\,&quot;linkType&quot;:&quot;regular&quot;\,&quot;linkTarget&quot;:&quot;_parent&quot;\,&quot;onClick&quot;:&quot;&quot;}]"/>
+                <search
+                    jcr:lastModified="{Date}2013-11-14T14:57:42.108-05:00"
+                    jcr:lastModifiedBy="oscararrieta"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aetna/components/global/content/search"
+                    searchLabel="Search"/>
+            </masthead>
+        </error-full-width-template>
+    </jcr:content>
+</jcr:root>

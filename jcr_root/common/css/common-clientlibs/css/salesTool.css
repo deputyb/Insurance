@@ -1,0 +1,349 @@
+/* ========  FONTS / COLORS ======== */
+.tool .grey {
+	color: #69747a;
+}
+
+.tool h5 {
+	word-wrap: break-word;
+}
+
+/* ========  FLOATS and PADDING ======== */
+
+.tool .floatLeft {
+	float: left;
+}
+
+.tool .drop-down-show-hide {
+	padding-bottom: 50px;
+}
+
+.tool .mt30 {
+	margin-top: 30px;
+}
+
+.tool .ml30 {
+	margin-left: 0px;
+}
+
+.tool .mt40 {
+	margin-top: 40px;
+}
+
+.tool .mt50 {
+	margin-top: 50px;
+}
+
+
+.tool .mtb50 {
+	margin-top: 50px !important;
+	margin-left: 0px !important;
+}
+
+.tool .mlt30 {
+	margin: 30px 0px 0px 30px;
+}
+
+.tool .pt10 {
+	padding: 10px 0px 10px 30px !important;
+}
+
+.tool .pt30 {
+	padding: 30px 30px 0px 30px !important;
+}
+
+.tool .pl30 {
+	padding: 0px 30px !important;
+} 
+
+.tool .p30n0 {
+	padding: 30px 0px !important;
+}
+
+.tool .pr30 {
+	padding: 30px 0px 30px 30px;
+}
+
+.tool .p30 {
+	padding: 30px !important;
+} 
+
+.tool .pl0 {
+	padding: 30px 30px 30px 0px !important;
+}
+
+.tool .m0 {
+	margin: 0px !important;
+}
+
+.tool .noMargin {
+	margin: 0px;
+}
+
+.tool .heading-space {
+	margin-bottom: 10px;
+}
+
+.tool .mw410 {
+	max-width: 410px;
+}
+/* ========  ROW / SPAN STYLES ======== */
+
+.tool .row-fluid [class*="span"]:first-child, .tool .row-fluid [class*="span"] {
+	padding: 0px;
+}
+
+.tool .graybg {
+	background: #69747a;
+	color: white;
+}
+
+.tool .graybg a, .tool .graybg a:hover, .tool .graybg, .tool .graybg h2{
+	color: white;
+}
+
+.tool .span2.sales {
+	width: 16.666667%;
+	margin: 0px;
+	padding-left: 28px;
+	border-left: 2px solid #dddedf;
+	min-height: 120px;
+}
+
+.tool .span2.salesSingle {
+	width: 16.666667%;
+	margin: 0px;
+	padding-left: 30px;
+/*	border-left: 2px solid #dddedf; */
+	min-height: 75px;
+}
+
+.tool .span3.sales {
+	width: 25%;
+	margin: 30px 45px 0px 0px;
+/*	padding-left: 28px;
+    border-left: 2px solid #dddedf;*/
+	min-height: 120px;
+}
+
+.tool .span3.salesSingle {
+	width: 25%;
+	margin: 0px 0px 50px 0px;
+}
+
+.tool .span4.margin30{
+	margin: 30px 0px 30px 30px !important;
+	width: 33.333333%;
+}
+
+.tool .span5.margin30 {
+	margin: 30px 0px !important;
+	padding-left: 30px !important;
+}
+
+.tool .span7.margin30 {
+	margin: 30px 0px !important;
+	padding-left: 30px !important;
+}
+
+.tool .paddings10{
+	padding-right:10px !important;
+	padding-left:10px !important;
+}
+
+.tool .span9.salesSingle {
+	width: 75%;
+	border-left: 2px solid #dddedf;
+	margin: 0px 0px 50px 0px;
+}
+
+.tool .row-fluid .span8{
+	width: 66.666667%;
+}
+
+.tool .span7.margin0 {
+	margin: 0px;
+}
+
+.tool .span12 p {
+	margin: 0;
+}
+
+.tool .span12 h2 {
+	margin: 0;
+}
+
+
+
+/* ========  DROPDOWN STYLING ======== */
+
+.tool .selectWrap{
+	width: 255px;
+}
+.tool .selectWrap.clientSize{
+	width: 100%; /*WIDTH CAN BE CHANGED DEPENDING ON STYLE OF SELECT IN SPECIFIC CASE*/
+	display:block;
+	height: 40px;
+	overflow:hidden;
+	background: #eee url(../../../images/designs/selectBg.png) no-repeat right;
+	-moz-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, .3);
+	box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, .3);
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.tool .selectWrap select:focus, .tool .selectWrap select:active{ background: rgba(0,0,0,0); border: 0; outline: 0; -moz-outline: none; }
+
+.tool .selectWrap select {
+   background: transparent;
+   width: 120%;
+   padding: 12px 10px;
+   font-size: 16px;
+   line-height: 1.2;
+   border: 0;
+   border-radius: 0;
+   color: #333333;
+   -webkit-appearance: none;
+   height: 43px;
+   font-weight: bold;
+}
+
+.tool .selectWrap.region{
+	min-width: 255px; /*WIDTH CAN BE CHANGED DEPENDING ON STYLE OF SELECT IN SPECIFIC CASE*/
+	display:block;
+	height: 40px;
+	overflow:hidden;
+	background: #eee url(../../../images/designs/selectBg.png) no-repeat right;
+	-moz-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, .3);
+	box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, .3);
+	float: left;
+	margin-bottom: 20px;
+}
+
+.tool select.region:disabled{
+	width: 120%; /*WIDTH CAN BE CHANGED DEPENDING ON STYLE OF SELECT IN SPECIFIC CASE*/
+	display:block;
+	height: 42px;
+	overflow:hidden;
+	background: #eee url(../../../images/designs/selectBg-inactive.png) no-repeat 81% 50%;
+	-moz-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, .3);
+	box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, .3);
+	float: left;
+	color: #9da2a7;
+}
+
+.tool .container-fluid:before, .tool .container-fluid:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.tool .container-fluid:after {
+    clear: both;
+}
+
+.tool .mobile-only {
+	display: none;
+}
+
+
+
+.tool .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.tool .hidden { display: none; visibility: hidden; }
+.tool .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.tool .visuallyhidden.focusable:active,
+.tool .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.tool .invisible { visibility: hidden; }
+.tool .clearfix:before, .tool .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.tool .clearfix:after { clear: both; }
+.tool .clearfix { zoom: 1; }
+
+
+@media all and (orientation:portrait) {
+
+}
+
+@media all and (orientation:landscape) {
+
+}
+
+@media screen and (max-device-width: 480px) {
+
+  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+
+/*Phone number can fit in one line*/
+@media only screen and (min-width : 768px) and (max-width:1016px) {
+	.tool .pt30 {
+		padding: 30px 0px 0px 11px!important;
+	}
+	.tool .pl30 {
+		padding: 0px 0px 0px 11px!important;
+	}	
+	
+	.tool .pl0{
+		padding: 30px 10px 30px 0 !important;
+	}
+}
+
+/*Smartphone*/
+@media only screen and (min-width : 1px) and (max-width:767px) {
+	.tool .p30n0 {
+		padding: 30px !important;
+	}
+	.tool .span3.salesSingle{
+		width: auto;
+		margin: auto;
+	}
+	.tool select.region:disabled {
+		width: 100%;
+		background-position: right center;
+	}
+}
+
+/* Tablet Portrait */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 929px){
+	.tool .state-region-header{
+		padding-bottom: 20px;
+	}
+	
+	.tool .span9 .extraPad{
+		/*padding-top: 20px;*/
+	}	
+}
+
+/* Tablet Rules for hcb-form */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px){
+	.hcb-form .form-header .span7{
+		width: 53%;
+	}
+	
+	.hcb-form .form-header .offset1{
+		margin-left: 0px;
+	}
+	
+	.hcb-form .form-header .span4{
+		width: 47%;
+	}		
+}
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; } 
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}

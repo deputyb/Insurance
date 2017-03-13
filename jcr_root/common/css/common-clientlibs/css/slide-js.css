@@ -1,0 +1,202 @@
+
+
+  #slides {
+      display: none;
+      position: relative;
+      margin-bottom: -24px;
+      margin-top: 24px;
+    }
+	.template{
+		margin-top: -24px;
+	}
+  .slidesjs-container {
+    /*height: 504px;*/
+    max-height: 504px;
+    z-index: -777;
+    overflow: hidden;
+    background: #ffffff;
+  }
+
+  #slides .row-fluid {
+    height: 100%;
+  }
+
+  .slidesjs-slide .container-fluid {
+    position: relative;
+    padding: 0 30px;
+  }
+
+  .slide-copy {
+    margin-top: 7.3%;
+  }
+
+  .slide-copy h1 {
+    font-size: 3.75em;
+    margin-bottom: 7px;
+    font-family: 'Foco W01 Bold', Arial, sans-serif;
+  }
+
+  .slide-copy p {
+    margin-bottom: 33px;
+  }
+
+  .slidesjs-pagination {
+    list-style: none;
+    position: relative;
+    top: -54px;
+    z-index: 10;
+    float: right;
+    padding-right: 2.5%;
+  }
+
+  .slidesjs-pagination.container-fluid {
+    /*display: none;*/
+  }
+
+  .slidesjs-pagination li {
+    float: left;
+    margin: 0 5px;
+  }
+
+  .slidesjs-pagination li a {
+    display: block;
+    width: 14px;
+    height: 0;
+    padding-top: 14px;
+    background-image: url(../../../images/designs/universalNav/spr-icn-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+    
+    float: left;
+    overflow: hidden;
+  }
+
+  .slidesjs-pagination li a.active,
+  .slidesjs-pagination li a:hover.active {
+    background-position: 0 -76px;
+    background-repeat: no-repeat;
+  }
+
+  .slidesjs-pagination li a:hover {
+    background-position: 0 -76px;
+  }
+
+  .navbar {
+    /*overflow: hidden;*/
+  }
+
+/*DESKTOP HERO*/
+@media (min-width:1024px) {
+  #slides .hero1 {
+    background: #eeeeee url(../../../images/designs/img-hero-1-d.jpg) no-repeat center top;
+/*    background-size: 100%;
+    min-height: 504px;*/
+  }
+
+  #slides .hero2 {
+    background: #eeeeee url(../../../images/designs/img-hero-2-d.jpg) no-repeat center top;
+    /*background-size: 100%;*/
+  }
+
+  #slides .hero3 {
+    background: #eeeeee url(../../../images/designs/img-hero-3-d.jpg) no-repeat center top;
+    /*background-size: 100%;*/
+  }
+
+  /*EMPLOYERS*/
+  #slides.employerHero .hero1 {
+    background: #eeeeee url(../../../images/dam/overview_E/employers-hero-1-d.jpg) no-repeat center top;
+  }
+}
+
+/*TABLET*/
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+	.slide-copy{
+		margin-top: 5%;
+	}
+  #slides .hero1 {
+    background: url(../../../images/designs/img-hero-1-t.jpg) no-repeat center top;
+    background-size: 100%;
+  }
+
+  #slides .hero2 {
+    background: url(../../../images/designs/img-hero-2-t.jpg) no-repeat center top;
+    background-size: 100%;
+  }
+
+  #slides .hero3 {
+    background: url(../../../images/designs/img-hero-3-t.jpg) no-repeat center top;
+    background-size: 100%;
+  }
+
+  /*EMPLOYERS*/
+  #slides.employerHero .hero1 {
+    background: #eeeeee url(../../../images/dam/overview_E/employers-hero-1-t.jpg) no-repeat center top;
+  }
+
+	#slides {
+  	margin-bottom: -24px;
+    margin-top: 24px;
+	 }
+
+  .slidesjs-slide .container-fluid h1 {
+      font-size: 2.25em;
+      letter-spacing: 0px;
+      margin-bottom: 10px;
+    }
+    
+}
+
+@media only screen and (max-width : 767px){
+  .slidesjs-container {
+      min-height: 300px;
+      /*overflow: hidden;*/
+  }
+	.slidesjs-slide .container-fluid{
+		padding: 0 2.5%;
+	}
+  #slides .row-fluid {
+      max-height: 180px;
+      min-height: 180px;
+    }
+
+  #slides .hero1 {
+      background: url(../../../images/designs/img-hero-1-m.jpg) no-repeat left top;
+      background-size: 100%;
+  }
+
+  #slides .hero2 {
+      background: url(../../../images/designs/img-hero-2-m.jpg) no-repeat left top;
+      background-size: 100%;
+  }
+
+  #slides .hero3 {
+      background: url(../../../images/designs/img-hero-3-m.jpg) no-repeat left top;
+      background-size: 100%;
+  }
+
+  /*EMPLOYERS*/
+  #slides.employerHero .hero1 {
+    background: #eeeeee url(../../../images/dam/overview_E/employers-hero-1-m.jpg) no-repeat center top;
+    background-size: 100%;
+  }
+
+  .slidesjs-slide .container-fluid h1 {
+      color: #5e9732;
+      font-size: 2em;
+      letter-spacing: 0px;
+      margin: 200px 0 0 0;
+      padding: 0;
+  } 
+
+  .slidesjs-pagination {
+    top: -140px;
+/*      height: 1px;
+    overflow: hidden;*/
+    /*display: none;*/
+  }
+
+  .slide-copy p {
+    display: none;
+  }
+}  
